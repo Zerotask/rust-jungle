@@ -2,7 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson title="Stage 1: Introduction" next="1/the-rust-playground">
+<Lesson title="Stage 1.1: Introduction" next="1/the-rust-playground">
 	<p>
 		In this first chapter we're going to be exploring the very basics with functions, variables, and
 		the most primitive types. Glad to have you on board!

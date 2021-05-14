@@ -26,7 +26,6 @@
 	</section>
 </div>
 
-
 <div class="lesson-nav">
 	{#if previous}
 		<a sveltekit:prefetch class="previous" href={previous} rel="prev">❮ Previous</a>
@@ -51,7 +50,7 @@
 		height: 70px;
 		background-color: #94d894;
 		border-top: 1px solid var(--primary-color);
-		margin-left: -.4rem;
+		margin-left: -0.4rem;
 		padding: 10px;
 	}
 
