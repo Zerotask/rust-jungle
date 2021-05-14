@@ -4,7 +4,7 @@
 </script>
 
 <header>
-	<div class="logo">
+	<div class="logo hide-md">
 		<a href="/">
 			<img src="/rust-jungle-logo.png" alt="Rust Jungle Logo" width="200" height="66" />
 		</a>
@@ -30,18 +30,21 @@
 	</nav>
 
 	<!-- TODO: add a language selector -->
-	<div class="corner">
+	<div class="hide-md">
+		<span class="language-selection">
+			<a href="/en">EN</a> | <a href="/de">DE</a>
+		</span>
 		<a
 			href="https://github.com/Zerotask/rust-jungle"
 			rel="external noreferrer"
 			title="Open project on GitHub"
 		>
-			<img src="/github-logo-small.png" alt="GitHub" />
+			<img class="github-logo" src="/github-logo-small.png" alt="GitHub" />
 		</a>
 	</div>
 </header>
 
-<main>
+<main class="container">
 	<slot />
 </main>
 
@@ -51,27 +54,12 @@
 		justify-content: space-between;
 	}
 
+	header .language-selection {
+		margin-right: 20px;
+	}
+
 	.logo {
 		margin: 8px;
-	}
-
-	.corner {
-		width: 3em;
-		height: 3em;
-	}
-
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
 	}
 
 	nav {
@@ -116,12 +104,15 @@
 	}
 
 	a:hover {
-		color: var(--text-color-hover);
+		color: #000;
 	}
-	main {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		padding: 20px;
+
+	@media screen and (max-width: 840px) {
+		main {
+			margin-top: 20px;
+		}
+		header {
+			justify-content: center;
+		}
 	}
 </style>

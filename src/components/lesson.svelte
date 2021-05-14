@@ -11,18 +11,21 @@
 	<title>{title}</title>
 </svelte:head>
 
-<section>
-	<h1>{title}</h1>
-	<slot />
-</section>
+<div class="columns">
+	<section class="column col-md-12 col-6">
+		<h1>{title}</h1>
+		<slot />
+	</section>
 
-<section>
-	{#if src}
-		<Playground {src} />
-	{:else}
-		<Ferris />
-	{/if}
-</section>
+	<section class="column col-md-12 col-6">
+		{#if src}
+			<Playground {src} />
+		{:else}
+			<Ferris />
+		{/if}
+	</section>
+</div>
+
 
 <div class="lesson-nav">
 	{#if previous}
@@ -45,9 +48,10 @@
 		position: fixed;
 		bottom: 0;
 		width: 100%;
-		height: 40px;
+		height: 70px;
 		background-color: #94d894;
 		border-top: 1px solid var(--primary-color);
+		margin-left: -.4rem;
 		padding: 10px;
 	}
 
@@ -66,9 +70,5 @@
 	.lesson-nav > .next {
 		float: right;
 		margin-right: 20px;
-	}
-
-	section {
-		width: 50%;
 	}
 </style>
