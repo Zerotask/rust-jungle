@@ -21,7 +21,7 @@
 		"eslint-config-prettier": "^8.1.0",
 		"eslint-plugin-svelte3": "^3.2.0",
 		"openode": "^2.1.0",
-		"prettier": "~2.2.1",
+		"prettier": "~2.3.0",
 		"prettier-plugin-svelte": "^2.2.0",
 		"svelte": "^3.34.0",
 		"svelte-preprocess": "^4.0.0",
