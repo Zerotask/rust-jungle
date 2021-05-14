@@ -1,4 +1,4 @@
-name: Deployment to openode.io
+name: Deployment
 
 on:
   push:
@@ -12,6 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Setup
+        run: npm i -D
+      - name: Build
+        run: npm run build
       - name: deploy
         run: |
           export OPENODE_TOKEN="${{ secrets.OPENODE_TOKEN }}"
