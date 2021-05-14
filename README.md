@@ -5,6 +5,8 @@
 
 # Rust Jungle
 
+WARNING: STILL IN DEVELOPMENT! NOT COMPLETE!
+
 Rust Jungle is based on the awesome [Tour of Rust](https://github.com/richardanaya/tour_of_rust)
 and is built with the high-performance JS framework [SvelteKit](https://github.com/sveltejs/kit).
 
