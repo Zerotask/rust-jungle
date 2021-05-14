@@ -17,4 +17,9 @@
 	</p>
 
 	<p>It's a great way to play around with Rust and show others your creativity and challenges!</p>
+
+	<p>
+		Besides the Rust Playground we use a code highlighting for Rust language specific parts in the
+		text and italic for other special words or phrases.
+	</p>
 </Lesson>

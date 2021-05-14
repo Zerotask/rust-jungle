@@ -111,7 +111,6 @@
 		font-weight: 700;
 		font-size: 0.8rem;
 		text-transform: uppercase;
-		letter-spacing: 10%;
 		text-decoration: none;
 		transition: color 0.2s linear;
 	}
@@ -119,7 +118,6 @@
 	a:hover {
 		color: var(--text-color-hover);
 	}
-
 	main {
 		display: flex;
 		flex-direction: row;

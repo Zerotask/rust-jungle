@@ -28,7 +28,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/fira-mono": "^4.2.2",
+		"@fontsource/mukta": "^4.3.0",
 		"@lukeed/uuid": "^2.0.0",
 		"@sveltejs/kit": "next",
 		"cookie": "^0.4.1",

@@ -35,12 +35,17 @@
 </div>
 
 <style>
+	h1 {
+		margin-top: 0;
+		margin-bottom: 8px;
+	}
+
 	.lesson-nav {
 		display: block;
 		position: fixed;
 		bottom: 0;
 		width: 100%;
-		height: 30px;
+		height: 40px;
 		background-color: #94d894;
 		border-top: 1px solid var(--primary-color);
 		padding: 10px;
@@ -49,7 +54,7 @@
 	.lesson-nav a {
 		text-decoration: none;
 		font-weight: bold;
-		font-size: 20px;
+		font-size: 24px;
 		color: var(--text-color);
 	}
 
