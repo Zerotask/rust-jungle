@@ -6,7 +6,7 @@
 <header>
 	<div class="logo">
 		<a href="/">
-			<img src="/rust-jungle-logo.png" alt="Rust Jungle Logo" />
+			<img src="/rust-jungle-logo.png" alt="Rust Jungle Logo" width="200" height="66" />
 		</a>
 	</div>
 
