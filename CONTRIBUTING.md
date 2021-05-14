@@ -6,10 +6,10 @@ Commits should follow the [Conventional Commits](https://www.conventionalcommits
 
 ## Developing
 
-To start the local dev server, just run `npm run dev`.
+To start the local dev server, just run `npm run dev`. This will start a watcher.
 
 ## Building
 
 You can build / compile the entire project with `npm run build`
 
-and with `npm run preview` you can test it.
+and with `npm run start` you can test it.

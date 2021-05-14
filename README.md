@@ -13,7 +13,6 @@ Therefore Rust Jungle will try help you navigating to all the major topics of th
 
 And you are not alone! [Ferris the crab](https://www.rustacean.net/) will be with you!
 
-
 Big thanks to [opeNode.io](https://www.openode.io/) where this bot is hosted for free!
 
 ## Structure
