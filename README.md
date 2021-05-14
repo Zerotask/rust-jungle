@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/20150243/118312159-3f79d880-b4f1-11eb-9ee3-5e67f406bf55.png)
+
 [![Lint](https://github.com/Zerotask/rust-jungle/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/Zerotask/rust-jungle/actions/workflows/lint.yml)
 [![Deployment](https://github.com/Zerotask/rust-jungle/actions/workflows/deployment.yml/badge.svg?branch=main)](https://github.com/Zerotask/rust-jungle/actions/workflows/deployment.yml)
 
