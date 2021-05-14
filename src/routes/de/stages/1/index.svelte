@@ -1,16 +1,17 @@
 <script lang="ts">
-	import Ferris from '$components/ferris.svelte';
+	import Lesson from '$components/lesson.svelte';
 </script>
 
-<svelte:head>
-	<title>Willkommen zur 1. Station</title>
-</svelte:head>
+<Lesson title="Station 1: Einführung" next="1/the-rust-playground">
+	<p>
+		Im ersten Kapitel werden grundlegende Eigenschaften von Funktionen, Variablen und (fast) allen
+		primitiven Datentypen präsentiert. Willkommen an Board!
+	</p>
 
-<section>
-	<h1>Willkommen zur 1. Station</h1>
-	<p>TODO</p>
-</section>
-
-<section>
-	<Ferris />
-</section>
+	<p>
+		Ach ja! Falls du dich fragst, wer diese süße sprechende Krabbe ist, das ist Ferris, das
+		inoffizielle Maskottchen der Programmiersprache Rust. Sag hallo! Sobald du dich mit Rust
+		vertraut gemacht hast, kannst du dich ein Rustacean. nennen. Leute, die Rust benutzen, dazu
+		beitragen oder generell daran interessiert sind, nennen sich selbst Rustaceans.
+	</p>
+</Lesson>

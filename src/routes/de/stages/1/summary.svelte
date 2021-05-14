@@ -1,16 +1,7 @@
 <script lang="ts">
-	import Ferris from '$components/ferris.svelte';
+	import Lesson from '$components/lesson.svelte';
 </script>
 
-<svelte:head>
-	<title>Zusammenfassung der 1. Station</title>
-</svelte:head>
-
-<section>
-	<h1>Zusammenfassung der 1. Station</h1>
+<Lesson title="Stage 1: Summary">
 	<p>TODO</p>
-</section>
-
-<section>
-	<Ferris />
-</section>
+</Lesson>

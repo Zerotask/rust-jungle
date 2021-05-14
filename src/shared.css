@@ -8,7 +8,7 @@
 	--secondary-color: #d6ffd6;
 	--heading-color: #535353;
 	--text-color: #000;
-	--text-color-hover: #535353;
+	--text-color-hover: #3ceb3c;
 }
 
 body {
@@ -53,4 +53,8 @@ button:focus:not(:focus-visible) {
 
 main section:not(:last-child) {
 	margin-right: 30px;
+}
+
+.lesson-container {
+	width: 50%;
 }
