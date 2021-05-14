@@ -1,5 +1,6 @@
 import preprocess from 'svelte-preprocess';
-import adapter from '@sveltejs/adapter-static';
+// import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-node';
 import path from 'path';
 
 // @see https://kit.svelte.dev/docs#configuration
@@ -14,11 +15,15 @@ const config = {
 		target: '#svelte',
 
 		// @see https://kit.svelte.dev/docs#adapters
+		// adapter: adapter({
+		// 	// default options are shown
+		// 	pages: 'build',
+		// 	assets: 'build',
+		// 	fallback: '200.html'
+		// }),
 		adapter: adapter({
 			// default options are shown
-			pages: 'build',
-			assets: 'build',
-			fallback: '200.html'
+			out: 'build'
 		}),
 
 		vite: {

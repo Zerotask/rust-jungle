@@ -7,9 +7,12 @@
 		"build:preview": "npm run build && npm run preview",
 		"preview": "svelte-kit preview",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-		"lint:fix": "prettier --write --plugin-search-dir=. . && eslint --fix --ignore-path .gitignore ."
+		"lint:fix": "prettier --write --plugin-search-dir=. . && eslint --fix --ignore-path .gitignore .",
+		"start": "node ./build/index.js",
+		"deploy": "openode deploy"
 	},
 	"devDependencies": {
+		"@sveltejs/adapter-node": "^1.0.0-next.20",
 		"@sveltejs/adapter-static": "^1.0.0-next.9",
 		"@sveltejs/kit": "next",
 		"@typescript-eslint/eslint-plugin": "^4.19.0",
@@ -17,6 +20,7 @@
 		"eslint": "^7.22.0",
 		"eslint-config-prettier": "^8.1.0",
 		"eslint-plugin-svelte3": "^3.2.0",
+		"openode": "^2.1.0",
 		"prettier": "~2.2.1",
 		"prettier-plugin-svelte": "^2.2.0",
 		"svelte": "^3.34.0",

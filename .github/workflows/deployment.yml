@@ -1,21 +1,21 @@
-name: GitHub Pages deployment
+name: Deployment to openode.io
 
 on:
   push:
     branches:
       - main
+  schedule:
+    - cron: "0 0 * * 1" # every monday at midnight
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Setup
-        run: npm i -D
-      - name: Build
-        run: npm run build
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+      - name: deploy
+        run: |
+          export OPENODE_TOKEN="${{ secrets.OPENODE_TOKEN }}"
+          export OPENODE_SITE_NAME="${{ secrets.OPENODE_SITE_NAME }}"
+          sudo npm i -g openode
+          openode ci-conf $OPENODE_TOKEN $OPENODE_SITE_NAME
+          openode deploy
