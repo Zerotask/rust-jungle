@@ -1,4 +1,5 @@
 [![Lint](https://github.com/Zerotask/rust-jungle/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/Zerotask/rust-jungle/actions/workflows/lint.yml)
+[![Deployment to openode.io](https://github.com/Zerotask/rust-jungle/actions/workflows/deployment.yml/badge.svg?branch=main)](https://github.com/Zerotask/rust-jungle/actions/workflows/deployment.yml)
 
 # Rust Jungle
 
