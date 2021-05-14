@@ -1,6 +1,7 @@
 # Contributing
 
 ## Commits
+
 Commits should follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) convention.
 
 ## Developing

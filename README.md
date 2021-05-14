@@ -1,4 +1,5 @@
 # Rust Jungle
+
 Rust Jungle is based on the awesome [Tour of Rust](https://github.com/richardanaya/tour_of_rust)
 and is built with the high-performance JS framework [SvelteKit](https://github.com/sveltejs/kit).
 
@@ -11,15 +12,18 @@ Therefore Rust Jungle will try help you navigating to all the major topics of th
 And you are not alone! [Ferris the crab](https://www.rustacean.net/) will be with you!
 
 ## Structure
+
 Rust Jungle is separated into stages and each stage have lessons.
 
 Each lesson starts with an introduction and ends with a summary.
 
 ## Contributing
+
 If you want to contribute to this project, please take a look into [Contributing](./CONTRIBUTING.md).
 
 You can also create an [issue](https://github.com/Zerotask/vscode-rust-extension-pack/issues/new) and suggest
 new stages, lessons, features etc. or report a bug.
 
 ## License
+
 This project is [MIT licensed](https://github.com/Zerotask/rust-jungle/blob/main/LICENSE).
