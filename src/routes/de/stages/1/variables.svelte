@@ -9,11 +9,16 @@
 >
 	<p>Variablen werden mit dem Schlüsselwort <i>let</i> deklariert.</p>
 	<p>
-		Im Regelfall sollte man Rust die Entscheidung überlassen, um welchen Datentypen es sich handelt. In Sonderfällen kann der Typ explizit angegeben werden.
+		Im Regelfall sollte man Rust die Entscheidung überlassen, um welchen Datentypen es sich handelt.
+		In Sonderfällen kann der Typ explizit angegeben werden.
 	</p>
 	<p>
 		Huch, was ist denn bei dem Beispiel los? Die Variable <i>x</i> wird mehrmals deklariert?
 	</p>
-	<p>Das ist kein Fehler - Rust erlaubt sogenanntes variable shadowing (Variable überschatten). Bei Neudeklaration "verfällt" die vorige Deklaration und wir können mit der Variable arbeiten, als ob es sie davor noch nie gegeben hätte. Der Datentyp darf sich dabei auch ändern.</p>
-    <p>Variablennamen werden ebenfalls in <i>snake_case</i> geschrieben.</p>
+	<p>
+		Das ist kein Fehler - Rust erlaubt sogenanntes variable shadowing (Variable überschatten). Bei
+		Neudeklaration "verfällt" die vorige Deklaration und wir können mit der Variable arbeiten, als
+		ob es sie davor noch nie gegeben hätte. Der Datentyp darf sich dabei auch ändern.
+	</p>
+	<p>Variablennamen werden ebenfalls in <i>snake_case</i> geschrieben.</p>
 </Lesson>
