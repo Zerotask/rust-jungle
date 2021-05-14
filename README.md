@@ -1,3 +1,5 @@
+[![Lint](https://github.com/Zerotask/rust-jungle/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/Zerotask/rust-jungle/actions/workflows/lint.yml)
+
 # Rust Jungle
 
 Rust Jungle is based on the awesome [Tour of Rust](https://github.com/richardanaya/tour_of_rust)
