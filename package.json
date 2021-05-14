@@ -10,7 +10,6 @@
 		"lint:fix": "prettier --write --plugin-search-dir=. . && eslint --fix --ignore-path .gitignore ."
 	},
 	"devDependencies": {
-		"@architect/sandbox": "^3.4.3",
 		"@sveltejs/adapter-static": "^1.0.0-next.9",
 		"@sveltejs/kit": "next",
 		"@typescript-eslint/eslint-plugin": "^4.19.0",
