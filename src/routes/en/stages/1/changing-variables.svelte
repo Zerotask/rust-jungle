@@ -10,8 +10,8 @@
 >
 	<p>Rust cares a great deal about what variables are modifiable. Values fall into two types:</p>
 	<ul>
-		<li><b>mutable</b> - the compiler will allow the variable to be written to and read from.</li>
-		<li><b>immutable</b> - the compiler will only allow the variable to be read from.</li>
+		<li><i>mutable</i> - the compiler will allow the variable to be written to and read from.</li>
+		<li><i>immutable</i> - the compiler will only allow the variable to be read from.</li>
 	</ul>
 
 	<p>
