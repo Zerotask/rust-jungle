@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	title="Stage 2.8: Summary"
+	title="Stage 2.9: Summary"
 	previous="writing-a-hello-world-program"
 	next="../3"
 	isSummary="true"
