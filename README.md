@@ -30,7 +30,7 @@ Rust Jungle is separated into stages and each stage has lessons.
 
 Each stage starts with an introduction and ends with a summary.
 
-A lesson has a text and an optional Rust playground and optional *further information*.
+A lesson has a text and an optional Rust playground and optional _further information_.
 
 ## Contributing
 
