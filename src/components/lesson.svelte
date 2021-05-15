@@ -14,12 +14,13 @@
 	export let isSummary = false;
 
 	onMount(() => {
-		// Add kevboard navigation
+		let link: string = null;
+
+		// Add keyboard navigation
 		document.body.addEventListener(
 			'keyup',
 			(event) => {
 				const eventKey = event.key;
-				let link: string;
 
 				if (['Left', 'ArrowLeft', 'Up', 'ArrowUp'].includes(eventKey)) {
 					link = previous;
