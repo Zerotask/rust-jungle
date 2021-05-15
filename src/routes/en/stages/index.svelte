@@ -47,7 +47,12 @@
 			<a href="stages/2/setup-visual-studio-code" sveltekit:prefetch>2.7 Setup Visual Studio Code</a
 			>
 		</li>
-		<li><a href="stages/2/summary" sveltekit:prefetch>2.8 Summary</a></li>
+		<li>
+			<a href="stages/2/writing-a-hello-world-program" sveltekit:prefetch
+				>2.8 Writing A Hello World Program</a
+			>
+		</li>
+		<li><a href="stages/2/summary" sveltekit:prefetch>2.9 Summary</a></li>
 	</ul>
 
 	<h2><a href="stages/3" sveltekit:prefetch>Stage 3: Basic Control Flow</a></h2>

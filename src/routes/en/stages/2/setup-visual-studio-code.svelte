@@ -3,7 +3,11 @@
 	import ExternalLink from '$components/external-link.svelte';
 </script>
 
-<Lesson title="Stage 2.7: Setup Visual Studio Code" previous="cargo-subcommands" next="summary">
+<Lesson
+	title="Stage 2.7: Setup Visual Studio Code"
+	previous="cargo-subcommands"
+	next="writing-a-hello-world-program"
+>
 	<p>
 		I recommend using
 		<ExternalLink href="https://code.visualstudio.com">Visual Studio Code</ExternalLink>

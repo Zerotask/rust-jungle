@@ -2,7 +2,12 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson title="Stage 2.8: Summary" previous="setup-visual-studio-code" next="../3" isSummary="true">
+<Lesson
+	title="Stage 2.8: Summary"
+	previous="writing-a-hello-world-program"
+	next="../3"
+	isSummary="true"
+>
 	<p>
 		In this stage you learned how to install Rust locally. You learned about the Rust tools <i
 			>rustup</i
@@ -15,5 +20,8 @@
 		<i>cargo subcommands</i>.
 	</p>
 
-	<p>You also learned how to setup Visual Studio Code to write your own Rust programs.</p>
+	<p>
+		You also learned how to setup Visual Studio Code and you wrote your first Rust program -
+		probably.
+	</p>
 </Lesson>
