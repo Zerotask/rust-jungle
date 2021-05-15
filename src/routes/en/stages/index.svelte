@@ -214,6 +214,18 @@
 				>8.5 Abstraction With Selective Exposure</a
 			>
 		</li>
+		<li>
+			<a href="stages/8/polymorphism-with-traits" sveltekit:prefetch>8.6 Polymorphism With Traits</a
+			>
+		</li>
+		<li>
+			<a href="stages/8/implemented-methods-on-traits" sveltekit:prefetch
+				>8.7 Implemented Methods On Traits</a
+			>
+		</li>
+		<li>
+			<a href="stages/8/trait-inheritance" sveltekit:prefetch>8.8 Trait Inheritance</a>
+		</li>
 	</ul>
 
 	<h2>Stage 9: Smart Pointers (TODO)</h2>

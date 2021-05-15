@@ -82,6 +82,7 @@
 	h1 {
 		margin-top: 0;
 		margin-bottom: 8px;
+		font-size: 34px;
 	}
 
 	.lesson-nav {
