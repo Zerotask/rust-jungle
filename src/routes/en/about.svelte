@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Ferris from '$components/ferris.svelte';
+	import ExternalLink from '$components/external-link.svelte';
 </script>
 
 <svelte:head>
@@ -7,7 +7,7 @@
 </svelte:head>
 
 <section>
-	<h1>What is Rust Jungle</h1>
+	<h1>About Rust Jungle</h1>
 
 	<p>
 		Rust Jungle is based on the awesome Tour of Rust and is built with the high-performance JS
@@ -15,19 +15,42 @@
 	</p>
 
 	<p>
-		Rust has a steep learning curve and for some people this might be the reason to look for an
-		alternative. In my experience, once you've learned Rust, you will love it. Others share my
-		experience, otherwise it wouldn't be the <a
-			href="https://stackoverflow.blog/2020/01/20/what-is-rust-and-why-is-it-so-popular/"
-			rel="external noreferrer">most loved language for four years in a row</a
+		This project is open source and you're welcome to contribute to it via <ExternalLink
+			href="https://github.com/Zerotask/rust-jungle">GitHub</ExternalLink
 		>.
 	</p>
 
 	<p>
-		Therefore <b>Rust Jungle</b> will try help you navigating to all the major topics of the Rust
-		programming language. And you are not alone!
-		<a href="https://www.rustacean.net/" rel="external noreferrer">Ferris the crab</a> will be with you!
+		Rust has a steep learning curve and for some people this might be the reason to look for an
+		alternative.<br />In my experience, once you've learned Rust, you will love it. Others share my
+		experience, otherwise it wouldn't be the
+		<ExternalLink href="https://stackoverflow.blog/2020/01/20/what-is-rust-and-why-is-it-so-popular"
+			>most loved language for four years in a row</ExternalLink
+		>.
+	</p>
+
+	<p>
+		The goal of Rust Jungle is to give you an easy start with the Rust programming language with
+		short but useful lessons, separated into stages.<br />And you are not alone in the Rust Jungle! <ExternalLink
+			href="https://www.rustacean.net">Ferris the crab</ExternalLink
+		> will be with you!
+	</p>
+
+	<h2>Structure of Rust Jungle</h2>
+	<p>
+		Rust Jungle is separated into stages and every stage has multiple lessons. A lesson consists of
+		a small portion of text with an optional running code example and optional further information.
+	</p>
+	<p>The text just uses 2 kinds of highlighting:</p>
+	<ul>
+		<li>
+			<code>Code blocks</code> - Rust syntax elements have a dark background and a white color.
+		</li>
+		<li><i>Special words</i> - special words or phrases are highlighted with an italic font.</li>
+	</ul>
+
+	<p>
+		Every stage starts with an introduction which covers all following lessons in short and ends
+		with a summary.
 	</p>
 </section>
-
-<Ferris />

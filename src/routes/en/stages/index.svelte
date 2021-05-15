@@ -23,7 +23,8 @@
 			<a href="stages/1/multiple-return-values" sveltekit:prefetch>1.10 Multiple Return Values</a>
 		</li>
 		<li><a href="stages/1/returning-nothing" sveltekit:prefetch>1.11 Returning Nothing</a></li>
-		<li><a href="stages/1/summary" sveltekit:prefetch>1.12 Summary</a></li>
+		<li><a href="stages/1/macros" sveltekit:prefetch>1.12 Macros</a></li>
+		<li><a href="stages/1/summary" sveltekit:prefetch>1.13 Summary</a></li>
 	</ul>
 
 	<h2>

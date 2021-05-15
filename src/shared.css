@@ -26,7 +26,16 @@ a,
 a:visited {
 	color: #8b4513;
 }
+a:hover {
+	text-decoration: none;
+	color: var(--primary-color);
+	font-weight: bold;
+}
 
 .columns {
 	padding: 10px 20px;
+}
+
+p {
+	margin-bottom: 10px;
 }

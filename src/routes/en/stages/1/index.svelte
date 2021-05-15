@@ -20,10 +20,17 @@
 	</p>
 
 	<p>
-		Some lessons will provide <i>further information</i> from the official <ExternalLink
-			href="https://doc.rust-lang.org/stable/book">Rust Book</ExternalLink
-		>, <ExternalLink href="https://doc.rust-lang.org/stable/rust-by-example"
-			>Rust by Example</ExternalLink
-		> or from the <ExternalLink href="https://docs.rs">the official docs website</ExternalLink>.
+		Some lessons will provide <i>further information</i> from the following official sources:
 	</p>
+	<ul>
+		<li>
+			<ExternalLink href="https://doc.rust-lang.org/stable/book">Rust Book</ExternalLink>
+		</li>
+		<li>
+			<ExternalLink href="https://doc.rust-lang.org/stable/rust-by-example"
+				>Rust by Example</ExternalLink
+			>
+		</li>
+		<li><ExternalLink href="https://docs.rs">the docs website (docs.rs)</ExternalLink></li>
+	</ul>
 </Lesson>
