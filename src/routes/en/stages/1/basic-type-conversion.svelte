@@ -13,5 +13,5 @@
 		a <code>u32</code> casually without error.
 	</p>
 
-	<p>Luckily Rust makes numeric type conversions very easy with the as keyword.</p>
+	<p>Luckily Rust makes numeric type conversions very easy with the <code>as</code> keyword.</p>
 </Lesson>
