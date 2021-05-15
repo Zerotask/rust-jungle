@@ -167,6 +167,10 @@
 		</li>
 		<li><a href="stages/7/raw-string-literals" sveltekit:prefetch>7.6 Raw String Literals</a></li>
 	</ul>
+
+	<h2>Stage 8: Object Oriented Programming (OOP) (TODO)</h2>
+	<h2>Stage 9: Smart Pointers (TODO)</h2>
+	<h2>Stage 10: Project Organization and Stucture (TODO)</h2>
 </section>
 
 <style>
