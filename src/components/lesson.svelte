@@ -77,6 +77,12 @@
 		margin-right: 20px;
 	}
 
+	.lesson-nav a:hover {
+		text-decoration: none;
+		color: var(--primary-color);
+		font-weight: bold;
+	}
+
 	@media screen and (max-width: 840px) {
 		section:last-child {
 			padding-bottom: 90px;

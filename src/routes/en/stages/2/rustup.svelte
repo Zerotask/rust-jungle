@@ -13,7 +13,7 @@
 		<li>updating Rust: <code>rustup update</code></li>
 		<li>
 			installing Rust tools like <i>Clippy</i> (a static analysis tool):
-			<code>rustup component add clippy</code>
+			<code>rustup component add clippy</code> - you can run it then with <code>cargo clippy</code>
 		</li>
 		<li>Open the official <i>The book</i>: <code>rustup doc --book</code></li>
 		<li>Show active and installed tools: <code>rustup show</code></li>
