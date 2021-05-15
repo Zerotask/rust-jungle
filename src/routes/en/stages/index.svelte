@@ -109,9 +109,63 @@
 		<li><a href="stages/5/summary" sveltekit:prefetch>5.10 Summary</a></li>
 	</ul>
 
-	<h2><a href="stages/6" sveltekit:prefetch>Stage 6: Ownership & Borrowing Data (TODO)</a></h2>
+	<h2><a href="stages/6" sveltekit:prefetch>Stage 6: Ownership & Borrowing Data</a></h2>
 	<ul>
 		<li><a href="stages/6" sveltekit:prefetch>6.1 Introduction</a></li>
+		<li><a href="stages/6/ownership" sveltekit:prefetch>6.2 Ownership</a></li>
+		<li>
+			<a href="stages/6/scope-based-resource-management" sveltekit:prefetch
+				>6.3 Scope-based Resource Management</a
+			>
+		</li>
+		<li>
+			<a href="stages/6/dropping-is-hierarchical" sveltekit:prefetch>6.4 Dropping Is Hierarchical</a
+			>
+		</li>
+		<li><a href="stages/6/moving-ownership" sveltekit:prefetch>6.5 Moving Ownership</a></li>
+		<li><a href="stages/6/returning-ownership" sveltekit:prefetch>6.6 Returning Ownership</a></li>
+		<li>
+			<a href="stages/6/borrowing-ownership-with-references" sveltekit:prefetch
+				>6.7 Borrowing Ownership With References</a
+			>
+		</li>
+		<li>
+			<a href="stages/6/borrowing-mutable-ownership-with-references" sveltekit:prefetch
+				>6.8 Borrowing Mutable Ownership With References</a
+			>
+		</li>
+		<li><a href="stages/6/dereferencing" sveltekit:prefetch>6.9 Dereferencing</a></li>
+		<li>
+			<a href="stages/6/passing-around-borrowed-data" sveltekit:prefetch
+				>6.10 Passing Around Borrowed Data</a
+			>
+		</li>
+		<li>
+			<a href="stages/6/references-of-references" sveltekit:prefetch
+				>6.11 References Of References</a
+			>
+		</li>
+		<li><a href="stages/6/explicit-lifetimes" sveltekit:prefetch>6.12 Explicit Lifetimes</a></li>
+		<li><a href="stages/6/multiple-lifetimes" sveltekit:prefetch>6.13 Multiple Lifetimes</a></li>
+		<li><a href="stages/6/static-lifetimes" sveltekit:prefetch>6.14 Static Lifetimes</a></li>
+		<li>
+			<a href="stages/6/lifetimes-in-data-types" sveltekit:prefetch>6.15 Lifetimes In Data Types</a>
+		</li>
+		<li><a href="stages/6/summary" sveltekit:prefetch>6.16 Summary</a></li>
+	</ul>
+
+	<h2><a href="stages/7" sveltekit:prefetch>Stage 7: Text (TODO)</a></h2>
+	<ul>
+		<li><a href="stages/7" sveltekit:prefetch>7.1 Introduction</a></li>
+		<li><a href="stages/7/string-literals" sveltekit:prefetch>7.2 String Literals</a></li>
+		<li><a href="stages/7/what-is-utf-8" sveltekit:prefetch>7.3 What Is UTF-8?</a></li>
+		<li><a href="stages/7/escaping-characters" sveltekit:prefetch>7.4 Escaping Characters</a></li>
+		<li>
+			<a href="stages/7/multi-line-string-literals" sveltekit:prefetch
+				>7.5 Multi-line String Literals</a
+			>
+		</li>
+		<li><a href="stages/7/raw-string-literals" sveltekit:prefetch>7.6 Raw String Literals</a></li>
 	</ul>
 </section>
 
