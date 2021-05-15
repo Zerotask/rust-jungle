@@ -160,7 +160,7 @@
 		<li><a href="stages/6/summary" sveltekit:prefetch>6.16 Summary</a></li>
 	</ul>
 
-	<h2><a href="stages/7" sveltekit:prefetch>Stage 7: Text (TODO)</a></h2>
+	<h2><a href="stages/7" sveltekit:prefetch>Stage 7: Text</a></h2>
 	<ul>
 		<li><a href="stages/7" sveltekit:prefetch>7.1 Introduction</a></li>
 		<li><a href="stages/7/string-literals" sveltekit:prefetch>7.2 String Literals</a></li>
@@ -172,9 +172,40 @@
 			>
 		</li>
 		<li><a href="stages/7/raw-string-literals" sveltekit:prefetch>7.6 Raw String Literals</a></li>
+		<li>
+			<a href="stages/7/string-literals-from-files" sveltekit:prefetch
+				>7.7 String Literals From Files</a
+			>
+		</li>
+		<li><a href="stages/7/string-slice" sveltekit:prefetch>7.8 String Slice</a></li>
+		<li><a href="stages/7/chars" sveltekit:prefetch>7.9 Chars</a></li>
+		<li><a href="stages/7/string" sveltekit:prefetch>7.10 String</a></li>
+		<li>
+			<a href="stages/7/text-as-function-parameters" sveltekit:prefetch
+				>7.11 Text As Function Parameters</a
+			>
+		</li>
+		<li><a href="stages/7/building-strings" sveltekit:prefetch>7.12 Building Strings</a></li>
+		<li><a href="stages/7/formatting-strings" sveltekit:prefetch>7.13 Formatting Strings</a></li>
+		<li><a href="stages/7/converting-strings" sveltekit:prefetch>7.14 Converting Strings</a></li>
+		<li><a href="stages/7/summary" sveltekit:prefetch>7.15 Summary</a></li>
 	</ul>
 
-	<h2>Stage 8: Object Oriented Programming (OOP) (TODO)</h2>
+	<h2>
+		<a href="stages/8" sveltekit:prefetch>Stage 8: Object Oriented Programming (OOP) (TODO)</a>
+	</h2>
+	<ul>
+		<li><a href="stages/8" sveltekit:prefetch>8.1 Introduction</a></li>
+		<li>
+			<a href="stages/8/what-is-object-oriented-programming" sveltekit:prefetch
+				>8.2 What Is Object Oriented Programming (OOP)?</a
+			>
+		</li>
+		<li>
+			<a href="stages/8/rust-is-not-oop" sveltekit:prefetch>8.3 Rust Is Not OOP</a>
+		</li>
+	</ul>
+
 	<h2>Stage 9: Smart Pointers (TODO)</h2>
 	<h2>Stage 10: Project Organization and Stucture (TODO)</h2>
 </section>
