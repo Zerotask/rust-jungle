@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+    paths:
+      - src/**
+      - static/**
+      - '*.js'
+      - '*.json'
   schedule:
     - cron: '0 0 * * 1' # every monday at midnight
 
