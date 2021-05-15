@@ -18,12 +18,12 @@
 
 	<p>
 		<i>cargo</i> will automatically create a <i>src/main.rs</i> for you which already has a
-		<i>hello world</i> output in it.
+		<i>Hello, world!</i> output in it.
 	</p>
 
 	<p>
 		If you chose <i>cargo</i> to create a basic project for you, all you have to do is to run:
-		<code>cargo run</code> in a terminal and you should see the output:<i>Hello, world!</i>
+		<code>cargo run</code> in a terminal and you should see the output: <i>Hello, world!</i>
 	</p>
 
 	<p>
