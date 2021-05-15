@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 	import Playground from '$components/playground.svelte';
 	import Ferris from '$components/ferris.svelte';
 	import FerrisReading from '$components/ferris-reading.svelte';
@@ -10,6 +12,35 @@
 	export let src: string | null = null;
 	export let links: string[] = [];
 	export let isSummary = false;
+
+	onMount(() => {
+		// Add kevboard navigation
+		document.body.addEventListener(
+			'keyup',
+			(event) => {
+				const eventKey = event.key;
+				let link: string;
+
+				if (['Left', 'ArrowLeft', 'Up', 'ArrowUp'].includes(eventKey)) {
+					link = previous;
+				}
+				if (['Right', 'ArrowRight', 'Down', 'ArrowDown'].includes(eventKey)) {
+					link = next;
+				}
+				if (link) {
+					console.log(link);
+					goto(link);
+				}
+			},
+			{ once: true, passive: true }
+		);
+
+		// Avoid loosing the focus by the iframe.
+		const iframeElement = document.querySelector('iframe');
+		if (iframeElement) {
+			iframeElement.addEventListener('load', () => setTimeout(() => document.body.focus(), 500));
+		}
+	});
 </script>
 
 <svelte:head>

@@ -3,7 +3,12 @@
 </script>
 
 <code>
-	<iframe {src} frameborder="0" title="Rust Playground" />
+	<iframe
+		{src}
+		frameborder="0"
+		title="Rust Playground"
+		sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"
+	/>
 </code>
 
 <style>
