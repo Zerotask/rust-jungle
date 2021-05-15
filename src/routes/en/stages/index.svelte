@@ -27,7 +27,7 @@
 	</ul>
 
 	<h2>
-		<a href="stages/2" sveltekit:prefetch>Stage 2: Local installation & Rust ecosystem (TODO)</a>
+		<a href="stages/2" sveltekit:prefetch>Stage 2: Rust installation and local development</a>
 	</h2>
 	<ul>
 		<li><a href="stages/2" sveltekit:prefetch>2.1 Introduction</a></li>
@@ -40,13 +40,13 @@
 			>
 		</li>
 		<li>
-			<a href="stages/2/cargo-subcommands" sveltekit:prefetch>2.6 cargo Subcommands (TODO)</a>
+			<a href="stages/2/cargo-subcommands" sveltekit:prefetch>2.6 cargo Subcommands</a>
 		</li>
 		<li>
 			<a href="stages/2/setup-visual-studio-code" sveltekit:prefetch>2.7 Setup Visual Studio Code</a
 			>
 		</li>
-		<li><a href="stages/2/summary" sveltekit:prefetch>2.8 Summary (TODO)</a></li>
+		<li><a href="stages/2/summary" sveltekit:prefetch>2.8 Summary</a></li>
 	</ul>
 
 	<h2><a href="stages/3" sveltekit:prefetch>Stage 3: Basic Control Flow</a></h2>

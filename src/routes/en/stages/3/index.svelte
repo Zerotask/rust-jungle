@@ -2,7 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson title="Stage 3.1: Introduction" next="3/if-else">
+<Lesson title="Stage 3.1: Introduction" previous="2/summary" next="3/if-else">
 	<p>
 		In this chapter let's talk about basic control flow methods in Rust. If you are familiar with C
 		based languages you'll feel right at home and maybe enjoy a surprise or two.

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Lesson from '$components/lesson.svelte';
+	import ExternalLink from '$components/external-link.svelte';
 </script>
 
 <Lesson
@@ -41,18 +42,12 @@ zip = "0.5"
 	<ul>
 		<li>run <code>cargo search crate-name</code></li>
 		<li>
-			open the Rust community’s crate registry: <a
-				href="https://crates.io/"
-				rel="external noreferrer"
-				target="_blank">https://crates.io</a
-			>
+			open the Rust community’s crate registry:
+			<ExternalLink href="https://crates.io" />
 		</li>
 		<li>
-			open the unofficial crates.io alternative which offers categories for crates: <a
-				href="https://lib.rs/"
-				rel="external noreferrer"
-				target="_blank">https://lib.rs</a
-			>
+			open the unofficial crates.io alternative which offers categories for crates:
+			<ExternalLink href="https://lib.rs" />
 		</li>
 	</ul>
 

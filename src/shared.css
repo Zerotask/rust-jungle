@@ -22,6 +22,11 @@ a {
 	text-decoration: none;
 }
 
+a,
+a:visited {
+	color: #8b4513;
+}
+
 .columns {
 	padding: 10px 20px;
 }

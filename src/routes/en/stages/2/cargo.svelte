@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Lesson from '$components/lesson.svelte';
+	import ExternalLink from '$components/external-link.svelte';
 </script>
 
 <Lesson title="Stage 2.4: cargo" previous="rustup" next="managing-dependencies-with-cargo">
@@ -46,6 +47,11 @@
 		<li>Formatting your code? No problem with <code>cargo fmt</code></li>
 		<li>and many more</li>
 	</ul>
+
+	<p>
+		More information can be found here:
+		<ExternalLink href="https://doc.rust-lang.org/cargo/commands/index.html" />
+	</p>
 
 	<p>In the next lesson you will learn how to deal with dependencies in Rust using <i>cargo</i>.</p>
 </Lesson>

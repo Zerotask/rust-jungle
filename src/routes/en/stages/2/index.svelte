@@ -1,8 +1,9 @@
 <script lang="ts">
 	import Lesson from '$components/lesson.svelte';
+	import ExternalLink from '$components/external-link.svelte';
 </script>
 
-<Lesson title="Stage 2.1: Introduction" next="2/installation">
+<Lesson title="Stage 2.1: Introduction" previous="1/summary" next="2/installation">
 	<p>
 		In this stage you will learn how to install Rust locally and you will learn about some important
 		Rust tools like <i>rustup</i> (the Rust toolchain installer) and
@@ -10,10 +11,7 @@
 	</p>
 
 	<p>
-		You will also learn how to write your own Rust programs with <a
-			href="https://code.visualstudio.com/"
-			rel="external noreferrer"
-			target="_blank">Visual Studio Code</a
-		>.
+		You will also learn how to write your own Rust programs with
+		<ExternalLink href="https://code.visualstudio.com/">Visual Studio Code</ExternalLink>.
 	</p>
 </Lesson>

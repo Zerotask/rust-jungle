@@ -1,14 +1,13 @@
 <script lang="ts">
 	import Lesson from '$components/lesson.svelte';
+	import ExternalLink from '$components/external-link.svelte';
 </script>
 
 <Lesson title="Stage 2.7: Setup Visual Studio Code" previous="cargo-subcommands" next="summary">
 	<p>
-		I recommend using <a
-			href="https://code.visualstudio.com/"
-			rel="external noreferrer"
-			target="_blank">Visual Studio Code</a
-		> for developing Rust programs.
+		I recommend using
+		<ExternalLink href="https://code.visualstudio.com">Visual Studio Code</ExternalLink>
+		for developing Rust programs.
 	</p>
 
 	<p>
@@ -18,20 +17,18 @@
 	</p>
 
 	<p>
-		Besides <a
-			href="https://marketplace.visualstudio.com/items?itemName=rust-lang.rust"
-			rel="external noreferrer"
-			target="_blank">the official Rust extension</a
+		Besides <ExternalLink href="https://marketplace.visualstudio.com/items?itemName=rust-lang.rust"
+			>the official Rust extension</ExternalLink
 		>
 		there are also <i>extension packs</i> which offers some additional tools often needed for Rust programming,
 		e. g. an extension for TOML files.
 	</p>
 
 	<p>
-		I can recommend you an extension pack of my own, which you can find here: <a
+		I can recommend you an extension pack of my own, which you can find here:
+		<ExternalLink
 			href="https://marketplace.visualstudio.com/items?itemName=Zerotaskx.rust-extension-pack"
-			rel="external noreferrer"
-			target="_blank">Rust Extension Pack</a
+			>Rust Extension Pack</ExternalLink
 		>.
 	</p>
 </Lesson>
