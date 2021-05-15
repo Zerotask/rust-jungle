@@ -1,0 +1,19 @@
+<script lang="ts">
+	import Lesson from '$components/lesson.svelte';
+</script>
+
+<Lesson title="Stage 2.1: Introduction" next="2/installation">
+	<p>
+		In this stage you will learn how to install Rust locally and you will learn about some important
+		Rust tools like <i>rustup</i> (the Rust toolchain installer) and
+		<i>cargo</i> (Rust's package manager).
+	</p>
+
+	<p>
+		You will also learn how to write your own Rust programs with <a
+			href="https://code.visualstudio.com/"
+			rel="external noreferrer"
+			target="_blank">Visual Studio Code</a
+		>.
+	</p>
+</Lesson>
