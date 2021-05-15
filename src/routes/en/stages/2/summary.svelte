@@ -2,7 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson title="Stage 2.8: Summary" previous="setup-visual-studio-code" next="../3">
+<Lesson title="Stage 2.8: Summary" previous="setup-visual-studio-code" next="../3" isSummary="true">
 	<p>
 		In this stage you learned how to install Rust locally. You learned about the Rust tools <i
 			>rustup</i

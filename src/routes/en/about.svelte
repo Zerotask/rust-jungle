@@ -50,7 +50,8 @@
 	</ul>
 
 	<p>
-		Every stage starts with an introduction which covers all following lessons in short and ends
-		with a summary.
+		Every stage starts with an introduction which covers all following lessons from that stage in
+		short. It ends with a short summary of that stage.<br />You can easily ifentify summaries by
+		watching out for a reading Ferris.
 	</p>
 </section>

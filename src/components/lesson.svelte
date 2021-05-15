@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Playground from '$components/playground.svelte';
 	import Ferris from '$components/ferris.svelte';
+	import FerrisReading from '$components/ferris-reading.svelte';
 	import FurtherInformation from '$components/further-information.svelte';
 
 	export let title: string;
@@ -8,6 +9,7 @@
 	export let next: string | null = null;
 	export let src: string | null = null;
 	export let links: string[] = [];
+	export let isSummary = false;
 </script>
 
 <svelte:head>
@@ -24,7 +26,9 @@
 	</section>
 
 	<section class="column col-md-12 col-6">
-		{#if src}
+		{#if isSummary}
+			<FerrisReading />
+		{:else if src}
 			<Playground {src} />
 		{:else}
 			<Ferris />
