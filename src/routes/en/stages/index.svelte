@@ -70,7 +70,7 @@
 		<li><a href="stages/3/summary" sveltekit:prefetch>3.9 Summary</a></li>
 	</ul>
 
-	<h2><a href="stages/4" sveltekit:prefetch>Stage 4: Basic Data Structure Types (TODO)</a></h2>
+	<h2><a href="stages/4" sveltekit:prefetch>Stage 4: Basic Data Structure Types</a></h2>
 	<ul>
 		<li><a href="stages/4" sveltekit:prefetch>4.1 Introduction</a></li>
 		<li><a href="stages/4/structures" sveltekit:prefetch>4.2 Structures</a></li>
@@ -85,6 +85,33 @@
 		<li><a href="stages/4/enums" sveltekit:prefetch>4.8 Enums</a></li>
 		<li><a href="stages/4/enums-with-data" sveltekit:prefetch>4.9 Enums With Data</a></li>
 		<li><a href="stages/4/summary" sveltekit:prefetch>4.10 Summary</a></li>
+	</ul>
+
+	<h2><a href="stages/5" sveltekit:prefetch>Stage 5: Generic Types</a></h2>
+	<ul>
+		<li><a href="stages/5" sveltekit:prefetch>5.1 Introduction</a></li>
+		<li>
+			<a href="stages/5/what-are-generic-types" sveltekit:prefetch>5.2 What Are Generic Types</a>
+		</li>
+		<li>
+			<a href="stages/5/representing-nothing" sveltekit:prefetch>5.3 Representing Nothing</a>
+		</li>
+		<li><a href="stages/5/option" sveltekit:prefetch>5.4 Option</a></li>
+		<li><a href="stages/5/result" sveltekit:prefetch>5.5 Result</a></li>
+		<li><a href="stages/5/failable-main" sveltekit:prefetch>5.6 Failable Main</a></li>
+		<li><a href="stages/5/error-handling" sveltekit:prefetch>5.7 Error Handling</a></li>
+		<li>
+			<a href="stages/5/ugly-option-result-handling" sveltekit:prefetch
+				>5.8 Ugly Option / Result Handling</a
+			>
+		</li>
+		<li><a href="stages/5/vectors" sveltekit:prefetch>5.9 Vectors</a></li>
+		<li><a href="stages/5/summary" sveltekit:prefetch>5.10 Summary</a></li>
+	</ul>
+
+	<h2><a href="stages/6" sveltekit:prefetch>Stage 6: Ownership & Borrowing Data (TODO)</a></h2>
+	<ul>
+		<li><a href="stages/6" sveltekit:prefetch>6.1 Introduction</a></li>
 	</ul>
 </section>
 
