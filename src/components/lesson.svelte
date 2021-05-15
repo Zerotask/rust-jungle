@@ -1,10 +1,13 @@
 <script lang="ts">
 	import Playground from '$components/playground.svelte';
 	import Ferris from '$components/ferris.svelte';
+	import FurtherInformation from '$components/further-information.svelte';
+
 	export let title: string;
 	export let previous: string | null = null;
 	export let next: string | null = null;
 	export let src: string | null = null;
+	export let links: string[] = [];
 </script>
 
 <svelte:head>
@@ -15,6 +18,9 @@
 	<section class="column col-md-12 col-6">
 		<h1>{title}</h1>
 		<slot />
+		{#if links.length > 0}
+			<FurtherInformation {links} />
+		{/if}
 	</section>
 
 	<section class="column col-md-12 col-6">
