@@ -204,6 +204,16 @@
 		<li>
 			<a href="stages/8/rust-is-not-oop" sveltekit:prefetch>8.3 Rust Is Not OOP</a>
 		</li>
+		<li>
+			<a href="stages/8/encapsulation-with-methods" sveltekit:prefetch
+				>8.4 Encapsulation With Methods</a
+			>
+		</li>
+		<li>
+			<a href="stages/8/abstraction-with-selective-exposure" sveltekit:prefetch
+				>8.5 Abstraction With Selective Exposure</a
+			>
+		</li>
 	</ul>
 
 	<h2>Stage 9: Smart Pointers (TODO)</h2>

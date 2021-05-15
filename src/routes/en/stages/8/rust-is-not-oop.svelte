@@ -2,7 +2,11 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson title="Stage 8.3: Rust Is Not OOP" previous="what-is-object-oriented-programming">
+<Lesson
+	title="Stage 8.3: Rust Is Not OOP"
+	previous="what-is-object-oriented-programming"
+	next="encapsulation-with-methods"
+>
 	<p>Rust lacks inheritance of data and behavior in any meaningful way:</p>
 	<ul>
 		<li>Structs cannot inherit fields from a parent struct.</li>

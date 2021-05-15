@@ -19,10 +19,10 @@
 
 	<pre>
         <code>
-match do_something_that_might_fail() { '{'}
+match do_something_that_might_fail() {'{'}
     Ok(v) => v,
     Err(e) => return Err(e),
-{ '}'}
+{'}'}
         </code>
     </pre>
 </Lesson>
