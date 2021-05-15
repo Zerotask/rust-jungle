@@ -70,4 +70,10 @@
 		float: right;
 		margin-right: 20px;
 	}
+
+	@media screen and (max-width: 840px) {
+		section:last-child {
+			padding-bottom: 90px;
+		}
+	}
 </style>

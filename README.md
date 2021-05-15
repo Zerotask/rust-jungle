@@ -7,7 +7,8 @@
 
 WARNING: STILL IN DEVELOPMENT! NOT COMPLETE!
 
-Rust Jungle is based on the awesome [Tour of Rust](https://github.com/richardanaya/tour_of_rust)
+Rust Jungle is a learning platform to learn the [Rust programming language](https://www.rust-lang.org/).
+It is based on the awesome [Tour of Rust](https://github.com/richardanaya/tour_of_rust)
 and is built with the high-performance JS framework [SvelteKit](https://github.com/sveltejs/kit).
 
 Rust has a steep learning curve and for some people this might be the reason to look for an alternative.

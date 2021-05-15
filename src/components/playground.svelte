@@ -14,4 +14,10 @@
 		width: 100%;
 		min-height: 600px;
 	}
+
+	@media screen and (max-width: 840px) {
+		iframe {
+			min-height: 450px;
+		}
+	}
 </style>

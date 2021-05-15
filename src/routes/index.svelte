@@ -1,10 +1,16 @@
-<script context="module" lang="ts">
-	export const prerender = true;
+<!-- TODO: redirect to /en -->
+<script lang="ts">
+	import Ferris from '$components/ferris.svelte';
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Welcome to the Rust Jungle</title>
 </svelte:head>
 
-<!-- TODO: redirect to /en -->
-<h1>Welcome to the Rust Jungle</h1>
+<section>
+	<h1>Welcome to Rust Jungle!</h1>
+</section>
+
+<section>
+	<Ferris />
+</section>

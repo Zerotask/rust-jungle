@@ -26,11 +26,25 @@
 		<li><a href="stages/1/summary" sveltekit:prefetch>1.12 Summary</a></li>
 	</ul>
 	<h2>Stage 2: Local installation & Rust ecosystem (TODO)</h2>
-	<h2><a href="stages/3" sveltekit:prefetch>Stage 3: Basic Control Flow (TODO)</a></h2>
+	<h2><a href="stages/3" sveltekit:prefetch>Stage 3: Basic Control Flow</a></h2>
 	<ul>
 		<li><a href="stages/3" sveltekit:prefetch>3.1 Introduction</a></li>
 		<li><a href="stages/3/if-else" sveltekit:prefetch>3.2 if / else</a></li>
 		<li><a href="stages/3/loop" sveltekit:prefetch>3.3 loop</a></li>
+		<li>
+			<a href="stages/3/returning-values-from-loop" sveltekit:prefetch
+				>3.4 Returning Values From loop</a
+			>
+		</li>
+		<li><a href="stages/3/while" sveltekit:prefetch>3.5 while</a></li>
+		<li><a href="stages/3/for" sveltekit:prefetch>3.6 for</a></li>
+		<li><a href="stages/3/match" sveltekit:prefetch>3.7 match</a></li>
+		<li>
+			<a href="stages/3/returning-values-from-block-expressions" sveltekit:prefetch
+				>3.8 Returning Values From Block Expressions</a
+			>
+		</li>
+		<li><a href="stages/3/summary" sveltekit:prefetch>3.9 Summary</a></li>
 	</ul>
 	<h2><a href="stages/4" sveltekit:prefetch>Stage 4: Basic Data Structure Types (TODO)</a></h2>
 	<ul>
@@ -51,5 +65,11 @@
 
 	section {
 		margin-left: 30px;
+	}
+
+	a:hover {
+		text-decoration: none;
+		color: var(--primary-color);
+		font-weight: bold;
 	}
 </style>

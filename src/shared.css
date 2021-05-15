@@ -21,3 +21,7 @@ code {
 a {
 	text-decoration: none;
 }
+
+.columns {
+	padding: 10px 20px;
+}
