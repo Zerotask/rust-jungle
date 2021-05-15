@@ -3,7 +3,8 @@
     "short_name": "Rust Jungle",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#008000",
+    "theme_color": "#008000",
+    "background_color": "#d6ffd6",
     "description": "Welcome to the Rust Jungle. Ferris the crab will help you navigating through the jungle and learning Rust",
     "icons": []
 }

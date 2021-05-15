@@ -38,6 +38,8 @@
 			href="https://github.com/Zerotask/rust-jungle"
 			rel="external noreferrer"
 			title="Open project on GitHub"
+			width="32"
+			height="32"
 		>
 			<img class="github-logo" src="/github-logo-small.png" alt="GitHub" />
 		</a>
