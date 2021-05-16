@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
 	import Playground from '$components/playground.svelte';
 	import Ferris from '$components/ferris.svelte';
@@ -14,6 +15,10 @@
 	export let isSummary = false;
 
 	onMount(() => {
+		// Remeber the current lesson, to enable a "continue" (testing)
+		const lessonData = { title, url: $page.path, date: new Date() };
+		localStorage.setItem('lesson', JSON.stringify(lessonData));
+
 		let link: string = null;
 
 		// Add keyboard navigation
