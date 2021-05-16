@@ -2,7 +2,7 @@
 	"name": "rust-jungle",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "svelte-kit dev --open",
+		"dev": "svelte-kit dev --open --port 4003",
 		"build": "svelte-kit build",
 		"preview": "svelte-kit preview",
 		"build:preview": "npm run build && npm run preview",
@@ -27,7 +27,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/mukta": "^4.3.0",
 		"@lukeed/uuid": "^2.0.0",
 		"@sveltejs/kit": "next",
 		"cookie": "^0.4.1",

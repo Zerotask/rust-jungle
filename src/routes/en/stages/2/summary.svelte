@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	title="Stage 2.9: Summary"
+	title="Stage 2.11: Summary"
 	previous="writing-a-hello-world-program"
 	next="../3"
 	isSummary="true"
@@ -20,8 +20,5 @@
 		<i>cargo subcommands</i>.
 	</p>
 
-	<p>
-		You also learned how to setup Visual Studio Code and you wrote your first Rust program -
-		probably.
-	</p>
+	<p>You also learned how to setup Visual Studio Code and you wrote your first Rust programs.</p>
 </Lesson>

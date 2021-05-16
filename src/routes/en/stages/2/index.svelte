@@ -11,7 +11,7 @@
 	</p>
 
 	<p>
-		You will also learn how to write your own Rust programs with
+		You will also learn how to write and test your own Rust programs with
 		<ExternalLink href="https://code.visualstudio.com/">Visual Studio Code</ExternalLink>.
 	</p>
 </Lesson>
