@@ -54,4 +54,11 @@
 		short. It ends with a short summary of that stage.<br />You can easily ifentify summaries by
 		watching out for a reading Ferris.
 	</p>
+
+	<h2>Community</h2>
+	<p>
+		You're welcome to join <ExternalLink href="https://discord.gg/cYw6q6D4tr"
+			>the official Discord server</ExternalLink
+		> to connect with other Rustaceans. This is also a place to ask for further help.
+	</p>
 </section>

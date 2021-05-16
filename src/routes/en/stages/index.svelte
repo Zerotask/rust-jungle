@@ -200,7 +200,7 @@
 	</ul>
 
 	<h2>
-		<a href="stages/8" sveltekit:prefetch>Stage 8: Object Oriented Programming (OOP) (TODO)</a>
+		<a href="stages/8" sveltekit:prefetch>Stage 8: Object Oriented Programming (OOP)</a>
 	</h2>
 	<ul>
 		<li><a href="stages/8" sveltekit:prefetch>8.1 Introduction</a></li>
@@ -233,6 +233,36 @@
 		</li>
 		<li>
 			<a href="stages/8/trait-inheritance" sveltekit:prefetch>8.8 Trait Inheritance</a>
+		</li>
+		<li>
+			<a href="stages/8/dynamic-vs-static-dispatch" sveltekit:prefetch
+				>8.9 Dynamic vs Static Dispatch</a
+			>
+		</li>
+		<li>
+			<a href="stages/8/trait-objects" sveltekit:prefetch>8.10 Trait Objects</a>
+		</li>
+		<li>
+			<a href="stages/8/handling-unsized-data" sveltekit:prefetch>8.11 Handling Unsized Data</a>
+		</li>
+		<li>
+			<a href="stages/8/generic-functions" sveltekit:prefetch>8.12 Generic Functions</a>
+		</li>
+		<li>
+			<a href="stages/8/generic-functions-shorthand" sveltekit:prefetch
+				>8.13 Generic Functions Shorthand</a
+			>
+		</li>
+		<li>
+			<a href="stages/8/box" sveltekit:prefetch>8.14 Box</a>
+		</li>
+		<li>
+			<a href="stages/8/generic-structs-revisited" sveltekit:prefetch
+				>8.15 Generic Structs Revisited</a
+			>
+		</li>
+		<li>
+			<a href="stages/8/summary" sveltekit:prefetch>8.16 Summary</a>
 		</li>
 	</ul>
 
