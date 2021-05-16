@@ -304,7 +304,7 @@
 
 	<h2>
 		<a href="stages/10" id="project-organization-and-structure"
-			>Stage 10: Project Organization and Stucture (TODO)</a
+			>Stage 10: Project Organization and Stucture</a
 		>
 	</h2>
 	<ul>
@@ -321,6 +321,12 @@
 		<li><a href="stages/10/creating-modules">10.7 Creating Modules</a></li>
 		<li><a href="stages/10/module-hierarchy">10.8 Module Hierarchy</a></li>
 		<li><a href="stages/10/inline-modules">10.9 Inline Modules</a></li>
+		<li><a href="stages/10/internal-module-referencing">10.10 Internal Module Referencing</a></li>
+		<li><a href="stages/10/exporting">10.11 Exporting</a></li>
+		<li><a href="stages/10/struct-visibility">10.12 struct Visibility</a></li>
+		<li><a href="stages/10/prelude">10.13 Prelude</a></li>
+		<li><a href="stages/10/your-own-prelude">10.14 Your Own Prelude</a></li>
+		<li><a href="stages/10/summary">10.15 Summary</a></li>
 	</ul>
 </section>
 
