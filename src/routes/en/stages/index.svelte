@@ -266,7 +266,7 @@
 		</li>
 	</ul>
 
-	<h2><a href="stages/9">Stage 9: Smart Pointers (TODO)</a></h2>
+	<h2><a href="stages/9">Stage 9: Smart Pointers</a></h2>
 	<ul>
 		<li><a href="stages/9">9.1 Introduction</a></li>
 		<li><a href="stages/9/references-revisited">9.2 References Revisited</a></li>
@@ -278,6 +278,12 @@
 		<li><a href="stages/9/smart-unsafe-code">9.8 Smart Unsafe Code</a></li>
 		<li><a href="stages/9/familiar-friends">9.9 Familiar Friends</a></li>
 		<li><a href="stages/9/heap-allocated-memory">9.10 Heap Allocated Memory</a></li>
+		<li><a href="stages/9/failable-main-revisted">9.11 Failable Main Revisted</a></li>
+		<li><a href="stages/9/referencing-counting">9.12 Referencing Counting</a></li>
+		<li><a href="stages/9/sharing-access">9.13 Sharing Access</a></li>
+		<li><a href="stages/9/sharing-across-threads">9.14 Sharing Across Threads</a></li>
+		<li><a href="stages/9/combining-smart-pointers">9.15 Combining Smart Pointers</a></li>
+		<li><a href="stages/9/summary">9.16 Summary</a></li>
 	</ul>
 
 	<h2>Stage 10: Project Organization and Stucture (TODO)</h2>
