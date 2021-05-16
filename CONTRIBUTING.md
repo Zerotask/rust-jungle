@@ -7,6 +7,7 @@ Commits should follow the [Conventional Commits](https://www.conventionalcommits
 ## Developing
 
 To get started developing, just run:
+
 ```
 git clone https://github.com/Zerotask/rust-jungle.git
 cd rust-jungle
@@ -15,6 +16,10 @@ npm run dev
 ```
 
 This will open a local development server in a watching mode.
+
+To ensure that your changes are Prettier and ESLint compliant,
+
+you can run `npm run lint` or `npm run lint:fix` to automatically fix it, if possible.
 
 ## Building
 
