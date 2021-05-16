@@ -98,7 +98,6 @@
 		<li><a href="stages/4/structures" sveltekit:prefetch>4.2 Structures</a></li>
 		<li><a href="stages/4/calling-methods" sveltekit:prefetch>4.3 Calling Methods</a></li>
 		<li><a href="stages/4/memory" sveltekit:prefetch>4.4 Memory</a></li>
-		<li><a href="stages/4/memory" sveltekit:prefetch>4.4 Memory</a></li>
 		<li>
 			<a href="stages/4/creating-data-in-memory" sveltekit:prefetch>4.5 Creating Data In Memory</a>
 		</li>
