@@ -276,6 +276,8 @@
 		<li><a href="stages/9/the-dot-operator">9.6 The Dot Operator .</a></li>
 		<li><a href="stages/9/smart-pointers">9.7 Smart Pointers</a></li>
 		<li><a href="stages/9/smart-unsafe-code">9.8 Smart Unsafe Code</a></li>
+		<li><a href="stages/9/familiar-friends">9.9 Familiar Friends</a></li>
+		<li><a href="stages/9/heap-allocated-memory">9.10 Heap Allocated Memory</a></li>
 	</ul>
 
 	<h2>Stage 10: Project Organization and Stucture (TODO)</h2>
