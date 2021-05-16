@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import ExternalLink from '$components/external-link.svelte';
 	import '../shared.css';
 </script>
 
@@ -34,15 +35,9 @@
 		<span class="language-selection">
 			<a href="/en">EN</a> | <a href="/de">DE</a>
 		</span>
-		<a
-			href="https://github.com/Zerotask/rust-jungle"
-			rel="external noreferrer"
-			title="Open project on GitHub"
-			width="32"
-			height="32"
-		>
-			<img class="github-logo" src="/github-logo-small.png" alt="GitHub" />
-		</a>
+		<ExternalLink href="https://github.com/Zerotask/rust-jungle">
+			<img class="github-logo" src="/github-logo-small.png" alt="GitHub" width="32" height="32" />
+		</ExternalLink>
 	</div>
 </header>
 
