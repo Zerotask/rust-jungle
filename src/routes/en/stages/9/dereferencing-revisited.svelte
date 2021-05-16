@@ -1,0 +1,26 @@
+<script lang="ts">
+	import Lesson from '$components/lesson.svelte';
+	const links: string[] = [
+		'https://doc.rust-lang.org/stable/rust-by-example/flow_control/match/destructuring/destructure_pointers.html'
+	];
+</script>
+
+<Lesson
+	title="Stage 9.4: Dereferencing Revisited"
+	previous="raw-pointers"
+	next="the-dereference-operator"
+	{links}
+>
+	<p>
+		The process of accessing / manipulating data that is being referred to by a reference (i.e.
+		<code>&i32</code>) is called dereferencing.
+	</p>
+
+	<p>References are used to access/manipulate data in two ways:</p>
+	<ul>
+		<li>Access to the referred data during assignment of variables.</li>
+		<li>Access to fields or methods of the referred data.</li>
+	</ul>
+
+	<p>Rust has some powerful operators that allow us to do this.</p>
+</Lesson>

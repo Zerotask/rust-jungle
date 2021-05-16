@@ -266,7 +266,18 @@
 		</li>
 	</ul>
 
-	<h2>Stage 9: Smart Pointers (TODO)</h2>
+	<h2><a href="stages/9">Stage 9: Smart Pointers (TODO)</a></h2>
+	<ul>
+		<li><a href="stages/9">9.1 Introduction</a></li>
+		<li><a href="stages/9/references-revisited">9.2 References Revisited</a></li>
+		<li><a href="stages/9/raw-pointers">9.3 Raw Pointers</a></li>
+		<li><a href="stages/9/dereferencing-revisited">9.4 Dereferencing Revisited</a></li>
+		<li><a href="stages/9/the-dereference-operator">9.5 The Dereference Operator *</a></li>
+		<li><a href="stages/9/the-dot-operator">9.6 The Dot Operator .</a></li>
+		<li><a href="stages/9/smart-pointers">9.7 Smart Pointers</a></li>
+		<li><a href="stages/9/smart-unsafe-code">9.8 Smart Unsafe Code</a></li>
+	</ul>
+
 	<h2>Stage 10: Project Organization and Stucture (TODO)</h2>
 </section>
 
