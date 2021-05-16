@@ -1,5 +1,9 @@
 <script lang="ts">
 	import Lesson from '$components/lesson.svelte';
+	const links: string[] = [
+		'https://doc.rust-lang.org/rust-by-example/flow_control/for.html',
+		'https://doc.rust-lang.org/std/keyword.for.html'
+	];
 </script>
 
 <Lesson
@@ -7,6 +11,7 @@
 	previous="while"
 	next="match"
 	src="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=fn%20main()%20%7B%0A%20%20%20%20for%20x%20in%200..5%20%7B%0A%20%20%20%20%20%20%20%20println!(%22%7B%7D%22%2C%20x)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20for%20x%20in%200..%3D5%20%7B%0A%20%20%20%20%20%20%20%20println!(%22%7B%7D%22%2C%20x)%3B%0A%20%20%20%20%7D%0A%7D%0A"
+	{links}
 >
 	<p>
 		Rust's <code>for</code> loop is a powerful upgrade. It iterates over values from any expression that

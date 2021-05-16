@@ -1,5 +1,9 @@
 <script lang="ts">
 	import Lesson from '$components/lesson.svelte';
+	const links: string[] = [
+		'https://doc.rust-lang.org/rust-by-example/flow_control/if_let.html',
+		'https://doc.rust-lang.org/rust-by-example/flow_control/while_let.html'
+	];
 </script>
 
 <Lesson
