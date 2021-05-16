@@ -91,7 +91,7 @@
 		bottom: 0;
 		width: 100%;
 		height: 70px;
-		background-color: #94d894;
+		background-color: var(--tertiary-color);
 		border-top: 1px solid var(--primary-color);
 		margin-left: -0.4rem;
 		padding: 10px;
