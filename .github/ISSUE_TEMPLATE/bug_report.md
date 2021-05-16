@@ -4,6 +4,7 @@ about: Create a bug report
 title: ''
 labels: bug
 assignees: ''
+
 ---
 
 **Describe the bug**
