@@ -6,7 +6,7 @@
 <section>
 	<h1>Overview of all stages</h1>
 
-	<h2><a href="stages/1" sveltekit:prefetch>Stage 1: The Basics</a></h2>
+	<h2><a href="stages/1" sveltekit:prefetch id="the-basics">Stage 1: The Basics</a></h2>
 	<ul>
 		<li><a href="stages/1" sveltekit:prefetch>1.1 Introduction</a></li>
 		<li><a href="stages/1/the-rust-playground" sveltekit:prefetch>1.2 The Rust Playground</a></li>
@@ -28,7 +28,9 @@
 	</ul>
 
 	<h2>
-		<a href="stages/2" sveltekit:prefetch>Stage 2: Rust installation and local development</a>
+		<a href="stages/2" sveltekit:prefetch id="rust-installation-and-local-development"
+			>Stage 2: Rust installation and local development</a
+		>
 	</h2>
 	<ul>
 		<li><a href="stages/2" sveltekit:prefetch>2.1 Introduction</a></li>
@@ -63,7 +65,9 @@
 		<li><a href="stages/2/summary" sveltekit:prefetch>2.11 Summary</a></li>
 	</ul>
 
-	<h2><a href="stages/3" sveltekit:prefetch>Stage 3: Basic Control Flow</a></h2>
+	<h2>
+		<a href="stages/3" sveltekit:prefetch id="basic-control-flow">Stage 3: Basic Control Flow</a>
+	</h2>
 	<ul>
 		<li><a href="stages/3" sveltekit:prefetch>3.1 Introduction</a></li>
 		<li><a href="stages/3/if-else" sveltekit:prefetch>3.2 if / else</a></li>
@@ -84,7 +88,11 @@
 		<li><a href="stages/3/summary" sveltekit:prefetch>3.9 Summary</a></li>
 	</ul>
 
-	<h2><a href="stages/4" sveltekit:prefetch>Stage 4: Basic Data Structure Types</a></h2>
+	<h2>
+		<a href="stages/4" sveltekit:prefetch id="basic-data-structure-types"
+			>Stage 4: Basic Data Structure Types</a
+		>
+	</h2>
 	<ul>
 		<li><a href="stages/4" sveltekit:prefetch>4.1 Introduction</a></li>
 		<li><a href="stages/4/structures" sveltekit:prefetch>4.2 Structures</a></li>
@@ -101,7 +109,7 @@
 		<li><a href="stages/4/summary" sveltekit:prefetch>4.10 Summary</a></li>
 	</ul>
 
-	<h2><a href="stages/5" sveltekit:prefetch>Stage 5: Generic Types</a></h2>
+	<h2><a href="stages/5" sveltekit:prefetch id="generic-types">Stage 5: Generic Types</a></h2>
 	<ul>
 		<li><a href="stages/5" sveltekit:prefetch>5.1 Introduction</a></li>
 		<li>
@@ -123,7 +131,11 @@
 		<li><a href="stages/5/summary" sveltekit:prefetch>5.10 Summary</a></li>
 	</ul>
 
-	<h2><a href="stages/6" sveltekit:prefetch>Stage 6: Ownership & Borrowing Data</a></h2>
+	<h2>
+		<a href="stages/6" sveltekit:prefetch id="ownership-and-borrowing-data"
+			>Stage 6: Ownership & Borrowing Data</a
+		>
+	</h2>
 	<ul>
 		<li><a href="stages/6" sveltekit:prefetch>6.1 Introduction</a></li>
 		<li><a href="stages/6/ownership" sveltekit:prefetch>6.2 Ownership</a></li>
@@ -168,7 +180,7 @@
 		<li><a href="stages/6/summary" sveltekit:prefetch>6.16 Summary</a></li>
 	</ul>
 
-	<h2><a href="stages/7" sveltekit:prefetch>Stage 7: Text</a></h2>
+	<h2><a href="stages/7" sveltekit:prefetch id="text">Stage 7: Text</a></h2>
 	<ul>
 		<li><a href="stages/7" sveltekit:prefetch>7.1 Introduction</a></li>
 		<li><a href="stages/7/string-literals" sveltekit:prefetch>7.2 String Literals</a></li>
@@ -200,7 +212,9 @@
 	</ul>
 
 	<h2>
-		<a href="stages/8" sveltekit:prefetch>Stage 8: Object Oriented Programming (OOP)</a>
+		<a href="stages/8" sveltekit:prefetch id="object-oriented-programming"
+			>Stage 8: Object Oriented Programming (OOP)</a
+		>
 	</h2>
 	<ul>
 		<li><a href="stages/8" sveltekit:prefetch>8.1 Introduction</a></li>
@@ -266,7 +280,9 @@
 		</li>
 	</ul>
 
-	<h2><a href="stages/9">Stage 9: Smart Pointers</a></h2>
+	<h2>
+		<a href="stages/9" id="smart-pointers">Stage 9: Smart Pointers</a>
+	</h2>
 	<ul>
 		<li><a href="stages/9">9.1 Introduction</a></li>
 		<li><a href="stages/9/references-revisited">9.2 References Revisited</a></li>
@@ -286,7 +302,26 @@
 		<li><a href="stages/9/summary">9.16 Summary</a></li>
 	</ul>
 
-	<h2>Stage 10: Project Organization and Stucture (TODO)</h2>
+	<h2>
+		<a href="stages/10" id="project-organization-and-structure"
+			>Stage 10: Project Organization and Stucture (TODO)</a
+		>
+	</h2>
+	<ul>
+		<li><a href="stages/10">10.1 Introduction</a></li>
+		<li><a href="stages/10/modules">10.2 Modules</a></li>
+		<li><a href="stages/10/writing-a-program">10.3 Writing A Program</a></li>
+		<li><a href="stages/10/writing-a-library">10.4 Writing A Library</a></li>
+		<li>
+			<a href="stages/10/referencing-other-modules-and-crates"
+				>10.5 Referencing Other Modules And Crates</a
+			>
+		</li>
+		<li><a href="stages/10/referencing-multiple-items">10.6 Referencing Multiple Items</a></li>
+		<li><a href="stages/10/creating-modules">10.7 Creating Modules</a></li>
+		<li><a href="stages/10/module-hierarchy">10.8 Module Hierarchy</a></li>
+		<li><a href="stages/10/inline-modules">10.9 Inline Modules</a></li>
+	</ul>
 </section>
 
 <style>

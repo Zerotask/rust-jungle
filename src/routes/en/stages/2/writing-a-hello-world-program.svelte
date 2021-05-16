@@ -33,4 +33,6 @@
 		This will create a <i>main.exe</i> in the same directory. Now you have to execute this compiled
 		file (<code>./main.exe</code>) and you will see the same output.
 	</p>
+
+	<p>In a later lesson you will also learn how to split your code into multiple files.</p>
 </Lesson>

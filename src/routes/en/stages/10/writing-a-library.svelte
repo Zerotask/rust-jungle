@@ -1,0 +1,13 @@
+<script lang="ts">
+	import Lesson from '$components/lesson.svelte';
+</script>
+
+<Lesson
+	title="Stage 10.4: Writing A Library"
+	previous="writing-a-program"
+	next="referencing-other-modules-and-crates"
+>
+	<p>
+		A library has a root module in a file called <i>lib.rs</i>.
+	</p>
+</Lesson>
