@@ -6,7 +6,15 @@ Commits should follow the [Conventional Commits](https://www.conventionalcommits
 
 ## Developing
 
-To start the local dev server, just run `npm run dev`. This will start a watcher.
+To get started developing, just run:
+```
+git clone https://github.com/Zerotask/rust-jungle.git
+cd rust-jungle
+npm i
+npm run dev
+```
+
+This will open a local development server in a watching mode.
 
 ## Building
 
