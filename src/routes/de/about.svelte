@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Ferris from '$components/ferris.svelte';
 	import ExternalLink from '$components/external-link.svelte';
 </script>
 
@@ -32,6 +31,12 @@
 		Und du bist nicht allein!
 		<ExternalLink href="https://www.rustacean.net/">Ferris die Krabbe</ExternalLink> wird bei dir sein!
 	</p>
-</section>
 
-<Ferris />
+	<h2>Community</h2>
+	<p>
+		Du kannst gerne auch dem <ExternalLink href="https://discord.gg/cYw6q6D4tr"
+			>offiziellen Rust Discord Server</ExternalLink
+		> beitreten. Dort kannst du dich mit anderen Rustaceans austauschen und hier findest du auch weitere
+		Hilfe.
+	</p>
+</section>

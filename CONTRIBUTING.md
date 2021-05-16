@@ -1,5 +1,9 @@
 # Contributing
 
+You're welcome contributing to Rust Jungle. Please read the following instructions before starting.
+
+For bigger changes, please create an issue before.
+
 ## Commits
 
 Commits should follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) convention.
