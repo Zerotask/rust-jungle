@@ -24,7 +24,8 @@
 		</li>
 		<li><a href="stages/1/returning-nothing" sveltekit:prefetch>1.11 Returning Nothing</a></li>
 		<li><a href="stages/1/macros" sveltekit:prefetch>1.12 Macros</a></li>
-		<li><a href="stages/1/summary" sveltekit:prefetch>1.13 Summary</a></li>
+		<li><a href="stages/1/compiler-messages" sveltekit:prefetch>1.13 Compiler Messages</a></li>
+		<li><a href="stages/1/summary" sveltekit:prefetch>1.14 Summary</a></li>
 	</ul>
 
 	<h2>

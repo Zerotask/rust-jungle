@@ -39,7 +39,7 @@
 		// Avoid loosing the focus by the iframe.
 		const iframeElement = document.querySelector('iframe');
 		if (iframeElement) {
-			iframeElement.addEventListener('load', () => setTimeout(() => document.body.focus(), 500));
+			iframeElement.addEventListener('load', () => setTimeout(() => document.body.focus(), 250));
 		}
 	});
 </script>
