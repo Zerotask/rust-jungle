@@ -32,7 +32,7 @@
 					confirmButtonText: 'Yes',
 					cancelButtonText: 'No',
 					showCancelButton: true,
-					showCloseButton: true,
+					showCloseButton: true
 				}).then((result) => {
 					if (result.isConfirmed) {
 						goto(lesson.url);
