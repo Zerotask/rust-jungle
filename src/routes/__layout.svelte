@@ -1,12 +1,17 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 	import ExternalLink from '$components/external-link.svelte';
 	import '../shared.css';
+	import Swal from 'sweetalert2';
+	import 'sweetalert2/dist/sweetalert2.css';
 
 	onMount(() => {
 		// Example: /en/stages/1
 		const regex = /\/([a-zA-Z]{2})+\/stages\/+([1-9]{1,2})/;
+
+		// If it's not a lesson page.
 		if (!regex.test($page.path)) {
 			interface ILesson {
 				title: string;
@@ -19,9 +24,20 @@
 			var diff = currentDate.getTime() - lessonDate.getTime();
 			var hourDiff = diff / (1000 * 60 * 60);
 
+			// If last difference to last lesson is at least 2 hours.
 			if (hourDiff >= 2) {
-				// TODO: show popup and ask if user want to continue.
-				console.log({ lesson });
+				Swal.fire({
+					title: `Do you want to continue your lesson?`,
+					text: lesson.title,
+					confirmButtonText: 'Yes',
+					cancelButtonText: 'No',
+					showCancelButton: true,
+					showCloseButton: true,
+				}).then((result) => {
+					if (result.isConfirmed) {
+						goto(lesson.url);
+					}
+				});
 			}
 		}
 	});

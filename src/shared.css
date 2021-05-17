@@ -40,3 +40,11 @@ a:hover {
 p {
 	margin-bottom: 10px;
 }
+
+.swal2-confirm {
+	background-color: var(--primary-color) !important;
+}
+
+.swal2-title {
+	font-size: 32px !important;
+}
