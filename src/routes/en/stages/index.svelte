@@ -294,7 +294,7 @@
 		<li><a href="stages/9/smart-unsafe-code">9.8 Smart Unsafe Code</a></li>
 		<li><a href="stages/9/familiar-friends">9.9 Familiar Friends</a></li>
 		<li><a href="stages/9/heap-allocated-memory">9.10 Heap Allocated Memory</a></li>
-		<li><a href="stages/9/failable-main-revisted">9.11 Failable Main Revisted</a></li>
+		<li><a href="stages/9/failable-main-revisited">9.11 Failable Main Revisted</a></li>
 		<li><a href="stages/9/referencing-counting">9.12 Referencing Counting</a></li>
 		<li><a href="stages/9/sharing-access">9.13 Sharing Access</a></li>
 		<li><a href="stages/9/sharing-across-threads">9.14 Sharing Across Threads</a></li>
