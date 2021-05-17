@@ -1,7 +1,30 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
 	import ExternalLink from '$components/external-link.svelte';
 	import '../shared.css';
+
+	onMount(() => {
+		// Example: /en/stages/1
+		const regex = /\/([a-zA-Z]{2})+\/stages\/+([1-9]{1,2})/;
+		if (!regex.test($page.path)) {
+			interface ILesson {
+				title: string;
+				url: string;
+				date: Date;
+			}
+			const lesson: ILesson = JSON.parse(localStorage.getItem('lesson'));
+			const lessonDate = new Date(lesson.date);
+			const currentDate = new Date();
+			var diff = currentDate.getTime() - lessonDate.getTime();
+			var hourDiff = diff / (1000 * 60 * 60);
+
+			if (hourDiff >= 2) {
+				// TODO: show popup and ask if user want to continue.
+				console.log({ lesson });
+			}
+		}
+	});
 </script>
 
 <header>
