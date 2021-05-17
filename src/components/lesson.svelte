@@ -50,7 +50,7 @@
 </script>
 
 <svelte:head>
-	<title>{title}</title>
+	<title>Rust Jungle - {title}</title>
 </svelte:head>
 
 <div class="columns">
