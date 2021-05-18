@@ -17,7 +17,7 @@
 	onMount(() => {
 		// Remeber the current lesson, to enable a "continue" (testing)
 		const lessonData = { title, url: $page.path, date: new Date() };
-		localStorage.setItem('lesson', JSON.stringify(lessonData));
+		localStorage.setItem('last-lesson', JSON.stringify(lessonData));
 
 		let link: string = null;
 

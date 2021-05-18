@@ -13,13 +13,13 @@
 
 		// If it's not a lesson page.
 		if (!regex.test($page.path)) {
-			interface ILesson {
+			interface ILastLesson {
 				title: string;
 				url: string;
 				date: Date;
 			}
-			const lesson: ILesson = JSON.parse(localStorage.getItem('lesson'));
-			const lessonDate = new Date(lesson.date);
+			const lastLesson: ILastLesson = JSON.parse(localStorage.getItem('last-lesson'));
+			const lessonDate = new Date(lastLesson.date);
 			const currentDate = new Date();
 			var diff = currentDate.getTime() - lessonDate.getTime();
 			var hourDiff = diff / (1000 * 60 * 60);
@@ -27,15 +27,17 @@
 			// If last difference to last lesson is at least 2 hours.
 			if (hourDiff >= 2) {
 				Swal.fire({
-					title: `Do you want to continue your lesson?`,
-					text: lesson.title,
+					title: 'Do you want to continue your lesson?',
+					text: lastLesson.title,
 					confirmButtonText: 'Yes',
 					cancelButtonText: 'No',
 					showCancelButton: true,
 					showCloseButton: true
 				}).then((result) => {
 					if (result.isConfirmed) {
-						goto(lesson.url);
+						goto(lastLesson.url);
+					} else {
+						localStorage.removeItem('last-lesson');
 					}
 				});
 			}
