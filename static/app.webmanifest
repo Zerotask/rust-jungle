@@ -31,16 +31,16 @@
     ],
     "icons": [
         {
+            "src": "images/android/android-launchericon-96-96.png",
+            "sizes": "96x96"
+        },
+        {
             "src": "images/android/android-launchericon-48-48.png",
             "sizes": "48x48"
         },
         {
             "src": "images/android/android-launchericon-72-72.png",
             "sizes": "72x72"
-        },
-        {
-            "src": "images/android/android-launchericon-96-96.png",
-            "sizes": "96x96"
         },
         {
             "src": "images/android/android-launchericon-144-144.png",
@@ -52,7 +52,8 @@
         },
         {
             "src": "images/android/android-launchericon-512-512.png",
-            "sizes": "512x512"
+            "sizes": "512x512",
+            "purpose": "maskable"
         }
     ]
 }
