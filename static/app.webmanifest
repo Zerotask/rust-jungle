@@ -5,6 +5,54 @@
     "display": "standalone",
     "theme_color": "#008000",
     "background_color": "#d6ffd6",
+    "lang": "en",
     "description": "Welcome to the Rust Jungle. Ferris the crab will help you navigating through the jungle and learning Rust",
-    "icons": []
+    "categories": [
+        "learning",
+        "education",
+        "programming",
+        "computer science"
+    ],
+    "orientation": "any",
+    "shortcuts": [
+        {
+            "name": "Stages",
+            "short_name": "Stages",
+            "description": "View the stages overview",
+            "url": "/en/stages"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "images/screenshots/lesson-changing-variables.png",
+            "sizes": "1024x768",
+            "type": "image/png"
+        }
+    ],
+    "icons": [
+        {
+            "src": "images/android/android-launchericon-48-48.png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "images/android/android-launchericon-72-72.png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "images/android/android-launchericon-96-96.png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "images/android/android-launchericon-144-144.png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "images/android/android-launchericon-192-192.png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "images/android/android-launchericon-512-512.png",
+            "sizes": "512x512"
+        }
+    ]
 }
