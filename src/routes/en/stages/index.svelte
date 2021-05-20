@@ -329,7 +329,8 @@
 		<li><a href="stages/10/struct-visibility">10.12 struct Visibility</a></li>
 		<li><a href="stages/10/prelude">10.13 Prelude</a></li>
 		<li><a href="stages/10/your-own-prelude">10.14 Your Own Prelude</a></li>
-		<li><a href="stages/10/summary">10.15 Summary</a></li>
+		<li><a href="stages/10/cargo-toml-file">10.15 Cargo.toml File</a></li>
+		<li><a href="stages/10/summary">10.16 Summary</a></li>
 	</ul>
 </section>
 

@@ -2,7 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson title="Stage 10.14: Your Own Prelude" previous="prelude" next="summary">
+<Lesson title="Stage 10.14: Your Own Prelude" previous="prelude" next="cargo-toml-file">
 	<p>
 		Because of standard library's prelude, it's common for your libary to have its own prelude
 		module as a starting point for where users should import all of the most common data structures
