@@ -211,7 +211,8 @@
 		<li>
 			<a href="stages/7/useful-string-methods" sveltekit:prefetch>7.15 Useful String Methods</a>
 		</li>
-		<li><a href="stages/7/summary" sveltekit:prefetch>7.16 Summary</a></li>
+		<li><a href="stages/7/regular-expressions" sveltekit:prefetch>7.16 Regular Expressions</a></li>
+		<li><a href="stages/7/summary" sveltekit:prefetch>7.17 Summary</a></li>
 	</ul>
 
 	<h2>
