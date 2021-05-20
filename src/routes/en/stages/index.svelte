@@ -208,7 +208,10 @@
 		<li><a href="stages/7/building-strings" sveltekit:prefetch>7.12 Building Strings</a></li>
 		<li><a href="stages/7/formatting-strings" sveltekit:prefetch>7.13 Formatting Strings</a></li>
 		<li><a href="stages/7/converting-strings" sveltekit:prefetch>7.14 Converting Strings</a></li>
-		<li><a href="stages/7/summary" sveltekit:prefetch>7.15 Summary</a></li>
+		<li>
+			<a href="stages/7/useful-string-methods" sveltekit:prefetch>7.15 Useful String Methods</a>
+		</li>
+		<li><a href="stages/7/summary" sveltekit:prefetch>7.16 Summary</a></li>
 	</ul>
 
 	<h2>
