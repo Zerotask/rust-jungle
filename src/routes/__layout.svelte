@@ -20,27 +20,29 @@
 				date: Date;
 			}
 			const lastLesson: ILastLesson = JSON.parse(localStorage.getItem('last-lesson'));
-			const lessonDate = new Date(lastLesson.date);
-			const currentDate = new Date();
-			var diff = currentDate.getTime() - lessonDate.getTime();
-			var hourDiff = diff / (1000 * 60 * 60);
+			if (lastLesson) {
+				const lessonDate = new Date(lastLesson.date);
+				const currentDate = new Date();
+				var diff = currentDate.getTime() - lessonDate.getTime();
+				var hourDiff = diff / (1000 * 60 * 60);
 
-			// If last difference to last lesson is at least 2 hours.
-			if (hourDiff >= 2) {
-				Swal.fire({
-					title: 'Do you want to continue your lesson?',
-					text: lastLesson.title,
-					confirmButtonText: 'Yes',
-					cancelButtonText: 'No',
-					showCancelButton: true,
-					showCloseButton: true
-				}).then((result) => {
-					if (result.isConfirmed) {
-						goto(lastLesson.url);
-					} else {
-						localStorage.removeItem('last-lesson');
-					}
-				});
+				// If last difference to last lesson is at least 2 hours.
+				if (hourDiff >= 2) {
+					Swal.fire({
+						title: 'Do you want to continue your lesson?',
+						text: lastLesson.title,
+						confirmButtonText: 'Yes',
+						cancelButtonText: 'No',
+						showCancelButton: true,
+						showCloseButton: true
+					}).then((result) => {
+						if (result.isConfirmed) {
+							goto(lastLesson.url);
+						} else {
+							localStorage.removeItem('last-lesson');
+						}
+					});
+				}
 			}
 		}
 	});
