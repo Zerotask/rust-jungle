@@ -55,6 +55,8 @@
 		watching out for a reading Ferris.
 	</p>
 
+	<p>Every stage has a maximum of 20 lessons.</p>
+
 	<h2>Community</h2>
 	<p>
 		You're welcome to join <ExternalLink href="https://discord.gg/cYw6q6D4tr"

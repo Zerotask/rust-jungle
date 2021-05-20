@@ -330,7 +330,8 @@
 		<li><a href="stages/10/prelude">10.13 Prelude</a></li>
 		<li><a href="stages/10/your-own-prelude">10.14 Your Own Prelude</a></li>
 		<li><a href="stages/10/cargo-toml-file">10.15 Cargo.toml File</a></li>
-		<li><a href="stages/10/summary">10.16 Summary</a></li>
+		<li><a href="stages/10/rust-editions">10.16 Rust Editions</a></li>
+		<li><a href="stages/10/summary">10.17 Summary</a></li>
 	</ul>
 </section>
 
