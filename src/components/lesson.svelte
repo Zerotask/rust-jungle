@@ -13,7 +13,6 @@
 	export let src: string | null = null;
 	export let links: string[] = [];
 	export let isSummary = false;
-	export let keywords: string[] = [];
 
 	onMount(() => {
 		// Remeber the current lesson, to enable a "continue" (testing)
@@ -47,10 +46,6 @@
 
 <svelte:head>
 	<title>Rust Jungle - {title}</title>
-
-	{#if keywords.length > 0}
-		<meta name="keywords" content="Rust, Programming, Learning, {keywords.join(', ')}" />
-	{/if}
 </svelte:head>
 
 <svelte:body on:keyup|once={onKeyboardNavigation} />
