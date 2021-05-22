@@ -1,25 +1,16 @@
 import preprocess from 'svelte-preprocess';
-// import adapter from '@sveltejs/adapter-static';
 import adapter from '@sveltejs/adapter-netlify';
 import path from 'path';
 
 // @see https://kit.svelte.dev/docs#configuration
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	// Consult https://github.com/sveltejs/svelte-preprocess
-	// for more information about preprocessors
+	// @see https://github.com/sveltejs/svelte-preprocess
 	preprocess: preprocess(),
 
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
-
-		// @see https://kit.svelte.dev/docs#adapters
-		// adapter: adapter({
-		// 	pages: 'public',
-		// 	assets: 'public',
-		// 	fallback: 'index.html'
-		// }),
 		adapter: adapter(),
 
 		vite: {
