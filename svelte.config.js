@@ -1,5 +1,6 @@
 import preprocess from 'svelte-preprocess';
-import adapter from '@sveltejs/adapter-static';
+// import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-netlify';
 import path from 'path';
 
 // @see https://kit.svelte.dev/docs#configuration
@@ -14,11 +15,12 @@ const config = {
 		target: '#svelte',
 
 		// @see https://kit.svelte.dev/docs#adapters
-		adapter: adapter({
-			pages: 'public',
-			assets: 'public',
-			fallback: 'index.html'
-		}),
+		// adapter: adapter({
+		// 	pages: 'public',
+		// 	assets: 'public',
+		// 	fallback: 'index.html'
+		// }),
+		adapter: adapter(),
 
 		vite: {
 			resolve: {
