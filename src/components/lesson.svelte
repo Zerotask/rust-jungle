@@ -45,6 +45,9 @@
 
 <svelte:head>
 	<title>Rust Jungle - {title}</title>
+	<meta property="og:title" content="Rust Jungle - {title}" />
+	<meta name="twitter:title" content="Rust Jungle - {title}" />
+	<meta property="og:url" content="https://{$page.host}{$page.path}" />
 </svelte:head>
 
 <svelte:body on:keyup|once={onKeyboardNavigation} />
