@@ -23,5 +23,8 @@
 		<li>Switching between profiles, e. g. stable and nightly version of Rust</li>
 	</ul>
 
-	<p>To update the tool itself, you can simply run: <code>rustup self update</code></p>
+	<p>
+		<i>rustup</i> can be updated with <code>rustup self update</code>, but it's also being updated
+		at the end of <code>rustup update</code>.
+	</p>
 </Lesson>

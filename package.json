@@ -4,7 +4,7 @@
 	"scripts": {
 		"dev": "svelte-kit dev --open --port 15007",
 		"build": "svelte-kit build",
-		"preview": "svelte-kit preview",
+		"preview": "svelte-kit preview --port 15008",
 		"build:preview": "npm run build && npm run preview",
 		"start": "node build",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",

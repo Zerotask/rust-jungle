@@ -18,7 +18,7 @@
 	</p>
 
 	<p>
-		<code>match</code> is exhaustive so all cases must be handled.
+		<code>match</code> is exhaustive, so all cases must be handled.
 	</p>
 
 	<p>
