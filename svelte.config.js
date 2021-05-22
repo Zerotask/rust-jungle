@@ -20,7 +20,7 @@ const config = {
 			// out: 'build'
 			pages: 'public',
 			assets: 'public',
-			fallback: '200.html'
+			fallback: 'index.html'
 		}),
 
 		vite: {
