@@ -18,10 +18,11 @@
 		"preview": "svelte-kit preview --port 15008",
 		"build:preview": "npm run build && npm run preview",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-		"lint:fix": "prettier --write --plugin-search-dir=. . && eslint --fix --ignore-path .gitignore ."
+		"lint:fix": "prettier --write --plugin-search-dir=. . && eslint --fix --ignore-path .gitignore .",
+		"deploy": "vercel"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-netlify": "^1.0.0-next.14",
+		"@sveltejs/adapter-vercel": "next",
 		"@typescript-eslint/eslint-plugin": "^4.19.0",
 		"@typescript-eslint/parser": "^4.19.0",
 		"eslint": "^7.22.0",
@@ -31,7 +32,8 @@
 		"prettier-plugin-svelte": "^2.2.0",
 		"svelte-preprocess": "^4.0.0",
 		"tslib": "^2.0.0",
-		"typescript": "^4.0.0"
+		"typescript": "^4.0.0",
+		"vercel": "^22.0.1"
 	},
 	"type": "module",
 	"dependencies": {
