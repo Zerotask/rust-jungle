@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="keywords" content="Rust, Programming, Learning" />
-		<meta
-			name="description"
-			content="Welcome to the Rust Jungle. Ferris the crab will help you navigating through the jungle and learning Rust"
-		/>
-		<meta content="#008000" name="theme-color" />
-		<link rel="manifest" href="/app.webmanifest" />
-		<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css" />
 
-		%svelte.head%
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="keywords" content="Rust, Programming, Learning" />
+	<meta name="description" content="Rust Jungle will help you learning the Rust programming language." />
+	<meta content="#008000" name="theme-color" />
+	<link rel="manifest" href="/app.webmanifest" />
+	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css" />
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-9G3Z05F651"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
+	%svelte.head%
 
-			gtag('config', 'G-9G3Z05F651', { anonymize_ip: true });
-		</script>
-	</head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9G3Z05F651"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
 
-	<body>
-		<div id="svelte">%svelte.body%</div>
-	</body>
+		gtag('config', 'G-9G3Z05F651', { anonymize_ip: true });
+	</script>
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org/",
+		"@type": "Guide",
+		"name": "Rust Jungle",
+		"description": "Rust Jungle will help you learning the Rust programming language.",
+		"tags": [
+			"rust",
+			"programming",
+			"learning"
+		],
+		"logo": "https://rust-jungle.eu.openode.io/rust-jungle-logo.png",
+		"url": "https://rust-jungle.eu.openode.io/en",
+		"author": {
+			"@type": "Person",
+			"name": "Patrick Hintermayer"
+		},
+		"learningResourceType": [
+			"lesson plan",
+			"learning activity"
+		],
+		"audience": {
+			"@type": "EducationalAudience",
+			"educationalRole": "student"
+		}
+	}
+	</script>
+</head>
+
+<body>
+	<div id="svelte">%svelte.body%</div>
+</body>
+
 </html>

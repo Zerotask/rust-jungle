@@ -13,7 +13,6 @@
 
 		// If it's not a lesson page.
 		if (!regex.test($page.path)) {
-			console.log('is not a lesson page');
 			interface ILastLesson {
 				title: string;
 				url: string;

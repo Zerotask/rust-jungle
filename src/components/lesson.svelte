@@ -38,7 +38,6 @@
 			link = next;
 		}
 		if (link) {
-			console.log(link);
 			goto(link);
 		}
 	}
