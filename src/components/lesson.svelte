@@ -13,33 +13,12 @@
 	export let src: string | null = null;
 	export let links: string[] = [];
 	export let isSummary = false;
+	export let keywords: string[] = [];
 
 	onMount(() => {
 		// Remeber the current lesson, to enable a "continue" (testing)
 		const lessonData = { title, url: $page.path, date: new Date() };
 		localStorage.setItem('last-lesson', JSON.stringify(lessonData));
-
-		let link: string = null;
-
-		// Add keyboard navigation
-		document.body.addEventListener(
-			'keyup',
-			(event) => {
-				const eventKey = event.key;
-
-				if (['Left', 'ArrowLeft', 'Up', 'ArrowUp'].includes(eventKey)) {
-					link = previous;
-				}
-				if (['Right', 'ArrowRight', 'Down', 'ArrowDown'].includes(eventKey)) {
-					link = next;
-				}
-				if (link) {
-					console.log(link);
-					goto(link);
-				}
-			},
-			{ once: true, passive: true }
-		);
 
 		// Avoid loosing the focus by the iframe.
 		const iframeElement = document.querySelector('iframe');
@@ -47,11 +26,34 @@
 			iframeElement.addEventListener('load', () => setTimeout(() => document.body.focus(), 250));
 		}
 	});
+
+	function onKeyboardNavigation(event: KeyboardEvent): void {
+		document.body.focus();
+		const eventKey = event.key;
+		let link: string = null;
+
+		if (['Left', 'ArrowLeft', 'Up', 'ArrowUp'].includes(eventKey)) {
+			link = previous;
+		}
+		if (['Right', 'ArrowRight', 'Down', 'ArrowDown'].includes(eventKey)) {
+			link = next;
+		}
+		if (link) {
+			console.log(link);
+			goto(link);
+		}
+	}
 </script>
 
 <svelte:head>
 	<title>Rust Jungle - {title}</title>
+
+	{#if keywords.length > 0}
+		<meta name="keywords" content="Rust, Programming, Learning, {keywords.join(', ')}" />
+	{/if}
 </svelte:head>
+
+<svelte:body on:keyup|once={onKeyboardNavigation} />
 
 <div class="columns">
 	<section class="column col-md-12 col-6">

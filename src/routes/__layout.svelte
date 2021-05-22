@@ -48,6 +48,19 @@
 	});
 </script>
 
+<svelte:head>
+	<slot name="keywords">
+		<meta name="keywords" content="Rust, Programming, Learning" />
+	</slot>
+
+	<slot name="description">
+		<meta
+			name="description"
+			content="Welcome to the Rust Jungle. Ferris the crab will help you navigating through the jungle and learning Rust"
+		/>
+	</slot>
+</svelte:head>
+
 <header>
 	<div class="logo hide-md">
 		<a href="/">
