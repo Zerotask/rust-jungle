@@ -1,7 +1,6 @@
 ![image](https://user-images.githubusercontent.com/20150243/118312159-3f79d880-b4f1-11eb-9ee3-5e67f406bf55.png)
 
 [![Lint](https://github.com/Zerotask/rust-jungle/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/Zerotask/rust-jungle/actions/workflows/lint.yml)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ac21c257-635a-4726-a8af-ddefdba6bcf4/deploy-status)](https://app.netlify.com/sites/rust-jungle/deploys)
 
 # Rust Jungle
 
