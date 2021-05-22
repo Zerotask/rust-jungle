@@ -1,6 +1,17 @@
 {
 	"name": "rust-jungle",
+	"description": "Rust Jungle is a learning platform to learn the Rust programming language.",
+	"keywords": [
+		"rust",
+		"programming",
+		"learning"
+	],
+	"license": "MIT",
 	"version": "0.1.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Zerotask/rust-jungle"
+	},
 	"scripts": {
 		"dev": "svelte-kit dev --open --port 15007",
 		"build": "svelte-kit build",
@@ -11,6 +22,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-vercel": "^1.0.0-next.0",
+		"@sveltejs/app-utils": "^1.0.0-next.0",
 		"@typescript-eslint/eslint-plugin": "^4.19.0",
 		"@typescript-eslint/parser": "^4.19.0",
 		"eslint": "^7.22.0",
