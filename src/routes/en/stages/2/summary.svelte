@@ -16,4 +16,8 @@
 	</p>
 
 	<p>You also learned how to setup Visual Studio Code and you wrote your first Rust programs.</p>
+
+	<p>
+		Next up we'll be looking at some old friends: <code>if</code> tests and <code>for</code> loops.
+	</p>
 </Lesson>
