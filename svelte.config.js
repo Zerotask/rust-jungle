@@ -1,5 +1,5 @@
 import preprocess from 'svelte-preprocess';
-import adapter from '@sveltejs/adapter-netlify';
+import adapter from '@sveltejs/adapter-vercel';
 import path from 'path';
 
 // @see https://kit.svelte.dev/docs#configuration
