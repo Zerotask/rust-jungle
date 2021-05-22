@@ -1,7 +1,7 @@
 ![image](https://user-images.githubusercontent.com/20150243/118312159-3f79d880-b4f1-11eb-9ee3-5e67f406bf55.png)
 
 [![Lint](https://github.com/Zerotask/rust-jungle/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/Zerotask/rust-jungle/actions/workflows/lint.yml)
-[![Deployment](https://github.com/Zerotask/rust-jungle/actions/workflows/deployment.yml/badge.svg?branch=main)](https://github.com/Zerotask/rust-jungle/actions/workflows/deployment.yml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ac21c257-635a-4726-a8af-ddefdba6bcf4/deploy-status)](https://app.netlify.com/sites/rust-jungle/deploys)
 
 # Rust Jungle
 
@@ -17,8 +17,6 @@ The goal of Rust Jungle is to give you an easy start with the Rust programming l
 short but useful lessons, separated into stages.
 
 And you are not alone! [Ferris the crab](https://www.rustacean.net/) will be with you!
-
-Big thanks to [opeNode.io](https://www.openode.io/) where this bot is hosted for free!
 
 ## Still in development
 
