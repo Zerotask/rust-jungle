@@ -74,11 +74,19 @@
 
 <div class="lesson-nav">
 	{#if previous}
-		<a sveltekit:prefetch class="previous" href={previous} rel="prev">❮ Previous</a>
+		<a
+			sveltekit:prefetch
+			class="previous"
+			href={previous}
+			rel="prev"
+			title="Go to the previous lesson">❮ Previous</a
+		>
 	{/if}
 
 	{#if next}
-		<a sveltekit:prefetch class="next" href={next} rel="prev">Next ❯</a>
+		<a sveltekit:prefetch class="next" href={next} rel="prev" title="Go to the next lesson"
+			>Next ❯</a
+		>
 	{/if}
 </div>
 
