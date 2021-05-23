@@ -16,12 +16,11 @@
 	"scripts": {
 		"dev": "svelte-kit dev --open --port 15007",
 		"build": "svelte-kit build",
+		"postbuild": "node --experimental-json-modules ./generateSitemap.js",
 		"preview": "svelte-kit preview --port 15008",
-		"build:preview": "npm run build && npm run preview",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"lint:fix": "prettier --write --plugin-search-dir=. . && eslint --fix --ignore-path .gitignore .",
-		"deploy": "vercel",
-		"postbuild": "node --experimental-json-modules ./generateSitemap.js"
+		"deploy": "vercel"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-vercel": "next",
@@ -45,6 +44,11 @@
 		"@sveltejs/kit": "next",
 		"cookie": "^0.4.1",
 		"svelte": "^3.34.0",
-		"sweetalert2": "^11.0.7"
-	}
+		"sweetalert2": "^11.0.7",
+		"workbox-cacheable-response": "^6.1.5",
+		"workbox-expiration": "^6.1.5",
+		"workbox-routing": "^6.1.5",
+		"workbox-strategies": "^6.1.5"
+	},
+	"_id": "rust-jungle@0.1.0"
 }
