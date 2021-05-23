@@ -334,6 +334,8 @@
 		<li><a href="stages/10/rust-editions">10.16 Rust Editions</a></li>
 		<li><a href="stages/10/summary">10.17 Summary</a></li>
 	</ul>
+
+	<h2>Stage 11: Advanced Rust (TODO)</h2>
 </section>
 
 <style>

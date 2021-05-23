@@ -4,3 +4,5 @@ build/**
 .vercel/**
 .vercel_build_output/**
 node_modules/**
+.vercel/**
+.vercel_build_output/**
