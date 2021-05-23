@@ -8,7 +8,6 @@
 	import 'sweetalert2/dist/sweetalert2.css';
 
 	onMount(() => {
-		console.log($page.path);
 		// Example: /en/stages/1
 		const regex = /\/([a-zA-Z]{2})+\/stages\/+([1-9]{1,2})/;
 

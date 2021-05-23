@@ -5,7 +5,7 @@
 	];
 </script>
 
-<Lesson title="Stage 2.3: rustup" previous="installation" next="cargo" {links}>
+<Lesson index="3" title="rustup" previous="installation" next="cargo" {links}>
 	<p>
 		<code>rustup</code> is Rust's toolchain manager. To see all available options of this tool, run
 		<code>rustup --help</code>.

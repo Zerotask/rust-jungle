@@ -4,7 +4,8 @@
 </script>
 
 <Lesson
-	title="Stage 2.6: Cargo Subcommands"
+	index="6"
+	title="Cargo Subcommands"
 	previous="managing-dependencies-with-cargo"
 	next="setup-visual-studio-code"
 >

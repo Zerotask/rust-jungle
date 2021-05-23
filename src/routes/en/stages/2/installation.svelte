@@ -3,7 +3,7 @@
 	import ExternalLink from '$components/external-link.svelte';
 </script>
 
-<Lesson title="Stage 2.2: Installation" previous="./" next="rustup">
+<Lesson index="2" title="Installation" previous="./" next="rustup">
 	<p>
 		The recommended way to install Rust and its tools is to download rustup, Rust's toolchain
 		manager.<br />

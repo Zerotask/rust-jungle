@@ -7,16 +7,53 @@
 	import FerrisReading from '$components/ferris-reading.svelte';
 	import FurtherInformation from '$components/further-information.svelte';
 
+	export let index: number;
 	export let title: string;
 	export let previous: string | null = null;
 	export let next: string | null = null;
 	export let src: string | null = null;
 	export let links: string[] = [];
-	export let isSummary = false;
+	let isIntroduction = false;
+	let isSummary = false;
+
+	// TODO: set it automatically.
+	const lastStage = 10;
+
+	const pathSplit: string[] = $page.path.split('/');
+
+	// Read the lesson name to know if it's an introduction or a summary.
+	const lessonName: string = pathSplit[pathSplit.length - 1];
+	isSummary = lessonName === 'summary';
+	if (!isSummary) {
+		isIntroduction = !isNaN(parseInt(lessonName));
+	}
+
+	// Set current stage
+	let currentStage: number = parseInt(pathSplit.pop());
+	if (isNaN(currentStage)) {
+		currentStage = parseInt(pathSplit.pop());
+	}
+
+	// Automatically extend navigtion destination for introduction and summary
+	if (isIntroduction) {
+		index = 1;
+		title = 'Introduction';
+		next = `${currentStage}/${next}`;
+
+		if (currentStage > 1) {
+			previous = `${currentStage - 1}/summary`;
+		}
+	} else if (isSummary) {
+		title = 'Summary';
+		if (currentStage < lastStage) {
+			next = `../${currentStage + 1}`;
+		}
+	}
+	const fullTitle = `Stage ${currentStage}.${index}: ${title}`;
 
 	onMount(() => {
 		// Remeber the current lesson, to enable a "continue" (testing)
-		const lessonData = { title, url: $page.path, date: new Date() };
+		const lessonData = { title: fullTitle, url: $page.path, date: new Date() };
 		localStorage.setItem('last-lesson', JSON.stringify(lessonData));
 
 		// Avoid loosing the focus by the iframe.
@@ -44,9 +81,9 @@
 </script>
 
 <svelte:head>
-	<title>Rust Jungle - {title}</title>
-	<meta property="og:title" content="Rust Jungle - {title}" />
-	<meta name="twitter:title" content="Rust Jungle - {title}" />
+	<title>Rust Jungle - {fullTitle}</title>
+	<meta property="og:title" content="Rust Jungle - {fullTitle}" />
+	<meta name="twitter:title" content="Rust Jungle - {fullTitle}" />
 	<meta property="og:url" content="https://{$page.host}{$page.path}" />
 </svelte:head>
 
@@ -54,7 +91,7 @@
 
 <div class="columns">
 	<section class="column col-md-12 col-6">
-		<h1>{title}</h1>
+		<h1>{fullTitle}</h1>
 		<slot />
 		{#if links.length > 0}
 			<FurtherInformation {links} />
@@ -82,6 +119,8 @@
 			title="Go to the previous lesson"
 			aria-label="Go to the previous lesson">❮ Previous</a
 		>
+	{:else}
+		<span />
 	{/if}
 
 	{#if next}
@@ -104,7 +143,8 @@
 	}
 
 	.lesson-nav {
-		display: block;
+		display: flex;
+		justify-content: space-between;
 		position: fixed;
 		bottom: 0;
 		width: 100%;

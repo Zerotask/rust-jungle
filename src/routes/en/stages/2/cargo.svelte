@@ -3,7 +3,7 @@
 	const links: string[] = ['https://doc.rust-lang.org/cargo/commands/index.html'];
 </script>
 
-<Lesson title="Stage 2.4: cargo" previous="rustup" next="managing-dependencies-with-cargo" {links}>
+<Lesson index="4" title="cargo" previous="rustup" next="managing-dependencies-with-cargo" {links}>
 	<p>
 		<i>cargo</i> is Rust's official package manager. If you've installed Rust with rustup, then
 		cargo is already installed. You can verify that by running <code>cargo --version</code>

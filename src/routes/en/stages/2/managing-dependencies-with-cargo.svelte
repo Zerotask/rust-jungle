@@ -4,7 +4,8 @@
 </script>
 
 <Lesson
-	title="Stage 2.5: Managing Dependencies With Cargo"
+	index="5"
+	title="Managing Dependencies With Cargo"
 	previous="cargo"
 	next="cargo-subcommands"
 >

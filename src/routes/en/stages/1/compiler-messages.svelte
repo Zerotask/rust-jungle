@@ -5,7 +5,8 @@
 </script>
 
 <Lesson
-	title="Stage 1.13: Compiler Messages"
+	index="13"
+	title="Compiler Messages"
 	previous="macros"
 	next="summary"
 	src="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=fn%20main()%20%7B%0D%0A%20%20%20%20let%20message%20%3D%20%22hello%20world%22%3B%0D%0A%20%20%20%20println!(message)%3B%0D%0A%7D"

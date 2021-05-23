@@ -8,7 +8,8 @@
 </script>
 
 <Lesson
-	title="Stage 2.10: How to test functions"
+	index="10"
+	title="How to test functions"
 	previous="reading-command-line-arguments"
 	next="summary"
 	src="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=fn%20add(number1%3A%20i32%2C%20number2%3A%20i32)%20-%3E%20i32%20%7B%0D%0A%20%20%20%20number1%20%2B%20number2%0D%0A%7D%0D%0A%0D%0Afn%20main()%20%7B%0D%0A%20%20%20%20println!(%222%20%2B%202%20are%20%7B%7D%22%2C%20add(2%2C%202))%3B%0D%0A%7D%0D%0A%0D%0A%23%5Bcfg(test)%5D%0D%0Amod%20test%20%7B%0D%0A%20%20%20%20use%20super%3A%3A*%3B%0D%0A%0D%0A%20%20%20%20%23%5Btest%5D%0D%0A%20%20%20%20fn%20test_add_two_numbers_are_equal()%20%7B%0D%0A%20%20%20%20%20%20%20%20assert_eq!(add(2%2C%202)%2C%204)%3B%0D%0A%20%20%20%20%7D%0D%0A%0D%0A%20%20%20%20%23%5Btest%5D%0D%0A%20%20%20%20fn%20test_add_two_numbers_are_not_equal()%20%7B%0D%0A%20%20%20%20%20%20%20%20assert_ne!(add(2%2C%20200)%2C%204)%3B%0D%0A%20%20%20%20%7D%0D%0A%7D%0D%0A"

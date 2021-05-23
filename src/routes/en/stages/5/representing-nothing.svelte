@@ -3,7 +3,8 @@
 </script>
 
 <Lesson
-	title="Stage 5.3: Representing Nothing"
+	index="3"
+	title="Representing Nothing"
 	previous="what-are-generic-types"
 	next="option"
 	src="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=enum%20Item%20%7B%0A%20%20%20%20Inventory(String)%2C%0A%20%20%20%20%2F%2F%20None%20represents%20the%20absence%20of%20an%20item%0A%20%20%20%20None%2C%0A%7D%0A%0Astruct%20BagOfHolding%20%7B%0A%20%20%20%20item%3A%20Item%2C%0A%7D%0A"

@@ -8,6 +8,7 @@ const getUrl = (page) => {
 };
 
 async function createSitemap() {
+	const startTime = process.hrtime();
 	const sitemap = create({ version: '1.0' }).ele('urlset', {
 		xmlns: 'http://www.sitemaps.org/schemas/sitemap/0.9'
 	});
@@ -24,6 +25,10 @@ async function createSitemap() {
 	const xml = sitemap.end({ prettyPrint: true });
 
 	fs.writeFileSync('.vercel_build_output/static/sitemap.xml', xml);
+
+	// Measure execution time.
+	const endTime = process.hrtime(startTime);
+	console.info('Execution time: %dms', endTime[1] / 1000000);
 }
 
 createSitemap();
