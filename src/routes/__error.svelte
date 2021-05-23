@@ -2,10 +2,12 @@
 	<title>Something went wrong</title>
 </svelte:head>
 
-<section>
-	<h1>Something went wrong!</h1>
+<div class="columns">
+	<section class="column col-12">
+		<h1>Something went wrong!</h1>
 
-	<p>
-		<img src="/ferris-gesture.png" alt="Rust masco ferris gesture" width="400" />
-	</p>
-</section>
+		<p>
+			<img src="/images/ferris-gesture.png" alt="Rust masco ferris gesture" width="400" />
+		</p>
+	</section>
+</div>

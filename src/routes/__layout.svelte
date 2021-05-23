@@ -50,7 +50,7 @@
 <header>
 	<div class="logo hide-md">
 		<a href="/">
-			<img src="/rust-jungle-logo.png" alt="Rust Jungle Logo" width="200" height="66" />
+			<img src="/images/rust-jungle-logo.png" alt="Rust Jungle Logo" width="200" height="66" />
 		</a>
 	</div>
 
@@ -79,7 +79,13 @@
 			<a href="/en">EN</a> | <a href="/de">DE</a>
 		</span>
 		<ExternalLink href="https://github.com/Zerotask/rust-jungle">
-			<img class="github-logo" src="/github-logo-small.png" alt="GitHub" width="32" height="32" />
+			<img
+				class="github-logo"
+				src="/images/github-logo-small.png"
+				alt="GitHub"
+				width="32"
+				height="32"
+			/>
 		</ExternalLink>
 	</div>
 </header>
