@@ -3,7 +3,8 @@
 </script>
 
 <Lesson
-	title="Stage 10.4: Writing A Library"
+	index="4"
+	title="Writing A Library"
 	previous="writing-a-program"
 	next="referencing-other-modules-and-crates"
 >

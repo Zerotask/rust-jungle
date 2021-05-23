@@ -2,7 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson title="Stage 9.1: Introduction" previous="8/summary" next="9/references-revisited">
+<Lesson next="references-revisited">
 	<p>
 		In this chapter we will demystify smart pointers. Let's explore into these data structures that
 		let us interact with the lowest level of memory.

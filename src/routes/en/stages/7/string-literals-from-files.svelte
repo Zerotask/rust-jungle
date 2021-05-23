@@ -4,7 +4,8 @@
 </script>
 
 <Lesson
-	title="Stage 7.7: String Literals From Files"
+	index="7"
+	title="String Literals From Files"
 	previous="raw-string-literals"
 	next="string-slice"
 	{links}

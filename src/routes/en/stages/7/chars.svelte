@@ -7,6 +7,7 @@
 </script>
 
 <Lesson
+	index="9"
 	title="Stage 7.9: Chars"
 	previous="string-slice"
 	next="string"

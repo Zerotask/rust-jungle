@@ -3,7 +3,7 @@
 	const links: string[] = ['https://doc.rust-lang.org/edition-guide/editions/index.html'];
 </script>
 
-<Lesson title="Stage 10.16: Rust Editions" previous="cargo-toml-file" next="summary" {links}>
+<Lesson index="16" title="Rust Editions" previous="cargo-toml-file" next="summary" {links}>
 	<p>
 		Rust ships new releases on a six-week cycle and you can easily update to it with <i
 			>rustup update</i

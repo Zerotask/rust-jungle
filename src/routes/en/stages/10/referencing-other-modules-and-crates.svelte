@@ -5,7 +5,8 @@
 </script>
 
 <Lesson
-	title="Stage 10.5: Referencing Other Modules And Crates"
+	index="5"
+	title="Referencing Other Modules And Crates"
 	previous="writing-a-library"
 	next="referencing-multiple-items"
 	src="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=use%20std%3A%3Af64%3A%3Aconsts%3A%3API%3B%0A%0Afn%20main()%20%7B%0A%20%20%20%20println!(%22Welcome%20to%20the%20playground!%22)%3B%0A%20%20%20%20println!(%22I%20would%20love%20a%20slice%20of%20%7B%7D!%22%2C%20PI)%3B%0A%7D%0A"

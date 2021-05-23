@@ -2,12 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson
-	title="Stage 9.16: Summary"
-	previous="combining-smart-pointers"
-	next="../10"
-	isSummary="true"
->
+<Lesson previous="combining-smart-pointers">
 	<p>
 		Smart pointers are the idioms of Rust programming and let us not have to re-create the very
 		common patterns of memory usage. With them you are ready to tackle the toughest of challenges!

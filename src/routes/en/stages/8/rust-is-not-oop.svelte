@@ -3,7 +3,8 @@
 </script>
 
 <Lesson
-	title="Stage 8.3: Rust Is Not OOP"
+	index="3"
+	title="Rust Is Not OOP"
 	previous="what-is-object-oriented-programming"
 	next="encapsulation-with-methods"
 >
