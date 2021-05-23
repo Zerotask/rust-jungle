@@ -8,6 +8,7 @@
 	import 'sweetalert2/dist/sweetalert2.css';
 
 	onMount(() => {
+		console.log($page.path);
 		// Example: /en/stages/1
 		const regex = /\/([a-zA-Z]{2})+\/stages\/+([1-9]{1,2})/;
 
@@ -49,7 +50,7 @@
 
 <header>
 	<div class="logo hide-md">
-		<a href="/">
+		<a href="/" title="Go to the homepage" aria-label="Go to the homepage">
 			<img src="/images/rust-jungle-logo.png" alt="Rust Jungle Logo" width="200" height="66" />
 		</a>
 	</div>
@@ -61,11 +62,23 @@
 		<ul>
 			<!-- TODO: dynamic links with slugs -->
 			<li class:active={$page.path === '/en'}><a sveltekit:prefetch href="/en">Home</a></li>
-			<li class:active={$page.path === '/en/about'}>
-				<a sveltekit:prefetch href="/en/stages">Stages</a>
+			<li class:active={$page.path === '/en/stages'}>
+				<a
+					sveltekit:prefetch
+					href="/en/stages"
+					title="See an overview of all stages. Each stage will teach you a specific part of Rust"
+					aria-label="See an overview of all stages. Each stage will teach you a specific part of Rust"
+					>Stages</a
+				>
 			</li>
-			<li class:active={$page.path === '/en/todos'}>
-				<a sveltekit:prefetch href="/en/about">About</a>
+			<li class:active={$page.path === '/en/about'}>
+				<a
+					sveltekit:prefetch
+					href="/en/about"
+					rel="help"
+					title="Read how Rust Jungle works and how to connect to other Rust learners"
+					aria-label="Read how Rust Jungle works and how to connect to other Rust learners">About</a
+				>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -147,6 +160,10 @@
 		text-transform: uppercase;
 		text-decoration: none;
 		transition: color 0.2s linear;
+	}
+
+	nav .active {
+		text-decoration: underline;
 	}
 
 	a:hover {

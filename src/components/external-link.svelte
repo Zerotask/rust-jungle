@@ -4,6 +4,6 @@
 	export let target = '_blank';
 </script>
 
-<a {href} {rel} {target} title="Open external link">
+<a {href} {rel} {target} title="Open external link: {href}" aria-label="Open external link: {href}">
 	<slot>{href}</slot>
 </a>
