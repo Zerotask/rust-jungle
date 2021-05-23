@@ -1,6 +1,7 @@
 {
 	"name": "rust-jungle",
 	"description": "Rust Jungle is a learning platform to learn the Rust programming language.",
+	"url": "https://rust-jungle.vercel.app",
 	"keywords": [
 		"rust",
 		"programming",
@@ -19,7 +20,8 @@
 		"build:preview": "npm run build && npm run preview",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"lint:fix": "prettier --write --plugin-search-dir=. . && eslint --fix --ignore-path .gitignore .",
-		"deploy": "vercel"
+		"deploy": "vercel",
+		"postbuild": "node --experimental-json-modules ./generateSitemap.js"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-vercel": "next",
@@ -28,12 +30,14 @@
 		"eslint": "^7.22.0",
 		"eslint-config-prettier": "^8.1.0",
 		"eslint-plugin-svelte3": "^3.2.0",
+		"fast-glob": "^3.2.5",
 		"prettier": "~2.3.0",
 		"prettier-plugin-svelte": "^2.2.0",
 		"svelte-preprocess": "^4.0.0",
 		"tslib": "^2.0.0",
 		"typescript": "^4.0.0",
-		"vercel": "^22.0.1"
+		"vercel": "^22.0.1",
+		"xmlbuilder2": "^2.4.1"
 	},
 	"type": "module",
 	"dependencies": {
