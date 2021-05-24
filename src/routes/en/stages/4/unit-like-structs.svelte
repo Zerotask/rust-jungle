@@ -3,6 +3,7 @@
 </script>
 
 <Lesson
+	index="7"
 	title="Stage 4.7: Unit-like Structs"
 	previous="tuple-like-structs"
 	next="enums"

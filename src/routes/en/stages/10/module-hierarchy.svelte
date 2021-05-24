@@ -7,7 +7,8 @@
 </script>
 
 <Lesson
-	title="Stage 10.8: Module Hierarchy"
+	index="8"
+	title="Module Hierarchy"
 	previous="referencing-multiple-items"
 	next="inline-modules"
 	{links}

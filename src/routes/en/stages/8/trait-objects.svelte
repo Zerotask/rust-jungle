@@ -7,7 +7,8 @@
 </script>
 
 <Lesson
-	title="Stage 8.10: Trait Objects"
+	index="10"
+	title="Trait Objects"
 	previous="dynamic-vs-static-dispatch"
 	next="handling-unsized-data"
 	{links}

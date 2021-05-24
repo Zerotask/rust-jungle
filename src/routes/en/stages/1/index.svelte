@@ -3,7 +3,7 @@
 	import ExternalLink from '$components/external-link.svelte';
 </script>
 
-<Lesson title="Stage 1.1: Introduction" next="1/the-rust-playground">
+<Lesson next="the-rust-playground">
 	<p>
 		In the first stage we're going to be exploring the very basics with functions, variables, and
 		the most primitive types. Glad to have you on board!

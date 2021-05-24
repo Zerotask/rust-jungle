@@ -4,7 +4,8 @@
 </script>
 
 <Lesson
-	title="Stage 7.3: What Is UTF-8?"
+	index="3"
+	title="What Is UTF-8?"
 	previous="string-literals"
 	next="escaping-characters"
 	{links}

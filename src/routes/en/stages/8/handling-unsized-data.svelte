@@ -6,7 +6,8 @@
 </script>
 
 <Lesson
-	title="Stage 8.11: Handling Unsized Data"
+	index="11"
+	title="Handling Unsized Data"
 	previous="trait-objects"
 	next="generic-functions"
 	{links}

@@ -6,7 +6,7 @@
 	import '../shared.css';
 	import Swal from 'sweetalert2';
 	import 'sweetalert2/dist/sweetalert2.css';
-	import lastLessonStore from '$stores/lastLesson.js';
+	import lastLessonStore from '$stores/lastLesson';
 
 	onMount(() => {
 		// Example: /en/stages/1

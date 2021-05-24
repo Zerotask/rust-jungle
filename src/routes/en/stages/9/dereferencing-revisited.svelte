@@ -6,7 +6,8 @@
 </script>
 
 <Lesson
-	title="Stage 9.4: Dereferencing Revisited"
+	index="4"
+	title="Dereferencing Revisited"
 	previous="raw-pointers"
 	next="the-dereference-operator"
 	{links}

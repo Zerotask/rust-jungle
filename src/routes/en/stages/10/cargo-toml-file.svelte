@@ -4,12 +4,7 @@
 	const links: string[] = ['https://doc.rust-lang.org/cargo/reference/manifest.html'];
 </script>
 
-<Lesson
-	title="Stage 10.15: Cargo.toml File"
-	previous="your-own-prelude"
-	next="rust-editions"
-	{links}
->
+<Lesson index="15" title="Cargo.toml File" previous="your-own-prelude" next="rust-editions" {links}>
 	<p>
 		The <i>Cargo.toml</i> file is the central configuration file when you decide to use
 		<i>cargo</i>.<br />

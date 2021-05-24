@@ -3,6 +3,7 @@
 </script>
 
 <Lesson
+	index="12"
 	title="Stage 7.12: Building Strings"
 	previous="text-as-function-parameters"
 	next="formatting-strings"

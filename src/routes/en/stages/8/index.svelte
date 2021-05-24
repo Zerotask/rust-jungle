@@ -2,11 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson
-	title="Stage 8.1: Introduction"
-	previous="7/summary"
-	next="8/what-is-object-oriented-programming"
->
+<Lesson next="what-is-object-oriented-programming">
 	<p>
 		Expressing ideas with functions is a proven way of representing behavior and data (C has been
 		doing it for decades!). Historically, computer science has found other useful expressive

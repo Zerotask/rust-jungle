@@ -3,7 +3,7 @@
 	import ExternalLink from '$components/external-link.svelte';
 </script>
 
-<Lesson title="Stage 2.1: Introduction" previous="1/summary" next="2/installation">
+<Lesson next="installation">
 	<p>
 		In this stage you will learn how to install Rust locally and you will learn about some important
 		Rust tools like <i>rustup</i> (the Rust toolchain installer) and

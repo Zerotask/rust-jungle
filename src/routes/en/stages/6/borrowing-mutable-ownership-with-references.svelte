@@ -3,6 +3,7 @@
 </script>
 
 <Lesson
+	index="8"
 	title="Stage 6.8: Borrowing Mutable Ownership With References"
 	previous="borrowing-ownership-with-references"
 	next="dereferencing"

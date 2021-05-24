@@ -3,7 +3,8 @@
 </script>
 
 <Lesson
-	title="Stage 8.2: What Is Object Oriented Programming (OOP)?"
+	index="2"
+	title="What Is Object Oriented Programming (OOP)?"
 	previous="./"
 	next="rust-is-not-oop"
 >

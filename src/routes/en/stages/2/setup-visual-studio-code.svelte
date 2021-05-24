@@ -4,7 +4,8 @@
 </script>
 
 <Lesson
-	title="Stage 2.7: Setup Visual Studio Code"
+	index="7"
+	title="Setup Visual Studio Code"
 	previous="cargo-subcommands"
 	next="writing-a-hello-world-program"
 >

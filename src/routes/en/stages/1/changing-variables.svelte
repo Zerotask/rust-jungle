@@ -3,7 +3,8 @@
 </script>
 
 <Lesson
-	title="Stage 1.4: Changing Variables"
+	index="4"
+	title="Changing Variables"
 	previous="variables"
 	next="basic-types"
 	src="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=fn%20main()%20%7B%0A%20%20%20%20let%20mut%20x%20%3D%2042%3B%0A%20%20%20%20println!(%22%7B%7D%22%2C%20x)%3B%0A%20%20%20%20x%20%3D%2013%3B%0A%20%20%20%20println!(%22%7B%7D%22%2C%20x)%3B%0A%7D%0A"

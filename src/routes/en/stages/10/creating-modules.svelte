@@ -3,7 +3,8 @@
 </script>
 
 <Lesson
-	title="Stage 10.7: Creating Modules"
+	index="7"
+	title="Creating Modules"
 	previous="referencing-multiple-items"
 	next="module-hierarchy"
 >
