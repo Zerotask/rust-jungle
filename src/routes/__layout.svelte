@@ -6,21 +6,16 @@
 	import '../shared.css';
 	import Swal from 'sweetalert2';
 	import 'sweetalert2/dist/sweetalert2.css';
+	import { lastLesson } from '$stores/lastLesson.js';
 
 	onMount(() => {
-		console.log($page.path);
 		// Example: /en/stages/1
 		const regex = /\/([a-zA-Z]{2})+\/stages\/+([1-9]{1,2})/;
 
 		// If it's not a lesson page.
 		if (!regex.test($page.path)) {
-			interface ILastLesson {
-				title: string;
-				url: string;
-				date: Date;
-			}
-			const lastLesson: ILastLesson = JSON.parse(localStorage.getItem('last-lesson'));
-			if (lastLesson) {
+			const lesson = lastLesson.get();
+			if (lesson) {
 				const lessonDate = new Date(lastLesson.date);
 				const currentDate = new Date();
 				var diff = currentDate.getTime() - lessonDate.getTime();
@@ -30,16 +25,16 @@
 				if (hourDiff >= 2) {
 					Swal.fire({
 						title: 'Do you want to continue your lesson?',
-						text: lastLesson.title,
+						text: lesson.title,
 						confirmButtonText: 'Yes',
 						cancelButtonText: 'No',
 						showCancelButton: true,
 						showCloseButton: true
 					}).then((result) => {
 						if (result.isConfirmed) {
-							goto(lastLesson.url);
+							goto(lesson.url);
 						} else {
-							localStorage.removeItem('last-lesson');
+							lastLesson.reset();
 						}
 					});
 				}
