@@ -1,3 +1,7 @@
+<script lang="ts">
+	import FerrisGesture from '$components/ferris/gesture.svelte';
+</script>
+
 <svelte:head>
 	<title>Something went wrong</title>
 </svelte:head>
@@ -8,12 +12,7 @@
 		<h4>You can go back <a href="/">to the homepage</a>.</h4>
 
 		<p>
-			<img
-				src="/images/ferris-gesture.png"
-				alt="Rust mascot ferris gesture"
-				title="Rust mascot ferris gesture"
-				width="350"
-			/>
+			<FerrisGesture />
 		</p>
 	</section>
 </div>

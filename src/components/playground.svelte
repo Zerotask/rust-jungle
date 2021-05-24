@@ -8,7 +8,7 @@
 		frameborder="0"
 		title="Rust Playground is an interactive tool to run Rust code"
 		aria-label="Rust Playground is an interactive tool to run Rust code"
-		sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"
+		sandbox="allow-same-origin allow-scripts"
 	/>
 </code>
 

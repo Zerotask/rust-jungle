@@ -1,6 +1,6 @@
 <!-- TODO: redirect to /en -->
 <script lang="ts">
-	import Ferris from '$components/ferris.svelte';
+	import FerrisNormal from '$components/ferris/normal.svelte';
 </script>
 
 <svelte:head>
@@ -21,6 +21,6 @@
 	</section>
 
 	<section class="column col-md-12 col-6">
-		<Ferris />
+		<FerrisNormal />
 	</section>
 </div>

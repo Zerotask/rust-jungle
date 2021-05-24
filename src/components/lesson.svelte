@@ -3,8 +3,8 @@
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
 	import Playground from '$components/playground.svelte';
-	import Ferris from '$components/ferris.svelte';
-	import FerrisReading from '$components/ferris-reading.svelte';
+	import FerrisNormal from '$components/ferris/normal.svelte';
+	import FerrisHappy from '$components/ferris/happy.svelte';
 	import FurtherInformation from '$components/further-information.svelte';
 	import lastLessonStore from '$stores/lastLesson';
 
@@ -106,11 +106,11 @@
 
 	<section class="column col-md-12 col-6">
 		{#if isSummary}
-			<FerrisReading />
+			<FerrisHappy />
 		{:else if src}
 			<Playground {src} />
 		{:else}
-			<Ferris />
+			<FerrisNormal />
 		{/if}
 	</section>
 </div>
