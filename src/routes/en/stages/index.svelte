@@ -335,7 +335,7 @@
 		<li><a href="stages/10/summary">10.17 Summary</a></li>
 	</ul>
 
-	<h2>Stage 11: Advanced Rust (TODO)</h2>
+	<h2>Stage 11: Advanced Rust (Upcoming)</h2>
 </section>
 
 <style>

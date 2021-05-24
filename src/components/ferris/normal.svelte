@@ -12,5 +12,5 @@
 	title="Rust mascot Ferris"
 	width={imageWidth}
 	height={imageHeight}
-	style="width: {imageWidth}px; {imageHeight}px;"
+	style="width: {imageWidth}px; height:{imageHeight}px;"
 />
