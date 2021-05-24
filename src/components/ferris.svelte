@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let width = 350;
-	$: imageHeight = imageWidth / (3 / 2);
+	$: imageHeight = imageWidth / 1.34;
 	$: imageWidth = Math.min(width, windowWidth - 40);
 	let windowWidth: number;
 </script>
