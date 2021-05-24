@@ -2,7 +2,7 @@ import { writable } from 'svelte/store';
 
 const localStorageKey = 'last-lesson';
 
-function createLastLesson() {
+const createStore = () => {
 	const { subscribe } = writable(null);
 
 	return {
@@ -12,6 +12,8 @@ function createLastLesson() {
 		get: () => JSON.parse(localStorage.getItem(localStorageKey)),
 		reset: () => localStorage.removeItem(localStorageKey)
 	};
-}
+};
 
-export const lastLesson = createLastLesson();
+const store = createStore();
+
+export default store;

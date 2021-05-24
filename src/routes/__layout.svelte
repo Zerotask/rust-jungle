@@ -6,7 +6,7 @@
 	import '../shared.css';
 	import Swal from 'sweetalert2';
 	import 'sweetalert2/dist/sweetalert2.css';
-	import { lastLesson } from '$stores/lastLesson.js';
+	import lastLessonStore from '$stores/lastLesson.js';
 
 	onMount(() => {
 		// Example: /en/stages/1
@@ -14,9 +14,9 @@
 
 		// If it's not a lesson page.
 		if (!regex.test($page.path)) {
-			const lesson = lastLesson.get();
+			const lesson = lastLessonStore.get();
 			if (lesson) {
-				const lessonDate = new Date(lastLesson.date);
+				const lessonDate = new Date(lesson.date);
 				const currentDate = new Date();
 				var diff = currentDate.getTime() - lessonDate.getTime();
 				var hourDiff = diff / (1000 * 60 * 60);
@@ -34,7 +34,7 @@
 						if (result.isConfirmed) {
 							goto(lesson.url);
 						} else {
-							lastLesson.reset();
+							lastLessonStore.reset();
 						}
 					});
 				}

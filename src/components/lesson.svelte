@@ -6,7 +6,7 @@
 	import Ferris from '$components/ferris.svelte';
 	import FerrisReading from '$components/ferris-reading.svelte';
 	import FurtherInformation from '$components/further-information.svelte';
-	import { lastLesson } from '$stores/lastLesson.js';
+	import lastLessonStore from '$stores/lastLesson.js';
 
 	export let title: string;
 	export let previous: string | null = null;
@@ -17,7 +17,7 @@
 
 	onMount(() => {
 		// Remeber the current lesson, to enable a "continue" (testing)
-		lastLesson.set({ title, url: $page.path, date: new Date() });
+		lastLessonStore.set({ title, url: $page.path, date: new Date() });
 
 		// Avoid loosing the focus by the iframe.
 		const iframeElement = document.querySelector('iframe');
