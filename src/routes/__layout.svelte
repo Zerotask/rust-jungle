@@ -6,6 +6,7 @@
 	import '../shared.css';
 	import Swal from 'sweetalert2';
 	import 'sweetalert2/dist/sweetalert2.css';
+	import lastLessonStore from '$stores/lastLesson.js';
 
 	onMount(() => {
 		// Example: /en/stages/1
@@ -13,14 +14,9 @@
 
 		// If it's not a lesson page.
 		if (!regex.test($page.path)) {
-			interface ILastLesson {
-				title: string;
-				url: string;
-				date: Date;
-			}
-			const lastLesson: ILastLesson = JSON.parse(localStorage.getItem('last-lesson'));
-			if (lastLesson) {
-				const lessonDate = new Date(lastLesson.date);
+			const lesson = lastLessonStore.get();
+			if (lesson) {
+				const lessonDate = new Date(lesson.date);
 				const currentDate = new Date();
 				var diff = currentDate.getTime() - lessonDate.getTime();
 				var hourDiff = diff / (1000 * 60 * 60);
@@ -29,16 +25,16 @@
 				if (hourDiff >= 2) {
 					Swal.fire({
 						title: 'Do you want to continue your lesson?',
-						text: lastLesson.title,
+						text: lesson.title,
 						confirmButtonText: 'Yes',
 						cancelButtonText: 'No',
 						showCancelButton: true,
 						showCloseButton: true
 					}).then((result) => {
 						if (result.isConfirmed) {
-							goto(lastLesson.url);
+							goto(lesson.url);
 						} else {
-							localStorage.removeItem('last-lesson');
+							lastLessonStore.reset();
 						}
 					});
 				}

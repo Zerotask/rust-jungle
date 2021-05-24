@@ -1,5 +1,15 @@
 <script lang="ts">
 	export let width = 350;
+	$: imageHeight = imageWidth / (3 / 2);
+	$: imageWidth = Math.min(width, windowWidth - 40);
+	let windowWidth: number;
 </script>
 
-<img src="/images/ferris.png" alt="Rust mascot Ferris" title="Rust mascot Ferris" {width} />
+<svelte:window bind:outerWidth={windowWidth} />
+<img
+	src="/images/ferris.png"
+	alt="Rust mascot Ferris"
+	title="Rust mascot Ferris"
+	width={imageWidth}
+	height={imageHeight}
+/>
