@@ -53,7 +53,7 @@
 	}
 	const fullTitle = `Stage ${currentStage}.${index}: ${title}`;
 	const shareTitle = encodeURIComponent(`Rust Jungle - ${fullTitle}`);
-	const url = encodeURI($page.host + $page.path);
+	const url = encodeURI(`https://${$page.host}${$page.path}`);
 	$: urlFacebook = `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${shareTitle}`;
 	$: urlTwitter = `https://twitter.com/intent/tweet?source=${url}&text=${shareTitle}`;
 	$: urlReddit = `http://www.reddit.com/submit?url=${url}&title=${shareTitle}`;
@@ -99,7 +99,7 @@
 	<title>Rust Jungle - {fullTitle}</title>
 	<meta property="og:title" content="Rust Jungle - {fullTitle}" />
 	<meta name="twitter:title" content="Rust Jungle - {fullTitle}" />
-	<meta property="og:url" content="https://{$page.host}{$page.path}" />
+	<meta property="og:url" content={url} />
 </svelte:head>
 
 <svelte:body on:keyup|once={onKeyboardNavigation} />
