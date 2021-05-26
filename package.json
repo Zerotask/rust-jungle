@@ -21,6 +21,7 @@
 		"preview": "svelte-kit preview --port 15008",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"lint:fix": "prettier --write --plugin-search-dir=. . && eslint --fix --ignore-path .gitignore .",
+		"check": "svelte-check",
 		"deploy": "vercel"
 	},
 	"dependencies": {
@@ -45,10 +46,12 @@
 		"fast-glob": "^3.2.5",
 		"prettier": "~2.3.0",
 		"prettier-plugin-svelte": "^2.2.0",
+		"svelte-check": "^1.5.4",
 		"svelte-preprocess": "^4.0.0",
 		"tslib": "^2.0.0",
 		"typescript": "^4.0.0",
 		"vercel": "^22.0.1",
+		"vite-imagetools": "^3.6.7",
 		"xmlbuilder2": "^2.4.1"
 	}
 }
