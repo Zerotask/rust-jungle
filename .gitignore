@@ -6,3 +6,4 @@ node_modules
 /functions
 /.vercel
 /.vercel_build_output
+/.env
