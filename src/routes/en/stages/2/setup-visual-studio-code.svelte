@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="{7}"
+	index={7}
 	title="Setup Visual Studio Code"
 	previous="cargo-subcommands"
 	next="writing-a-hello-world-program"

@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="{6}"
+	index={6}
 	title="Basic Type Conversion"
 	previous="basic-types"
 	next="constants"

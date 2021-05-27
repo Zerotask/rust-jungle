@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="{4}"
+	index={4}
 	title="Changing Variables"
 	previous="variables"
 	next="basic-types"

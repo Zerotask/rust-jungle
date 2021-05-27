@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="{5}"
+	index={5}
 	title="Basic Types"
 	previous="changing-variables"
 	next="basic-type-conversion"

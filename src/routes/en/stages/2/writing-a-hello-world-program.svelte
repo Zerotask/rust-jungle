@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="{8}"
+	index={8}
 	title="Writing A Hello World Program"
 	previous="setup-visual-studio-code"
 	next="reading-command-line-arguments"

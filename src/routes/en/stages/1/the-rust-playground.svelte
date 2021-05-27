@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="{2}"
+	index={2}
 	title="The Rust Playground"
 	previous="./"
 	next="variables"

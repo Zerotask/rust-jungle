@@ -7,7 +7,7 @@
 </script>
 
 <Lesson
-	index="{9}"
+	index={9}
 	title="Reading Command Line Arguments"
 	previous="writing-a-hello-world-program"
 	next="how-to-test-functions"

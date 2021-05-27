@@ -8,7 +8,7 @@
 </script>
 
 <Lesson
-	index="{10}"
+	index={10}
 	title="How to test functions"
 	previous="reading-command-line-arguments"
 	next="summary"

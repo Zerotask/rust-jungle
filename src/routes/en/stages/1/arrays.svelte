@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="{8}"
+	index={8}
 	title="Arrays"
 	previous="constants"
 	next="functions"

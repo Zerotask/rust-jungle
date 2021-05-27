@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="{6}"
+	index={6}
 	title="Cargo Subcommands"
 	previous="managing-dependencies-with-cargo"
 	next="setup-visual-studio-code"

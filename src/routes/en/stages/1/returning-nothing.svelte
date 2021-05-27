@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="{11}"
+	index={11}
 	title="Returning Nothing"
 	previous="multiple-return-values"
 	next="macros"

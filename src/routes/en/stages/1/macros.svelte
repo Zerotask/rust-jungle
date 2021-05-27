@@ -7,7 +7,7 @@
 </script>
 
 <Lesson
-	index="{12}"
+	index={12}
 	title="Macros"
 	previous="returning-nothing"
 	next="compiler-messages"

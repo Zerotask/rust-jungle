@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="{3}"
+	index={3}
 	title="Variables"
 	previous="the-rust-playground"
 	next="changing-variables"
