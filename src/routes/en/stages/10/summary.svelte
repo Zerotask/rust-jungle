@@ -3,7 +3,7 @@
 	import ExternalLink from '$components/external-link.svelte';
 </script>
 
-<Lesson previous="rust-editions">
+<Lesson index={17} previous="rust-editions">
 	<p>
 		You now have a few tricks up your sleeve when it comes to creating Rust applications and
 		libraries ready for the world. Don't worry about remembering it all. As your library grows and

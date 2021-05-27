@@ -2,7 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson previous="lifetimes-in-data-types">
+<Lesson index={16} previous="lifetimes-in-data-types">
 	<p>
 		Whew, congrats for making it through! I know it's a lot to take in, but you are well under way
 		to becoming a Rustacean. Hopefully it's clear how Rust as a language aims to solve many of these

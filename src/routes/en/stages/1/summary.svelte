@@ -2,7 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson index="14" previous="compiler-messages">
+<Lesson index={14} previous="compiler-messages">
 	<p>
 		Nice job so far! The basics of Rust aren't so bad, right? We're getting a peek into how the Rust
 		compiler thinks. As a system programming language it cares a lot about the size of values in

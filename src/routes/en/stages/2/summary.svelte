@@ -2,7 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson index="11" previous="how-to-test-functions">
+<Lesson index={11} previous="how-to-test-functions">
 	<p>
 		In this stage you learned how to install Rust locally. You learned about the Rust tools <i
 			>rustup</i

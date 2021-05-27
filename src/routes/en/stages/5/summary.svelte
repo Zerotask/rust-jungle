@@ -2,7 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson previous="vectors">
+<Lesson index={10} previous="vectors">
 	<p>
 		In one chapter we've learned how much power generic types give us! Don't worry if you don't know
 		fully how to use everything, right now it's just good to be aware of the major ideas you will

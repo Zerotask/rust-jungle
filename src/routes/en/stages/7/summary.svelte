@@ -2,7 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson previous="useful-string-method">
+<Lesson index={17} previous="useful-string-method">
 	<p>
 		Now you know the basics of text! As you have seen, Unicode makes working with text a bit tricky,
 		but the standard library has plenty of functionality to make it easy to manage.

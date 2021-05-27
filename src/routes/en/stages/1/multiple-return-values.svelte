@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="10"
+	index="{10}"
 	title="Multiple Return Values"
 	previous="functions"
 	next="returning-nothing"

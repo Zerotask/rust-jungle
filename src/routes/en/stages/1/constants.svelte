@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="7"
+	index="{7}"
 	title="Constants"
 	previous="basic-type-conversion"
 	next="arrays"

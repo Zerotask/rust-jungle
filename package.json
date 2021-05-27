@@ -17,8 +17,7 @@
 	"scripts": {
 		"dev": "svelte-kit dev --open --port 15007",
 		"build": "svelte-kit build",
-		"postbuild": "node --experimental-json-modules ./generateSitemap.js",
-		"preview": "svelte-kit preview --port 15008",
+		"preview": "svelte-kit preview --port 15007",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"lint:fix": "prettier --write --plugin-search-dir=. . && eslint --fix --ignore-path .gitignore .",
 		"check": "svelte-check",

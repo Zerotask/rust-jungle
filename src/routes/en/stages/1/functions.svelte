@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="9"
+	index="{9}"
 	title="Functions"
 	previous="arrays"
 	next="multiple-return-values"

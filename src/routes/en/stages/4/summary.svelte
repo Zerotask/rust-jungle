@@ -2,7 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson previous="enums-with-data">
+<Lesson index={10} previous="enums-with-data">
 	<p>
 		How exciting! We now have the most basic tools for representing the form of our ideas in code.
 		Hopefully now we can see a glimmer of how Rust's fundamental operations work in harmony and

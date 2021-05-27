@@ -1,14 +1,12 @@
-import fs from 'fs';
 import fg from 'fast-glob';
+import pkg from '../../package.json';
 import { create } from 'xmlbuilder2';
-import pkg from './package.json';
 
 const getUrl = (page) => {
 	return page.replace('src/routes', pkg.url).replace('.svelte', '').replace('index', '');
 };
 
-async function createSitemap() {
-	const startTime = process.hrtime();
+export async function get() {
 	const sitemap = create({ version: '1.0' }).ele('urlset', {
 		xmlns: 'http://www.sitemaps.org/schemas/sitemap/0.9'
 	});
@@ -24,11 +22,12 @@ async function createSitemap() {
 
 	const xml = sitemap.end({ prettyPrint: true });
 
-	fs.writeFileSync('.vercel_build_output/static/sitemap.xml', xml);
-
-	// Measure execution time.
-	const endTime = process.hrtime(startTime);
-	console.info('Execution time: %dms', endTime[1] / 1000000);
+	return {
+		status: 200,
+		headers: {
+			'Cache-Control': 'max-age:0, s-max-age=600',
+			'Content-Type': 'application/xml'
+		},
+		body: xml
+	};
 }
-
-createSitemap();

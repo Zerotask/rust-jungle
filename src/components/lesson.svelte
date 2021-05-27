@@ -8,6 +8,7 @@
 	import FurtherInformation from '$components/further-information.svelte';
 	import ExternalLink from '$components/external-link.svelte';
 	import lastLessonStore from '$stores/lastLesson';
+	import DirectoryStore from '$stores/directory';
 
 	export let index: number;
 	export let title: string;
@@ -29,6 +30,7 @@
 	if (!isSummary) {
 		isIntroduction = !isNaN(parseInt(lessonName));
 	}
+	let lessonsPerStage: Array<number> = [];
 
 	// Set current stage
 	let currentStage: number = parseInt(pathSplit.pop());
@@ -62,6 +64,12 @@
 	$: urlEmail = `mailto:?subject=${shareTitle}&body=${url}`;
 
 	onMount(() => {
+		const lang = 'en'; // TODO: read URl to detect language.
+		const startsWith = `src/routes/${lang}/stages/${currentStage}/`;
+		lessonsPerStage = Array.from($DirectoryStore).filter((value: string) =>
+			value.startsWith(`${startsWith}`)
+		);
+
 		// Remeber the current lesson, to enable a "continue" (testing)
 		lastLessonStore.set({
 			stage: currentStage,
@@ -208,6 +216,10 @@
 		<span />
 	{/if}
 
+	{#if lessonsPerStage.length > 0}
+		<span class="stageProgress">{index} / {lessonsPerStage.length}</span>
+	{/if}
+
 	{#if next}
 		<a
 			sveltekit:prefetch
@@ -217,6 +229,8 @@
 			title="Go to the next lesson"
 			aria-label="Go to the next lesson">Next ❯</a
 		>
+	{:else}
+		<span />
 	{/if}
 </div>
 
@@ -249,17 +263,21 @@
 
 	.lesson-nav > .previous {
 		float: left;
-		margin-left: 20px;
+		margin-left: 15px;
 	}
 
 	.lesson-nav > .next {
 		float: right;
-		margin-right: 20px;
+		margin-right: 15px;
 	}
 
 	.lesson-nav a:hover {
 		text-decoration: none;
 		color: var(--primary-color);
+		font-weight: bold;
+	}
+
+	.stageProgress {
 		font-weight: bold;
 	}
 

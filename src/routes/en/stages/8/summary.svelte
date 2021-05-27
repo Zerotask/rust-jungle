@@ -2,7 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson previous="generic-structs-revisited">
+<Lesson index={16} previous="generic-structs-revisited">
 	<p>
 		We now have more language features at hand to represent our ideas clearly! Rust abstractions
 		might be simple but they are powerful enough to make working with code a joy. In this chapter,
