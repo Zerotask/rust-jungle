@@ -2,7 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson index="15" title="Generic Structs Revisited" previous="box" next="summary">
+<Lesson index={15} title="Generic Structs Revisited" previous="box" next="summary">
 	<p>Generic structs can also have their parameterized types constrained by traits:</p>
 	<pre>
         <code>

@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="4"
+	index={4}
 	title="Writing A Library"
 	previous="writing-a-program"
 	next="referencing-other-modules-and-crates"

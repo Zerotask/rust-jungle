@@ -6,7 +6,7 @@
 </script>
 
 <Lesson
-	index="4"
+	index={4}
 	title="Escaping Characters"
 	previous="what-is-utf-8"
 	next="multi-line-string-literals"

@@ -1,10 +1,10 @@
 <script lang="ts">
 	import Lesson from '$components/lesson.svelte';
-	const links: string[] = ['https://en.wikipedia.org/wiki/UTF-8'];
+	const links: string[] = ['https://doc.rust-lang.org/book/ch08-02-strings.html'];
 </script>
 
 <Lesson
-	index="3"
+	index={3}
 	title="What Is UTF-8?"
 	previous="string-literals"
 	next="escaping-characters"

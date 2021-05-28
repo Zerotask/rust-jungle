@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="16"
+	index={16}
 	title="Regular Expressions"
 	previous="useful-string-methods"
 	next="summary"

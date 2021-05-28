@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="11"
+	index={11}
 	title="Text As Function Parameters"
 	previous="string"
 	next="building-strings"

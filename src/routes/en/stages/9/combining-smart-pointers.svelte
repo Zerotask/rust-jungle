@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="15"
+	index={15}
 	title="Combining Smart Pointers"
 	previous="sharing-across-threads"
 	next="summary"

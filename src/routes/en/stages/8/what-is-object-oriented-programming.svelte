@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="2"
+	index={2}
 	title="What Is Object Oriented Programming (OOP)?"
 	previous="./"
 	next="rust-is-not-oop"

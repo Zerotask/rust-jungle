@@ -2,7 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson index="2" title="References Revisited" previous="./" next="raw-pointers">
+<Lesson index={2} title="References Revisited" previous="./" next="raw-pointers">
 	<p>
 		A reference is fundamentally just a number that is the start position of some bytes in memory.
 		Its only purpose is to represent the concept of where data of a specific type exists. What makes

@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="10"
+	index={10}
 	title="Internal Module Referencing"
 	previous="inline-modules"
 	next="exporting"

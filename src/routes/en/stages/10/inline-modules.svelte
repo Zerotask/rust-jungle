@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="9"
+	index={9}
 	title="Inline Modules"
 	previous="module-hierarchy"
 	next="internal-module-referencing"

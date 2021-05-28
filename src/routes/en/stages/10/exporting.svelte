@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="11"
+	index={11}
 	title="Exporting"
 	previous="internal-module-referencing"
 	next="struct-visibility"

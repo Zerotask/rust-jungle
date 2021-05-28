@@ -7,7 +7,7 @@
 </script>
 
 <Lesson
-	index="14"
+	index={14}
 	title="Box"
 	previous="generic-functions-shorthand"
 	next="generic-structs-revisited"

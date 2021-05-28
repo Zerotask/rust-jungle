@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="4"
+	index={4}
 	title="Encapsulation With Methods"
 	previous="rust-is-not-oop"
 	next="abstraction-with-selective-exposure"

@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="6"
+	index={6}
 	title="Raw String Literals"
 	previous="multi-line-string-literals"
 	next="string-literals-from-files"

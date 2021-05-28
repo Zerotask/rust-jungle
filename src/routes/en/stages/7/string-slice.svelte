@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="8"
+	index={8}
 	title="String Slice"
 	previous="string-literals-from-files"
 	next="chars"

@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="7"
+	index={7}
 	title="Creating Modules"
 	previous="referencing-multiple-items"
 	next="module-hierarchy"

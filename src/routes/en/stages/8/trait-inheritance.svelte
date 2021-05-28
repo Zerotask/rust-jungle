@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="8"
+	index={8}
 	title="Trait Inheritance"
 	previous="implemented-methods-on-traits"
 	next="dynamic-vs-static-dispatch"

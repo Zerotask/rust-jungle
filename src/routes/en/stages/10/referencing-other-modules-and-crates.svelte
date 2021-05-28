@@ -5,7 +5,7 @@
 </script>
 
 <Lesson
-	index="5"
+	index={5}
 	title="Referencing Other Modules And Crates"
 	previous="writing-a-library"
 	next="referencing-multiple-items"

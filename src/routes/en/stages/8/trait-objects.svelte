@@ -7,7 +7,7 @@
 </script>
 
 <Lesson
-	index="10"
+	index={10}
 	title="Trait Objects"
 	previous="dynamic-vs-static-dispatch"
 	next="handling-unsized-data"

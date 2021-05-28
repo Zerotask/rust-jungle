@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="11"
+	index={11}
 	title="Failable Main Revisited"
 	previous="heap-allocated-memory"
 	next="referencing-counting"

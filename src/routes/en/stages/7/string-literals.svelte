@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="2"
+	index={2}
 	title="String Literals"
 	previous="./"
 	next="what-is-utf-8"

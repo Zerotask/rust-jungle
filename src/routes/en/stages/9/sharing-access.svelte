@@ -7,7 +7,7 @@
 </script>
 
 <Lesson
-	index="13"
+	index={13}
 	title="Sharing Access"
 	previous="referencing-counting"
 	next="sharing-across-threads"

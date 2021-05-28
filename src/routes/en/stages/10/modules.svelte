@@ -6,7 +6,7 @@
 	];
 </script>
 
-<Lesson index="2" title="Modules" previous="./" next="writing-a-program" {links}>
+<Lesson index={2} title="Modules" previous="./" next="writing-a-program" {links}>
 	<p>
 		Every Rust program or library is a <i>crate</i>.
 	</p>

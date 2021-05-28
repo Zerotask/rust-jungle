@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="6"
+	index={6}
 	title="Polymorphism With Traits"
 	previous="abstraction-with-selective-exposure"
 	next="implemented-methods-on-traits"

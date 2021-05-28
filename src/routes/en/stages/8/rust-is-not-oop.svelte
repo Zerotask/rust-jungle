@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="3"
+	index={3}
 	title="Rust Is Not OOP"
 	previous="what-is-object-oriented-programming"
 	next="encapsulation-with-methods"

@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="13"
+	index={13}
 	title="Formatting Strings"
 	previous="building-strings"
 	next="converting-strings"

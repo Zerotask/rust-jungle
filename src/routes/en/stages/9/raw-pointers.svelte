@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="3"
+	index={3}
 	title="Raw Pointers"
 	previous="references-revisited"
 	next="dereferencing-revisited"

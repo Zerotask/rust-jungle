@@ -6,7 +6,7 @@
 </script>
 
 <Lesson
-	index="11"
+	index={11}
 	title="Handling Unsized Data"
 	previous="trait-objects"
 	next="generic-functions"

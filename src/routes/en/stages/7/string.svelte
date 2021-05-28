@@ -7,7 +7,7 @@
 </script>
 
 <Lesson
-	index="10"
+	index={10}
 	title="String"
 	previous="chars"
 	next="text-as-function-parameters"

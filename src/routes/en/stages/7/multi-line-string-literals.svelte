@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="5"
+	index={5}
 	title="Multi-line String Literals"
 	previous="escaping-characters"
 	next="raw-string-literals"

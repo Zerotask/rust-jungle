@@ -8,7 +8,7 @@
 </script>
 
 <Lesson
-	index="14"
+	index={14}
 	title="Sharing Across Threads"
 	previous="sharing-access"
 	next="combining-smart-pointers"

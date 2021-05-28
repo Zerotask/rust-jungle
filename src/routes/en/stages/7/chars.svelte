@@ -7,7 +7,7 @@
 </script>
 
 <Lesson
-	index="9"
+	index={9}
 	title="Chars"
 	previous="string-slice"
 	next="string"

@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="5"
+	index={5}
 	title="Abstraction With Selective Exposure"
 	previous="encapsulation-with-methods"
 	next="polymorphism-with-traits"

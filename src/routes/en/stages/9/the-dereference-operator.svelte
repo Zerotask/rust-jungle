@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="5"
+	index={5}
 	title="The Dereference Operator *"
 	previous="references-revisited"
 	next="the-dot-operator"

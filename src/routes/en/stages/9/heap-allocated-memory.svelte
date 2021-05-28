@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="10"
+	index={10}
 	title="Heap Allocated Memory"
 	previous="familiar-friends"
 	next="failable-main-revisited"

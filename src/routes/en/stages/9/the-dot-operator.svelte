@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="6"
+	index={6}
 	title="The Dot Operator ."
 	previous="the-dereference-operator"
 	next="smart-pointers"

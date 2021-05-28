@@ -7,7 +7,7 @@
 </script>
 
 <Lesson
-	index="12"
+	index={12}
 	title="Referencing Counting"
 	previous="failable-main-revisited"
 	next="sharing-access"

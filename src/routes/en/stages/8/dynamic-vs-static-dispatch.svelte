@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="9"
+	index={9}
 	title="Dynamic vs Static Dispatch"
 	previous="trait-inheritance"
 	next="trait-objects"

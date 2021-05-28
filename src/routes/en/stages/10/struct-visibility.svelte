@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="12"
+	index={12}
 	title="struct Visibility"
 	previous="exporting"
 	next="prelude"

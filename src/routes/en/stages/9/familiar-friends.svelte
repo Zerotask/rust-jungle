@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="9"
+	index={9}
 	title="Familiar Friends"
 	previous="smart-unsafe-code"
 	next="heap-allocated-memory"

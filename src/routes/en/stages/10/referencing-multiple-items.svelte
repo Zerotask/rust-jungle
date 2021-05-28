@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="6"
+	index={6}
 	title="Referencing Multiple Items"
 	previous="referencing-other-modules-and-crates"
 	next="creating-modules"

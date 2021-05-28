@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="7"
+	index={7}
 	title="Implemented Methods On Traits"
 	previous="polymorphism-with-traits"
 	next="trait-inheritance"

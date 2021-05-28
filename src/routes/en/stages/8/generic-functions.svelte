@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="12"
+	index={12}
 	title="Generic Functions"
 	previous="handling-unsized-data"
 	next="generic-functions-shorthand"

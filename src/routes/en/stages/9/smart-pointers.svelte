@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="7"
+	index={7}
 	title="Smart Pointers"
 	previous="the-dot-operator"
 	next="smart-unsafe-code"
