@@ -69,6 +69,11 @@
 				>the official Discord server</ExternalLink
 			> to connect with other Rustaceans. This is also a place to ask for further help.
 		</p>
+		<p>
+			You can also <ExternalLink href="https://discord.com/users/209292814599716865"
+				>contact me directly on Discord</ExternalLink
+			>.
+		</p>
 	</section>
 
 	<section class="column col-md-12 col-6">
