@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="8"
+	index={8}
 	title="Ugly Option / Result Handling"
 	previous="error-handling"
 	next="vectors"

@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="4"
+	index={4}
 	title="Dropping Is Hierarchical"
 	previous="scope-based-resource-management"
 	next="moving-ownership"

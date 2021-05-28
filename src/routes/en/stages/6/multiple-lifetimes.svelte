@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="13"
+	index={13}
 	title="Multiple Lifetimes"
 	previous="explicit-lifetimes"
 	next="static-lifetimes"

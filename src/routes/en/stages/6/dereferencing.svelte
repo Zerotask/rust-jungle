@@ -6,7 +6,7 @@
 </script>
 
 <Lesson
-	index="9"
+	index={9}
 	title="Dereferencing"
 	previous="borrowing-mutable-ownership-with-references"
 	next="passing-around-borrowed-data"

@@ -7,7 +7,7 @@
 </script>
 
 <Lesson
-	index="8"
+	index={8}
 	title="Returning Values From Block Expressions"
 	previous="match"
 	next="summary"

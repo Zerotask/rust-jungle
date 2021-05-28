@@ -7,7 +7,7 @@
 </script>
 
 <Lesson
-	index="9"
+	index={9}
 	title="Vectors"
 	previous="ugly-option-result-handling"
 	next="summary"

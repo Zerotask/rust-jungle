@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="3"
+	index={3}
 	title="Calling Methods"
 	previous="structures"
 	next="memory"

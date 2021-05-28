@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="9"
+	index={9}
 	title="Enums With Data"
 	previous="enums"
 	next="summary"

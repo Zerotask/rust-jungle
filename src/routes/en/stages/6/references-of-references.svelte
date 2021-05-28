@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="11"
+	index={11}
 	title="References Of References"
 	previous="passing-around-borrowed-data"
 	next="explicit-lifetimes"

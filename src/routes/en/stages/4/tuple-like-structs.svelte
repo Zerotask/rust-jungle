@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="6"
+	index={6}
 	title="Tuple-like Structs"
 	previous="creating-data-in-memory"
 	next="unit-like-structs"

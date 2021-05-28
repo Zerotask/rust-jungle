@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="7"
+	index={7}
 	title="Error Handling"
 	previous="failable-main"
 	next="ugly-option-result-handling"

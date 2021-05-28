@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="5"
+	index={5}
 	title="Moving Ownership"
 	previous="dropping-is-hierarchical"
 	next="returning-ownership"

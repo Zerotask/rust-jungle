@@ -7,7 +7,7 @@
 </script>
 
 <Lesson
-	index="2"
+	index={2}
 	title="Structures"
 	previous="./"
 	next="calling-methods"

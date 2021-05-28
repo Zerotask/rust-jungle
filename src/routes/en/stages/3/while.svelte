@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="5"
+	index={5}
 	title="while"
 	previous="returning-values-from-loop"
 	next="for"

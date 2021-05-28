@@ -7,7 +7,7 @@
 </script>
 
 <Lesson
-	index="4"
+	index={4}
 	title="Option"
 	previous="representing-nothing"
 	next="result"

@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="15"
+	index={15}
 	title="Lifetimes In Data Types"
 	previous="static-lifetimes"
 	next="summary"

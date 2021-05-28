@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="4"
+	index={4}
 	title="Returning Values From Loop"
 	previous="loop"
 	next="while"

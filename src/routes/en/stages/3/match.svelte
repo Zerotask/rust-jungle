@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="7"
+	index={7}
 	title="match"
 	previous="for"
 	next="returning-values-from-block-expressions"

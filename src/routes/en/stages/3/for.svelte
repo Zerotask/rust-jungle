@@ -7,7 +7,7 @@
 </script>
 
 <Lesson
-	index="6"
+	index={6}
 	title="for"
 	previous="while"
 	next="match"

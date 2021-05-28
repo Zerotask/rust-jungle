@@ -10,8 +10,8 @@
 	import lastLessonStore from '$stores/lastLesson';
 	import DirectoryStore from '$stores/directory';
 
-	export let index: number;
-	export let title: string;
+	export let index = 1;
+	export let title = 'Introduction';
 	export let previous: string | null = null;
 	export let next: string | null = null;
 	export let src: string | null = null;

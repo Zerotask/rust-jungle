@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="7"
+	index={7}
 	title="Unit-like Structs"
 	previous="tuple-like-structs"
 	next="enums"

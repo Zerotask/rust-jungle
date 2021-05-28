@@ -7,7 +7,7 @@
 </script>
 
 <Lesson
-	index="8"
+	index={8}
 	title="Enums"
 	previous="unit-like-structs"
 	next="enums-with-data"

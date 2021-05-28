@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="3"
+	index={3}
 	title="loop"
 	previous="if-else"
 	next="returning-values-from-loop"

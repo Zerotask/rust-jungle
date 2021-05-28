@@ -2,7 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson index="4" title="Memory" previous="calling-methods" next="creating-data-in-memory">
+<Lesson index={4} title="Memory" previous="calling-methods" next="creating-data-in-memory">
 	<p>Rust programs have 3 memory regions where data is stored:</p>
 	<ul>
 		<li>

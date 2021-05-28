@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="6"
+	index={6}
 	title="Failable Main"
 	previous="result"
 	next="error-handling"

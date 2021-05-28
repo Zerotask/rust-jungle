@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="3"
+	index={3}
 	title="Representing Nothing"
 	previous="what-are-generic-types"
 	next="option"

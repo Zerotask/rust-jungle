@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="2"
+	index={2}
 	title="Ownership"
 	previous="./"
 	next="scope-based-resource-management"

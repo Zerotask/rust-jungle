@@ -4,7 +4,7 @@
 </script>
 
 <Lesson
-	index="3"
+	index={3}
 	title="Scope-based Resource Management"
 	previous="ownership"
 	next="dropping-is-hierarchical"

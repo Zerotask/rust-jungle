@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="10"
+	index={10}
 	title="Passing Around Borrowed Data"
 	previous="dereferencing"
 	next="references-of-references"

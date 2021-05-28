@@ -7,7 +7,7 @@
 </script>
 
 <Lesson
-	index="14"
+	index={14}
 	title="Static Lifetimes"
 	previous="multiple-lifetimes"
 	next="lifetimes-in-data-types"

@@ -7,7 +7,7 @@
 </script>
 
 <Lesson
-	index="12"
+	index={12}
 	title="Explicit Lifetimes"
 	previous="references-of-references"
 	next="multiple-lifetimes"

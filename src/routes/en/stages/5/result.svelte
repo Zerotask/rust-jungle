@@ -7,7 +7,7 @@
 </script>
 
 <Lesson
-	index="5"
+	index={5}
 	title="Result"
 	previous="option"
 	next="failable-main"

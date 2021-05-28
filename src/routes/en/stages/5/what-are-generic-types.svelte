@@ -8,7 +8,7 @@
 </script>
 
 <Lesson
-	index="2"
+	index={2}
 	title="What Are Generic Types?"
 	previous="./"
 	next="representing-nothing"

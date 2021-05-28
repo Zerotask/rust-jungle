@@ -3,7 +3,7 @@
 </script>
 
 <Lesson
-	index="6"
+	index={6}
 	title="Returning Ownership"
 	previous="moving-ownership"
 	next="borrowing-ownership-with-references"
