@@ -1,7 +1,7 @@
 import type { RequestHandler } from '@sveltejs/kit';
 import fg from 'fast-glob';
 import fs from 'fs';
-import htmlParser from 'node-html-parser';
+import { parse } from 'node-html-parser';
 
 export interface LessonData {
 	url: string;
@@ -27,7 +27,7 @@ export async function get(): Promise<RequestHandler> {
 	// const data: LessonData[] = {};
 	pages.forEach((page) => {
 		const fileContent = fs.readFileSync(page, 'utf8');
-		const root = htmlParser.parse(fileContent);
+		const root = parse(fileContent);
 		const lessonElement = root.querySelector('lesson');
 		// console.log(lessonElement);
 		if (!lessonElement) {

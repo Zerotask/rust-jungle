@@ -122,8 +122,8 @@
 
 <svelte:body on:keyup|once={onKeyboardNavigation} />
 
-<div class="columns">
-	<section class="column col-md-12 col-6">
+<div class="pure-g">
+	<section class="pure-u-1 pure-u-md-1-2">
 		<h1>{fullTitle}</h1>
 
 		<slot />
@@ -210,7 +210,7 @@
 		</div>
 	</section>
 
-	<section class="column col-md-12 col-6">
+	<section class="pure-u-1 pure-u-md-1-2">
 		{#if isSummary}
 			<FerrisHappy />
 		{:else if src}
