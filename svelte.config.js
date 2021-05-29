@@ -27,7 +27,8 @@ const config = {
 			resolve: {
 				alias: {
 					$components: path.resolve('./src/components'),
-					$stores: path.resolve('./src/stores')
+					$stores: path.resolve('./src/stores'),
+					$routes: path.resolve('./src/routes')
 				}
 			},
 			plugins: [imagetools()],

@@ -7,17 +7,29 @@
 	import FerrisHappy from '$components/ferris/happy.svelte';
 	import FurtherInformation from '$components/further-information.svelte';
 	import ExternalLink from '$components/external-link.svelte';
+	import InternalLink from '$components/internal-link.svelte';
 	import lastLessonStore from '$stores/lastLesson';
-	import DirectoryStore from '$stores/directory';
+	import LessonsStore from '$stores/lessons';
+	import type { LessonData } from '$routes/lessons.json';
 
 	export let index = 1;
 	export let title = 'Introduction';
 	export let previous: string | null = null;
 	export let next: string | null = null;
 	export let src: string | null = null;
-	export let links: string[] = [];
+	export let links: string[] | string = [];
+	export let tags: string[] | string = [];
 	let isIntroduction = false;
 	let isSummary = false;
+
+	// for compatibility. the lessons endpoint needs a string, not an array.
+	if (!Array.isArray(links)) {
+		links = links.split(' ');
+	}
+
+	if (!Array.isArray(tags)) {
+		tags = tags.split(' ');
+	}
 
 	// TODO: set it automatically.
 	const lastStage = 10;
@@ -30,7 +42,7 @@
 	if (!isSummary) {
 		isIntroduction = !isNaN(parseInt(lessonName));
 	}
-	let lessonsPerStage: Array<number> = [];
+	let lessonsPerStage: Array<LessonData> = [];
 
 	// Set current stage
 	let currentStage: number = parseInt(pathSplit.pop());
@@ -64,10 +76,8 @@
 	$: urlEmail = `mailto:?subject=${shareTitle}&body=${url}`;
 
 	onMount(() => {
-		const lang = 'en'; // TODO: read URl to detect language.
-		const startsWith = `src/routes/${lang}/stages/${currentStage}/`;
-		lessonsPerStage = Array.from($DirectoryStore).filter((value: string) =>
-			value.startsWith(`${startsWith}`)
+		lessonsPerStage = $LessonsStore.pages.filter(
+			(lesson: LessonData) => lesson.stage === currentStage
 		);
 
 		// Remeber the current lesson, to enable a "continue" (testing)
@@ -117,6 +127,15 @@
 		<h1>{fullTitle}</h1>
 
 		<slot />
+
+		{#if tags.length > 0}
+			<div id="tags">
+				Tags:
+				{#each tags as tag}
+					<span><InternalLink path="/en/tags/{tag}">#{tag}</InternalLink></span>
+				{/each}
+			</div>
+		{/if}
 
 		{#if links.length > 0}
 			<FurtherInformation {links} />
@@ -284,6 +303,10 @@
 	.socialMedaShare {
 		margin-top: 25px;
 		margin-bottom: 20px;
+	}
+
+	#tags {
+		margin-top: 15px;
 	}
 
 	@media screen and (max-width: 840px) {

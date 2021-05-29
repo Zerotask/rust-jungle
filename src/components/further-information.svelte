@@ -15,7 +15,7 @@
 <style>
 	p {
 		margin-bottom: 5px;
-		margin-top: 25px;
+		margin-top: 15px;
 		font-size: 18px;
 	}
 

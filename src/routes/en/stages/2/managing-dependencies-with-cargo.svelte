@@ -8,6 +8,7 @@
 	title="Managing Dependencies With Cargo"
 	previous="cargo"
 	next="cargo-subcommands"
+	tags="cargo"
 >
 	<p>
 		At first, you have to create a <i>workspace</i> (project) with either

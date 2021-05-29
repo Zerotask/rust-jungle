@@ -25,7 +25,7 @@ export async function get() {
 	return {
 		status: 200,
 		headers: {
-			'Cache-Control': 'max-age:0, s-max-age=600',
+			'Cache-Control': 'public, max-age=3600',
 			'Content-Type': 'application/xml'
 		},
 		body: xml
