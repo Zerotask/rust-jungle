@@ -27,7 +27,8 @@ export async function get(): Promise<RequestHandler> {
 		status: 200,
 		headers: {
 			'Cache-Control': 'public, max-age=3600',
-			'Content-Type': 'application/xml'
+			'Content-Type': 'application/xml',
+			'Access-Control-Allow-Origin': '*'
 		},
 		body: xml
 	};

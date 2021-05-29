@@ -109,7 +109,8 @@ export async function get(): Promise<RequestHandler> {
 		status: 200,
 		headers: {
 			'Cache-Control': 'public, max-age=3600',
-			'Content-Type': 'application/json'
+			'Content-Type': 'application/json',
+			'Access-Control-Allow-Origin': '*'
 		},
 		body: {
 			total: data.size,
