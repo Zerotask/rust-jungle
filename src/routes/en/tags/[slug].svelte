@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import LessonsStore from '$stores/lessons';
-	import FerrisGesture from '$components/ferris/gesture.svelte';
 	import type { LessonData } from '$routes/lessons.json';
 	import { onMount } from 'svelte';
 

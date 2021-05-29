@@ -1,12 +1,13 @@
 import fg from 'fast-glob';
 import pkg from '../../package.json';
 import { create } from 'xmlbuilder2';
+import type { RequestHandler } from '@sveltejs/kit';
 
 const getUrl = (page) => {
 	return page.replace('src/routes', pkg.url).replace('.svelte', '').replace('index', '');
 };
 
-export async function get() {
+export async function get(): Promise<RequestHandler> {
 	const sitemap = create({ version: '1.0' }).ele('urlset', {
 		xmlns: 'http://www.sitemaps.org/schemas/sitemap/0.9'
 	});
