@@ -8,7 +8,7 @@ const { imagetools } = viteImagetoolsPkg;
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// @see https://github.com/sveltejs/svelte-preprocess
-	preprocess: preprocess({ typescript: true }),
+	preprocess: preprocess({ postcss: true, typescript: true }),
 
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html

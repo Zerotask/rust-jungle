@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import ExternalLink from '$components/external-link.svelte';
-	import '../shared.css';
+	import '../global.postcss';
 	import Swal from 'sweetalert2';
 	import 'sweetalert2/dist/sweetalert2.css';
 	import lastLessonStore from '$stores/lastLesson';
@@ -102,7 +102,7 @@
 	<slot />
 </main>
 
-<style>
+<style lang="postcss">
 	header {
 		display: flex;
 		justify-content: space-between;

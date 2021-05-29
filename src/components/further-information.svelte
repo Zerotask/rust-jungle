@@ -12,7 +12,7 @@
 	</ul>
 {/if}
 
-<style>
+<style lang="postcss">
 	p {
 		margin-bottom: 5px;
 		margin-top: 15px;

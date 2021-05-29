@@ -52,7 +52,7 @@
 	<p>Loading</p>
 {/if}
 
-<style>
+<style lang="postcss">
 	h2:not(:first-of-type) {
 		border-top: 1px solid;
 		padding-top: 15px;

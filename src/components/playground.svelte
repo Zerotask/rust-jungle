@@ -12,7 +12,7 @@
 	/>
 </code>
 
-<style>
+<style lang="postcss">
 	code {
 		background: none;
 	}

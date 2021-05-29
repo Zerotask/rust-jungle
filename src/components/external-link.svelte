@@ -18,7 +18,7 @@
 	<span class="error">ERROR: invalid url</span>
 {/if}
 
-<style>
+<style lang="postcss">
 	.error {
 		color: #ff0000;
 		font-weight: bold;

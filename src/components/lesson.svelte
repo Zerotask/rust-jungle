@@ -253,7 +253,7 @@
 	{/if}
 </div>
 
-<style>
+<style lang="postcss">
 	h1 {
 		margin-top: 0;
 		margin-bottom: 8px;
