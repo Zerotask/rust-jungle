@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Lesson from '$components/lesson.svelte';
-	const links: string[] = ['https://doc.rust-lang.org/book/ch03-03-how-functions-work.html'];
 </script>
 
 <Lesson
@@ -9,7 +8,8 @@
 	previous="arrays"
 	next="multiple-return-values"
 	src="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=fn%20add(x%3A%20i32%2C%20y%3A%20i32)%20-%3E%20i32%20%7B%0A%20%20%20%20return%20x%20%2B%20y%3B%0A%7D%0A%0Afn%20subtract(x%3A%20i32%2C%20y%3A%20i32)%20-%3E%20i32%20%7B%0A%20%20%20%20x%20-%20y%0A%7D%0A%0Afn%20main()%20%7B%0A%20%20%20%20println!(%2242%20%2B%2013%20%3D%20%7B%7D%22%2C%20add(42%2C%2013))%3B%0A%20%20%20%20println!(%2242%20-%2013%20%3D%20%7B%7D%22%2C%20subtract(42%2C%2013))%0A%7D%0A"
-	{links}
+	links="https://doc.rust-lang.org/book/ch03-03-how-functions-work.html"
+	tags="functions"
 >
 	<p>A function has zero or more parameters.</p>
 

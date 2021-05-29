@@ -8,6 +8,7 @@
 	title="Cargo Subcommands"
 	previous="managing-dependencies-with-cargo"
 	next="setup-visual-studio-code"
+	tags="cargo"
 >
 	<p>
 		<i>cargo</i> subcommands are an option to add additional commands which are developed by the community

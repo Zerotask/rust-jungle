@@ -8,6 +8,7 @@
 	previous="setup-visual-studio-code"
 	next="reading-command-line-arguments"
 	src="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=fn%20main()%20%7B%0A%20%20%20%20println!(%22Hello%2C%20world!%22)%3B%0A%7D%0A"
+	tags="program"
 >
 	<p>
 		You can create a new file <i>main.rs</i> and put the code from the <i>Rust Playground</i> in it<br

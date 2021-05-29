@@ -1,12 +1,13 @@
 import fg from 'fast-glob';
 import pkg from '../../package.json';
 import { create } from 'xmlbuilder2';
+import type { RequestHandler } from '@sveltejs/kit';
 
 const getUrl = (page) => {
 	return page.replace('src/routes', pkg.url).replace('.svelte', '').replace('index', '');
 };
 
-export async function get() {
+export async function get(): Promise<RequestHandler> {
 	const sitemap = create({ version: '1.0' }).ele('urlset', {
 		xmlns: 'http://www.sitemaps.org/schemas/sitemap/0.9'
 	});
@@ -25,7 +26,7 @@ export async function get() {
 	return {
 		status: 200,
 		headers: {
-			'Cache-Control': 'max-age:0, s-max-age=600',
+			'Cache-Control': 'public, max-age=3600',
 			'Content-Type': 'application/xml'
 		},
 		body: xml
