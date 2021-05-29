@@ -1,8 +1,7 @@
 import type { RequestHandler } from '@sveltejs/kit';
 import fg from 'fast-glob';
 import fs from 'fs';
-import pkg from 'node-html-parser';
-const { parse } = pkg;
+import { parse } from 'node-html-parser';
 
 export interface LessonData {
 	url: string;
@@ -23,6 +22,8 @@ export async function get(): Promise<RequestHandler> {
 	// pages = pages.map(value => value.replace('src/routes', import.meta.env.VITE_APP_URL).replace('.svelte', ''));
 
 	const data: Set<LessonData> = new Set();
+	const stages: Set<number> = new Set();
+
 	// const data: LessonData[] = {};
 	pages.forEach((page) => {
 		const fileContent = fs.readFileSync(page, 'utf8');
@@ -34,7 +35,10 @@ export async function get(): Promise<RequestHandler> {
 		}
 
 		// map key
-		const url = page.replace('src/routes', import.meta.env.VITE_APP_URL).replace('.svelte', '');
+		const url = page
+			.replace('src/routes', import.meta.env.VITE_APP_URL)
+			.replace('.svelte', '')
+			.replace('index', '');
 
 		const pathParts = page.split('/');
 
@@ -43,6 +47,7 @@ export async function get(): Promise<RequestHandler> {
 
 		// stage
 		const stage = parseInt(pathParts[4]);
+		stages.add(stage);
 
 		// index
 		const indexAttribute = lessonElement.getAttribute('index');
@@ -59,6 +64,8 @@ export async function get(): Promise<RequestHandler> {
 		let title = 'Introduction';
 		if (titleAttribute) {
 			title = titleAttribute;
+		} else if (pathParts.pop() === 'summary.svelte') {
+			title = 'Summary';
 		}
 
 		// tags
@@ -96,6 +103,8 @@ export async function get(): Promise<RequestHandler> {
 		});
 	});
 
+	const sortedStages = [...stages].sort((a: number, b: number) => a - b);
+
 	return {
 		status: 200,
 		headers: {
@@ -104,7 +113,8 @@ export async function get(): Promise<RequestHandler> {
 		},
 		body: {
 			total: data.size,
-			pages: Array.from(data)
+			stages: sortedStages,
+			pages: [...data]
 		}
 	};
 }

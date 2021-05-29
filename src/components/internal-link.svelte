@@ -3,12 +3,21 @@
 	let title = `Go to: ${href}`;
 </script>
 
-<a {href} {title} aria-label={title}>
-	<slot>{href}</slot>
-</a>
+{#if href}
+	<a {href} {title} aria-label={title}>
+		<slot>{href}</slot>
+	</a>
+{:else}
+	<span class="error">ERROR: invalid url</span>
+{/if}
 
 <style>
 	a {
 		margin-right: 8px;
+	}
+
+	.error {
+		color: #ff0000;
+		font-weight: bold;
 	}
 </style>

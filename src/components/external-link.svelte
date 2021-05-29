@@ -4,6 +4,23 @@
 	export let target = '_blank';
 </script>
 
-<a {href} {rel} {target} title="Open external link: {href}" aria-label="Open external link: {href}">
-	<slot>{href}</slot>
-</a>
+{#if href}
+	<a
+		{href}
+		{rel}
+		{target}
+		title="Open external link: {href}"
+		aria-label="Open external link: {href}"
+	>
+		<slot>{href}</slot>
+	</a>
+{:else}
+	<span class="error">ERROR: invalid url</span>
+{/if}
+
+<style>
+	.error {
+		color: #ff0000;
+		font-weight: bold;
+	}
+</style>

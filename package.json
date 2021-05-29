@@ -15,7 +15,7 @@
 	},
 	"type": "module",
 	"scripts": {
-		"dev": "svelte-kit dev --open --port 15007",
+		"dev": "svelte-kit dev --port 15007",
 		"build": "svelte-kit build",
 		"preview": "svelte-kit preview --port 15007",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
