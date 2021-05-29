@@ -1,6 +1,8 @@
+import type { RequestHandler } from '@sveltejs/kit';
 import fg from 'fast-glob';
 import fs from 'fs';
-import { parse } from 'node-html-parser';
+import pkg from 'node-html-parser';
+const { parse } = pkg;
 
 export interface LessonData {
 	url: string;
@@ -16,7 +18,7 @@ export interface LessonData {
 	content?: string;
 }
 
-export async function get() {
+export async function get(): Promise<RequestHandler> {
 	const pages = await fg('src/routes/**/[^__]*.svelte');
 	// pages = pages.map(value => value.replace('src/routes', import.meta.env.VITE_APP_URL).replace('.svelte', ''));
 

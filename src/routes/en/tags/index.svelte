@@ -28,7 +28,7 @@
 		<h1>Available tags</h1>
 		{#each Array.from(availableTags) as tag}
 			<p>
-				<InternalLink path="/en/tags/{tag}">#{tag}</InternalLink>
+				<InternalLink href="/en/tags/{tag}">#{tag}</InternalLink>
 			</p>
 		{:else}
 			<p>Loading...</p>

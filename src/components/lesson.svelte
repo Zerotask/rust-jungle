@@ -132,7 +132,7 @@
 			<div id="tags">
 				Tags:
 				{#each tags as tag}
-					<span><InternalLink path="/en/tags/{tag}">#{tag}</InternalLink></span>
+					<span><InternalLink href="/en/tags/{tag}">#{tag}</InternalLink></span>
 				{/each}
 			</div>
 		{/if}
