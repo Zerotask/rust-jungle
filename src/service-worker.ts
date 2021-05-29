@@ -30,6 +30,7 @@ registerRoute(
 	({ request }) =>
 		request.destination === 'style' ||
 		request.destination === 'script' ||
+		request.destination === 'font' ||
 		request.destination === 'worker',
 	// Use a Stale While Revalidate caching strategy
 	new StaleWhileRevalidate({

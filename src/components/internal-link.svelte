@@ -15,9 +15,4 @@
 	a {
 		margin-right: 8px;
 	}
-
-	.error {
-		color: #ff0000;
-		font-weight: bold;
-	}
 </style>

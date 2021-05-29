@@ -1,7 +1,7 @@
 import type { RequestHandler } from '@sveltejs/kit';
 import fg from 'fast-glob';
 import fs from 'fs';
-import { parse } from 'node-html-parser';
+import { parse } from 'node-html-better-parser';
 
 export interface LessonData {
 	url: string;
@@ -28,7 +28,7 @@ export async function get(): Promise<RequestHandler> {
 	pages.forEach((page) => {
 		const fileContent = fs.readFileSync(page, 'utf8');
 		const root = parse(fileContent);
-		const lessonElement = root.querySelector('lesson');
+		const lessonElement = root.querySelector('Lesson');
 		// console.log(lessonElement);
 		if (!lessonElement) {
 			return;
@@ -50,7 +50,7 @@ export async function get(): Promise<RequestHandler> {
 		stages.add(stage);
 
 		// index
-		const indexAttribute = lessonElement.getAttribute('index');
+		const indexAttribute = lessonElement.attributes.index;
 		let index = 1;
 		if (indexAttribute) {
 			index = parseInt(indexAttribute);
@@ -60,7 +60,7 @@ export async function get(): Promise<RequestHandler> {
 		}
 
 		// title
-		const titleAttribute = lessonElement.getAttribute('title');
+		const titleAttribute = lessonElement.attributes.title;
 		let title = 'Introduction';
 		if (titleAttribute) {
 			title = titleAttribute;
@@ -69,19 +69,19 @@ export async function get(): Promise<RequestHandler> {
 		}
 
 		// tags
-		const tags = lessonElement.getAttribute('tags')?.split(' ');
+		const tags = lessonElement.attributes.tags?.split(' ');
 
 		// previous
-		const previous = lessonElement.getAttribute('previous');
+		const previous = lessonElement.attributes.previous;
 
 		// next
-		const next = lessonElement.getAttribute('next');
+		const next = lessonElement.attributes.next;
 
 		// playground
-		const playground = lessonElement.getAttribute('src');
+		const playground = lessonElement.attributes.src;
 
 		// furtherInformation
-		const furtherInformation = lessonElement.getAttribute('links')?.split(' ');
+		const furtherInformation = lessonElement.attributes.links?.split(' ');
 
 		// content
 		const content = lessonElement.structuredText.trim();

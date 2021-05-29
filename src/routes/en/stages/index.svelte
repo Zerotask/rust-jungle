@@ -357,11 +357,6 @@
 		border-top: 1px solid;
 		padding-top: 15px;
 	}
-
-	section {
-		margin-left: 30px;
-	}
-
 	a:hover {
 		text-decoration: none;
 		color: var(--primary-color);

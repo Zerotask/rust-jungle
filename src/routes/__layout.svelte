@@ -161,6 +161,10 @@
 		text-decoration: underline;
 	}
 
+	ul li {
+		list-style: none;
+	}
+
 	a:hover {
 		color: #000;
 	}

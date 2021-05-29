@@ -24,10 +24,11 @@
 		"deploy": "vercel"
 	},
 	"dependencies": {
+		"@fontsource/tauri": "^4.4.0",
 		"@lukeed/uuid": "^2.0.0",
 		"@sveltejs/kit": "next",
 		"cookie": "^0.4.1",
-		"node-html-parser": "^3.3.4",
+		"node-html-better-parser": "^1.1.26",
 		"svelte": "^3.34.0",
 		"sweetalert2": "^11.0.7",
 		"workbox-cacheable-response": "^6.1.5",
