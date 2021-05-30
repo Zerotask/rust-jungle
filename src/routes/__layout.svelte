@@ -44,7 +44,7 @@
 </script>
 
 <header>
-	<div class="logo hide-md">
+	<div class="logo hide show-md">
 		<a href="/" title="Go to the homepage" aria-label="Go to the homepage">
 			<img src="/images/rust-jungle-logo.png" alt="Rust Jungle Logo" width="200" height="66" />
 		</a>
@@ -82,7 +82,7 @@
 	</nav>
 
 	<!-- TODO: add a language selector -->
-	<div class="hide-md">
+	<div class="hide show-md">
 		<span class="language-selection">
 			<a href="/en">EN</a> | <a href="/de">DE</a>
 		</span>
@@ -98,7 +98,7 @@
 	</div>
 </header>
 
-<main class="container">
+<main>
 	<slot />
 </main>
 

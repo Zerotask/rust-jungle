@@ -14,16 +14,22 @@
 
 	export let index = 1;
 	export let title = 'Introduction';
+	export let description: string | null = null;
 	export let previous: string | null = null;
 	export let next: string | null = null;
 	export let src: string | null = null;
-	export let links: string[] | string = [];
+	export let links: string | string[] | null = null;
 	export let tags: string[] | string = [];
+
 	let isIntroduction = false;
 	let isSummary = false;
+	let lastStage: number;
+	let fullTitle: string;
+	let shareTitle: string;
+	let url: string;
 
 	// for compatibility. the lessons endpoint needs a string, not an array.
-	if (!Array.isArray(links)) {
+	if (typeof links === 'string') {
 		links = links.split(' ');
 	}
 
@@ -31,43 +37,20 @@
 		tags = tags.split(' ');
 	}
 
-	// TODO: set it automatically.
-	const lastStage = 10;
+	const [language, currentPage, currentStage, currentLesson] = $page.path
+		.split('/')
+		.filter(Boolean);
 
-	const pathSplit: string[] = $page.path.split('/');
-
-	// Read the lesson name to know if it's an introduction or a summary.
-	const lessonName: string = pathSplit[pathSplit.length - 1];
-	isSummary = lessonName === 'summary';
-	if (!isSummary) {
-		isIntroduction = !isNaN(parseInt(lessonName));
+	// since the 'index' is dropped.
+	if (!currentLesson) {
+		isIntroduction = true;
 	}
+
+	const stage = parseInt(currentStage);
+	isSummary = currentLesson === 'summary';
+
 	let lessonsPerStage: Array<LessonData> = [];
 
-	// Set current stage
-	let currentStage: number = parseInt(pathSplit.pop());
-	if (isNaN(currentStage)) {
-		currentStage = parseInt(pathSplit.pop());
-	}
-
-	// Automatically extend navigtion destination for introduction and summary
-	if (isIntroduction) {
-		index = 1;
-		title = 'Introduction';
-		next = `${currentStage}/${next}`;
-
-		if (currentStage > 1) {
-			previous = `${currentStage - 1}/summary`;
-		}
-	} else if (isSummary) {
-		title = 'Summary';
-		if (currentStage < lastStage) {
-			next = `../${currentStage + 1}`;
-		}
-	}
-	const fullTitle = `Stage ${currentStage}.${index}: ${title}`;
-	const shareTitle = encodeURIComponent(`Rust Jungle - ${fullTitle}`);
-	const url = encodeURI(`https://${$page.host}${$page.path}`);
 	$: urlFacebook = `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${shareTitle}`;
 	$: urlTwitter = `https://twitter.com/intent/tweet?source=${url}&text=${shareTitle}`;
 	$: urlReddit = `http://www.reddit.com/submit?url=${url}&title=${shareTitle}`;
@@ -76,9 +59,29 @@
 	$: urlEmail = `mailto:?subject=${shareTitle}&body=${url}`;
 
 	onMount(() => {
-		lessonsPerStage = $LessonsStore.pages.filter(
-			(lesson: LessonData) => lesson.stage === currentStage
-		);
+		lastStage = $LessonsStore.stages[$LessonsStore.stages.length - 1];
+
+		// Automatically extend navigtion destination for introduction and summary
+		if (isIntroduction) {
+			index = 1;
+			title = 'Introduction';
+			next = `${currentStage}/${next}`;
+
+			if (stage > 1) {
+				previous = `${stage - 1}/summary`;
+			}
+		} else if (isSummary) {
+			title = 'Summary';
+			if (stage < lastStage) {
+				next = `../${currentStage + 1}`;
+			}
+		}
+
+		fullTitle = `Stage ${currentStage}.${index}: ${title}`;
+		shareTitle = encodeURIComponent(`Rust Jungle - ${fullTitle}`);
+		url = encodeURI(`https://${$page.host}${$page.path}`);
+
+		lessonsPerStage = $LessonsStore.pages.filter((lesson: LessonData) => lesson.stage === stage);
 
 		// Remeber the current lesson, to enable a "continue" (testing)
 		lastLessonStore.set({
@@ -118,6 +121,16 @@
 	<meta property="og:title" content="Rust Jungle - {fullTitle}" />
 	<meta name="twitter:title" content="Rust Jungle - {fullTitle}" />
 	<meta property="og:url" content={url} />
+
+	{#if description}
+		<meta name="description" content={description} />
+		<meta property="og:description" content={description} />
+		<meta name="twitter:description" content={description} />
+	{/if}
+
+	{#if tags && tags.length > 0}
+		<meta name="keywords" content="Rust, Programming, Language, Learning, {tags.join(', ')}" />
+	{/if}
 </svelte:head>
 
 <svelte:body on:keyup|once={onKeyboardNavigation} />
@@ -137,7 +150,7 @@
 			</div>
 		{/if}
 
-		{#if links.length > 0}
+		{#if links && links.length > 0}
 			<FurtherInformation {links} />
 		{/if}
 
@@ -224,7 +237,6 @@
 <div class="lesson-nav">
 	{#if previous}
 		<a
-			sveltekit:prefetch
 			class="previous"
 			href={previous}
 			rel="prev"
@@ -241,7 +253,6 @@
 
 	{#if next}
 		<a
-			sveltekit:prefetch
 			class="next"
 			href={next}
 			rel="prev"
@@ -257,7 +268,6 @@
 	h1 {
 		margin-top: 0;
 		margin-bottom: 8px;
-		font-size: 34px;
 	}
 
 	.lesson-nav {
@@ -269,7 +279,7 @@
 		height: 70px;
 		background-color: var(--tertiary-color);
 		border-top: 1px solid var(--primary-color);
-		margin-left: -0.4rem;
+		margin-left: -20px;
 		padding: 10px;
 	}
 

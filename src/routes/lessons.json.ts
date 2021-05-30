@@ -18,27 +18,23 @@ export interface LessonData {
 }
 
 export async function get(): Promise<RequestHandler> {
-	const pages = await fg('src/routes/**/[^__]*.svelte');
-	// pages = pages.map(value => value.replace('src/routes', import.meta.env.VITE_APP_URL).replace('.svelte', ''));
+	const pages = await fg('src/routes/(en|de)/stages/**/[^__]*.svelte');
 
-	const data: Set<LessonData> = new Set();
+	const data: LessonData[] = [];
 	const stages: Set<number> = new Set();
+	const appUrl = import.meta.env.VITE_APP_URL;
 
-	// const data: LessonData[] = {};
 	pages.forEach((page) => {
 		const fileContent = fs.readFileSync(page, 'utf8');
 		const root = parse(fileContent);
 		const lessonElement = root.querySelector('Lesson');
 		// console.log(lessonElement);
 		if (!lessonElement) {
+			console.log({ page });
 			return;
 		}
 
-		// map key
-		const url = page
-			.replace('src/routes', import.meta.env.VITE_APP_URL)
-			.replace('.svelte', '')
-			.replace('index', '');
+		const url = page.replace('src/routes', appUrl).replace('.svelte', '').replace('index', '');
 
 		const pathParts = page.split('/');
 
@@ -86,9 +82,7 @@ export async function get(): Promise<RequestHandler> {
 		// content
 		const content = lessonElement.structuredText.trim();
 
-		// console.log({ lessonElement });
-
-		data.add({
+		data.push({
 			url,
 			language,
 			stage,
@@ -113,9 +107,9 @@ export async function get(): Promise<RequestHandler> {
 			'Access-Control-Allow-Origin': '*'
 		},
 		body: {
-			total: data.size,
+			total: data.length,
 			stages: sortedStages,
-			pages: [...data]
+			pages: data
 		}
 	};
 }

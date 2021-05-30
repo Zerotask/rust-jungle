@@ -1,9 +1,14 @@
 <script lang="ts">
 	import Lesson from '$components/lesson.svelte';
-	const links: string[] = ['https://doc.rust-lang.org/edition-guide/editions/index.html'];
 </script>
 
-<Lesson index={16} title="Rust Editions" previous="cargo-toml-file" next="summary" {links}>
+<Lesson
+	index={16}
+	title="Rust Editions"
+	previous="cargo-toml-file"
+	next="summary"
+	links="https://doc.rust-lang.org/edition-guide/editions/index.html"
+>
 	<p>
 		Rust ships new releases on a six-week cycle and you can easily update to it with <i
 			>rustup update</i
