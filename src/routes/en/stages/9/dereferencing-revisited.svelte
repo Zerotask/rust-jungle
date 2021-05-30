@@ -1,8 +1,5 @@
 <script lang="ts">
 	import Lesson from '$components/lesson.svelte';
-	const links: string[] = [
-		'https://doc.rust-lang.org/stable/rust-by-example/flow_control/match/destructuring/destructure_pointers.html'
-	];
 </script>
 
 <Lesson
@@ -10,7 +7,7 @@
 	title="Dereferencing Revisited"
 	previous="raw-pointers"
 	next="the-dereference-operator"
-	{links}
+	links="https://doc.rust-lang.org/stable/rust-by-example/flow_control/match/destructuring/destructure_pointers.html"
 >
 	<p>
 		The process of accessing / manipulating data that is being referred to by a reference (i.e.

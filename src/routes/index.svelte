@@ -7,8 +7,8 @@
 	<title>Welcome to the Rust Jungle</title>
 </svelte:head>
 
-<div class="columns">
-	<section class="column col-md-12 col-6">
+<div class="pure-g">
+	<section class="pure-u-1 pure-u-md-1-2">
 		<h1>Welcome to Rust Jungle!</h1>
 		<p>Rust Jungle will help you learning the Rust programming language.</p>
 		<p>
@@ -20,7 +20,7 @@
 		</p>
 	</section>
 
-	<section class="column col-md-12 col-6">
+	<section class="pure-u-1 pure-u-md-1-2">
 		<FerrisNormal />
 	</section>
 </div>

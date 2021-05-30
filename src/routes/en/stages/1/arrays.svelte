@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Lesson from '$components/lesson.svelte';
-	const links: string[] = ['https://doc.rust-lang.org/std/primitive.array.html'];
 </script>
 
 <Lesson
@@ -9,7 +8,7 @@
 	previous="constants"
 	next="functions"
 	src="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=fn%20main()%20%7B%0A%20%20%20%20let%20nums%3A%20%5Bi32%3B%203%5D%20%3D%20%5B1%2C%202%2C%203%5D%3B%0A%20%20%20%20println!(%22%7B%3A%3F%7D%22%2C%20nums)%3B%0A%20%20%20%20println!(%22%7B%7D%22%2C%20nums%5B1%5D)%3B%0A%7D%0A"
-	{links}
+	links="https://doc.rust-lang.org/std/primitive.array.html"
 >
 	<p>
 		An array is a <i>fixed length collection</i> of data elements all of the same type.

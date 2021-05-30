@@ -1,10 +1,15 @@
 <script lang="ts">
 	import Lesson from '$components/lesson.svelte';
 	import ExternalLink from '$components/external-link.svelte';
-	const links: string[] = ['https://doc.rust-lang.org/cargo/reference/manifest.html'];
 </script>
 
-<Lesson index={15} title="Cargo.toml File" previous="your-own-prelude" next="rust-editions" {links}>
+<Lesson
+	index={15}
+	title="Cargo.toml File"
+	previous="your-own-prelude"
+	next="rust-editions"
+	links="https://doc.rust-lang.org/cargo/reference/manifest.html"
+>
 	<p>
 		The <i>Cargo.toml</i> file is the central configuration file when you decide to use
 		<i>cargo</i>.<br />

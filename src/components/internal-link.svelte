@@ -4,7 +4,7 @@
 </script>
 
 {#if href}
-	<a {href} {title} aria-label={title}>
+	<a {href} {title} aria-label={title} sveltekit:prefetch>
 		<slot>{href}</slot>
 	</a>
 {:else}
@@ -14,10 +14,5 @@
 <style lang="postcss">
 	a {
 		margin-right: 8px;
-	}
-
-	.error {
-		color: #ff0000;
-		font-weight: bold;
 	}
 </style>

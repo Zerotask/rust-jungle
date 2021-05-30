@@ -30,6 +30,8 @@
 			// Workaround for Svelte's reactivity.
 			lessonsPerStage = lessonsPerStage;
 		});
+
+		console.log({ lessonsPerStage });
 	});
 </script>
 
@@ -53,8 +55,16 @@
 {/if}
 
 <style lang="postcss">
+	h2 {
+		margin-bottom: 10px;
+	}
+
 	h2:not(:first-of-type) {
 		border-top: 1px solid;
 		padding-top: 15px;
+	}
+
+	ul {
+		margin-top: 5px;
 	}
 </style>

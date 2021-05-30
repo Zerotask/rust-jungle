@@ -1,9 +1,5 @@
 <script lang="ts">
 	import Lesson from '$components/lesson.svelte';
-	const links: string[] = [
-		'https://doc.rust-lang.org/book/ch17-02-trait-objects.html',
-		'https://doc.rust-lang.org/reference/types/trait-object.html'
-	];
 </script>
 
 <Lesson
@@ -11,7 +7,7 @@
 	title="Trait Objects"
 	previous="dynamic-vs-static-dispatch"
 	next="handling-unsized-data"
-	{links}
+	links="https://doc.rust-lang.org/book/ch17-02-trait-objects.html https://doc.rust-lang.org/reference/types/trait-object.html"
 >
 	<p>
 		When we pass an instance of an object to a parameter of type <code>&dyn MyTrait</code> we pass what

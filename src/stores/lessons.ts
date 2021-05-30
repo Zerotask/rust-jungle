@@ -1,5 +1,6 @@
 import { readable } from 'svelte/store';
 import type { LessonData } from '$routes/lessons.json';
+import { onMount } from 'svelte';
 
 interface Lessons {
 	total: number;
@@ -13,26 +14,28 @@ const cacheKey = 'lessons';
 const endpoint = 'lessons.json';
 
 export default readable({}, (set) => {
-	const lessons = localStorage.getItem(cacheKey);
-	if (lessons) {
-		const cachedObject = JSON.parse(lessons);
+	onMount(() => {
+		const lessons = localStorage.getItem(cacheKey);
+		if (lessons) {
+			const cachedObject = JSON.parse(lessons);
 
-		// Cache entry is still valid.
-		if (cachedObject.expires > Date.now()) {
-			set(cachedObject.data);
-			return;
+			// Cache entry is still valid.
+			if (cachedObject.expires > Date.now()) {
+				set(cachedObject.data);
+				return;
+			}
 		}
-	}
 
-	// Not cached, fetch it via HTTP and cache it.
-	fetch(`${import.meta.env.VITE_APP_URL}/${endpoint}`)
-		.then((response) => response.json())
-		.then((body: Lessons) => {
-			const cacheObject = {
-				expires: Date.now() + cacheDuration,
-				data: body
-			};
-			localStorage.setItem(cacheKey, JSON.stringify(cacheObject));
-			set(body);
-		});
+		// Not cached, fetch it via HTTP and cache it.
+		fetch(`${import.meta.env.VITE_APP_URL}/${endpoint}`)
+			.then((response) => response.json())
+			.then((body: Lessons) => {
+				const cacheObject = {
+					expires: Date.now() + cacheDuration,
+					data: body
+				};
+				localStorage.setItem(cacheKey, JSON.stringify(cacheObject));
+				set(body);
+			});
+	});
 });

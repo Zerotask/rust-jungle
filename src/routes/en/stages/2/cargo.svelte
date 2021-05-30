@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Lesson from '$components/lesson.svelte';
-	const links: string[] = ['https://doc.rust-lang.org/cargo/commands/index.html'];
 </script>
 
 <Lesson
@@ -8,7 +7,7 @@
 	title="cargo"
 	previous="rustup"
 	next="managing-dependencies-with-cargo"
-	{links}
+	links="https://doc.rust-lang.org/cargo/commands/index.html"
 	tags="cargo"
 >
 	<p>

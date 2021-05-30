@@ -26,6 +26,8 @@
 		"generate": "node ./generator.js"
 	},
 	"dependencies": {
+		"@fontsource/alata": "^4.4.1",
+		"@fontsource/alfa-slab-one": "^4.4.1",
 		"@lukeed/uuid": "^2.0.0",
 		"@sveltejs/kit": "next",
 		"cookie": "^0.4.1",
