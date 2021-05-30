@@ -5,10 +5,10 @@
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 
-	export let placeholder: string = 'Search for lessons';
+	export let placeholder = 'Search for lessons';
 
 	let results: LessonData[] = [];
-	let searchValue: string = '';
+	let searchValue = '';
 
 	onMount(() => {
 		// consider URL query
