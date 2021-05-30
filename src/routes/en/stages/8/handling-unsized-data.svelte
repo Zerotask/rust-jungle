@@ -1,8 +1,5 @@
 <script lang="ts">
 	import Lesson from '$components/lesson.svelte';
-	const links: string[] = [
-		'https://doc.rust-lang.org/nomicon/exotic-sizes.html#dynamically-sized-types-dsts'
-	];
 </script>
 
 <Lesson
@@ -10,7 +7,7 @@
 	title="Handling Unsized Data"
 	previous="trait-objects"
 	next="generic-functions"
-	{links}
+	links="https://doc.rust-lang.org/nomicon/exotic-sizes.html#dynamically-sized-types-dsts"
 >
 	<p>
 		Traits introduce an interesting challenge when we want to store them within another struct.

@@ -1,9 +1,5 @@
 <script lang="ts">
 	import Lesson from '$components/lesson.svelte';
-	const links: string[] = [
-		'https://doc.rust-lang.org/book/ch07-05-separating-modules-into-different-files.html',
-		'https://doc.rust-lang.org/rust-by-example/mod/split.html'
-	];
 </script>
 
 <Lesson
@@ -11,7 +7,7 @@
 	title="Module Hierarchy"
 	previous="referencing-multiple-items"
 	next="inline-modules"
-	{links}
+	links="https://doc.rust-lang.org/book/ch07-05-separating-modules-into-different-files.html https://doc.rust-lang.org/rust-by-example/mod/split.html"
 >
 	<p>
 		A module can depend on another one. In order to establish a relationship between a module and

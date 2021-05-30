@@ -23,10 +23,10 @@
 	});
 </script>
 
-<div class="columns">
-	<section class="column col-md-12 col-6">
+<div class="pure-g">
+	<section class="pure-u-1">
 		<h1>Available tags</h1>
-		{#each Array.from(availableTags) as tag}
+		{#each [...availableTags] as tag}
 			<p>
 				<InternalLink href="/en/tags/{tag}">#{tag}</InternalLink>
 			</p>

@@ -1,11 +1,14 @@
 <script lang="ts">
 	import Lesson from '$components/lesson.svelte';
-	const links: string[] = [
-		'https://doc.rust-lang.org/nightly/edition-guide/rust-2018/rustup-for-managing-rust-versions.html'
-	];
 </script>
 
-<Lesson index={3} title="rustup" previous="installation" next="cargo" {links}>
+<Lesson
+	index={3}
+	title="rustup"
+	previous="installation"
+	next="cargo"
+	links="https://doc.rust-lang.org/nightly/edition-guide/rust-2018/rustup-for-managing-rust-versions.html"
+>
 	<p>
 		<code>rustup</code> is Rust's toolchain manager. To see all available options of this tool, run
 		<code>rustup --help</code>.

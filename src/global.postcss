@@ -1,7 +1,19 @@
+@import '@fontsource/alfa-slab-one';
+@import '@fontsource/alata';
+
 :root {
 	--primary-color: #008000;
 	--secondary-color: #d6ffd6;
 	--tertiary-color: #94d894;
+}
+
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class*='pure-u'] {
+	font-family: 'Alata', Times, 'Times New Roman', serif;
 }
 
 body {
@@ -16,7 +28,17 @@ code {
 	display: inline;
 	background: #444;
 	color: white;
-	padding: 2px 5px;
+	padding: 1px 4px;
+}
+
+h1 {
+	font-family: 'Alfa Slab One', serif;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-size: 22px;
 }
 
 a {
@@ -33,12 +55,10 @@ a:hover {
 	font-weight: bold;
 }
 
-.columns {
-	padding: 10px 20px;
-}
-
 p {
 	margin-bottom: 10px;
+	font-size: 15px;
+	line-height: 16px;
 }
 
 .swal2-confirm {
@@ -47,4 +67,28 @@ p {
 
 .swal2-title {
 	font-size: 32px !important;
+}
+
+main {
+	padding: 10px 20px;
+}
+
+ul li {
+	padding: 5px 0;
+	list-style: circle;
+}
+
+.error {
+	color: #ff0000;
+	font-weight: bold;
+}
+
+.hide {
+	display: none;
+}
+
+@media only screen and (min-width: 767px) {
+	.show-md {
+		display: block !important;
+	}
 }

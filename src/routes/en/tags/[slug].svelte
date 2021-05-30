@@ -13,8 +13,8 @@
 	});
 </script>
 
-<div class="columns">
-	<section class="column col-md-12 col-6">
+<div class="pure-g">
+	<section class="pure-u-1">
 		<h1>All lessons for #{tag}</h1>
 		{#each lessonsForTag as lesson}
 			<p><a href={lesson.url}>Stage {lesson.stage}.{lesson.index}: {lesson.title}</a></p>

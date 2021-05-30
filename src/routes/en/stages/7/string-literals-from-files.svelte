@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Lesson from '$components/lesson.svelte';
-	const links: string[] = ['https://doc.rust-lang.org/std/macro.include_str.html'];
 </script>
 
 <Lesson
@@ -8,7 +7,7 @@
 	title="String Literals From Files"
 	previous="raw-string-literals"
 	next="string-slice"
-	{links}
+	links="https://doc.rust-lang.org/std/macro.include_str.html"
 >
 	<p>
 		If you have some very large text, consider using the macro <code>include_str!</code> to include text

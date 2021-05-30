@@ -7,8 +7,8 @@
 	<title>What is Rust Jungle</title>
 </svelte:head>
 
-<div class="columns">
-	<section class="column col-md-12 col-6">
+<div class="pure-g">
+	<section class="pure-u-1">
 		<h1>About Rust Jungle</h1>
 
 		<p>
