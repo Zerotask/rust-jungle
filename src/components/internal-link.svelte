@@ -4,7 +4,7 @@
 </script>
 
 {#if href}
-	<a {href} {title} aria-label={title}>
+	<a {href} {title} aria-label={title} sveltekit:prefetch>
 		<slot>{href}</slot>
 	</a>
 {:else}

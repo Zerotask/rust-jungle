@@ -56,7 +56,7 @@
 	$: urlPocket = `https://getpocket.com/save?url=${shareTitle}&title=${shareTitle}`;
 	$: urlLinkedin = `http://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${shareTitle}&summary=&source=${url}`;
 	$: urlEmail = `mailto:?subject=${shareTitle}&body=${url}`;
-	$: fullTitle = `Stage ${currentStage}.${index}: ${title}`;
+	$: fullTitle = `Stage ${stage}.${index}: ${title}`;
 
 	onMount(() => {
 		lastStage = $LessonsStore.stages[$LessonsStore.stages.length - 1];
@@ -65,7 +65,7 @@
 		if (isIntroduction) {
 			index = 1;
 			title = 'Introduction';
-			next = `${currentStage}/${next}`;
+			next = `${stage}/${next}`;
 
 			if (stage > 1) {
 				previous = `${stage - 1}/summary`;
@@ -73,7 +73,7 @@
 		} else if (isSummary) {
 			title = 'Summary';
 			if (stage < lastStage) {
-				next = `../${currentStage + 1}`;
+				next = `../${stage + 1}`;
 			}
 		}
 
@@ -84,7 +84,7 @@
 
 		// Remeber the current lesson, to enable a "continue" (testing)
 		lastLessonStore.set({
-			stage: currentStage,
+			stage: stage,
 			index: index,
 			title: fullTitle,
 			url: $page.path,
@@ -236,6 +236,7 @@
 <div class="lesson-nav">
 	{#if previous}
 		<a
+			sveltekit:prefetch
 			class="previous"
 			href={previous}
 			rel="prev"
@@ -252,6 +253,7 @@
 
 	{#if next}
 		<a
+			sveltekit:prefetch
 			class="next"
 			href={next}
 			rel="prev"
