@@ -10,7 +10,6 @@
 	import InternalLink from '$components/internal-link.svelte';
 	import lastLessonStore from '$stores/lastLesson';
 	import LessonsStore from '$stores/lessons';
-	import type { LessonData } from '$routes/lessons.json';
 
 	export let index = 1;
 	export let title = 'Introduction';
@@ -48,7 +47,7 @@
 	const stage = parseInt(currentStage);
 	isSummary = currentLesson === 'summary';
 
-	let lessonsPerStage: Array<LessonData> = [];
+	let lessonsPerStage = [];
 
 	$: urlFacebook = `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${shareTitle}`;
 	$: urlTwitter = `https://twitter.com/intent/tweet?source=${url}&text=${shareTitle}`;
@@ -80,7 +79,7 @@
 		shareTitle = encodeURIComponent(`Rust Jungle - ${fullTitle}`);
 		url = encodeURI(`https://${$page.host}${$page.path}`);
 
-		lessonsPerStage = $LessonsStore.pages.filter((lesson: LessonData) => lesson.stage === stage);
+		lessonsPerStage = $LessonsStore.pages.filter((lesson) => lesson.stage === stage);
 
 		// Remeber the current lesson, to enable a "continue" (testing)
 		lastLessonStore.set({

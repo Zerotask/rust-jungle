@@ -15,6 +15,7 @@
 	},
 	"type": "module",
 	"scripts": {
+		"predev": "npm run generate",
 		"dev": "svelte-kit dev --port 15007",
 		"prebuild": "npm run generate",
 		"build": "svelte-kit build",
