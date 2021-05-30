@@ -11,7 +11,7 @@
 	let searchValue: string = '';
 
 	onMount(() => {
-		// consider URL query 
+		// consider URL query
 		const searchQuery = $page.query.get('search');
 		if (searchQuery) {
 			search(searchQuery);
