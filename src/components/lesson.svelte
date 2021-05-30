@@ -24,7 +24,6 @@
 	let isIntroduction = false;
 	let isSummary = false;
 	let lastStage: number;
-	let fullTitle: string;
 	let shareTitle: string;
 	let url: string;
 
@@ -57,6 +56,7 @@
 	$: urlPocket = `https://getpocket.com/save?url=${shareTitle}&title=${shareTitle}`;
 	$: urlLinkedin = `http://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${shareTitle}&summary=&source=${url}`;
 	$: urlEmail = `mailto:?subject=${shareTitle}&body=${url}`;
+	$: fullTitle = `Stage ${currentStage}.${index}: ${title}`;
 
 	onMount(() => {
 		lastStage = $LessonsStore.stages[$LessonsStore.stages.length - 1];
@@ -77,7 +77,6 @@
 			}
 		}
 
-		fullTitle = `Stage ${currentStage}.${index}: ${title}`;
 		shareTitle = encodeURIComponent(`Rust Jungle - ${fullTitle}`);
 		url = encodeURI(`https://${$page.host}${$page.path}`);
 
