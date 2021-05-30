@@ -21,15 +21,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://localhost:15007/en/search</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://localhost:15007/de/stages/</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/tags/</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/tags/[slug]</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -38,6 +34,14 @@
   </url>
   <url>
     <loc>http://localhost:15007/en/stages/2</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/tags/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/tags/[slug]</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>

@@ -1,25 +1,29 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import LessonsStore from '$stores/lessons';
-	import type { LessonData } from '$routes/lessons.json';
 	import { onMount } from 'svelte';
+	import FerrisNormal from '$components/ferris/normal.svelte';
 
 	const tag = $page.params.slug;
-	let lessonsForTag: Array<LessonData> = [];
+	let lessonsForTag = [];
 
 	onMount(() => {
 		// we have to do it here to avoid the error that localStorage is undefined.
-		lessonsForTag = $LessonsStore.pages?.filter((lesson: LessonData) => lesson.tags?.includes(tag));
+		lessonsForTag = $LessonsStore.pages?.filter((lesson) => lesson.tags?.includes(tag));
 	});
 </script>
 
 <div class="pure-g">
-	<section class="pure-u-1">
+	<section class="pure-u-1 pure-u-md-1-2">
 		<h1>All lessons for #{tag}</h1>
 		{#each lessonsForTag as lesson}
 			<p><a href={lesson.url}>Stage {lesson.stage}.{lesson.index}: {lesson.title}</a></p>
 		{:else}
 			<p>No lessons found.</p>
 		{/each}
+	</section>
+
+	<section class="pure-u-1 pure-u-md-1-2">
+		<FerrisNormal />
 	</section>
 </div>

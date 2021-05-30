@@ -1,11 +1,9 @@
 <script lang="ts">
-	import type { LessonData } from '$routes/lessons.json';
 	import LessonsStore from '$stores/lessons';
 	import { onMount } from 'svelte';
 	import InternalLink from '$components/internal-link.svelte';
 
 	export let language = 'en';
-	// let lessonsPerStage: Map<number, LessonData[]> = new Map();
 	let lessonsPerStage = {};
 	const stages = $LessonsStore.stages || [];
 
@@ -13,7 +11,7 @@
 		// Sort by index.
 		const sortedPages = $LessonsStore.pages.sort((a, b) => a.index - b.index);
 
-		sortedPages.forEach((lesson: LessonData) => {
+		sortedPages.forEach((lesson) => {
 			if (lesson.language !== language) {
 				return;
 			}

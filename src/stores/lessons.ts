@@ -1,8 +1,21 @@
 import { readable } from 'svelte/store';
-import type { LessonData } from '$routes/lessons.json';
 import { onMount } from 'svelte';
 
-interface Lessons {
+export interface LessonData {
+	url: string;
+	language: string;
+	stage: number;
+	index: number;
+	title: string;
+	tags: string[];
+	previous?: string;
+	next?: string;
+	playground: string;
+	furtherInformation?: string[];
+	content?: string;
+}
+
+export interface Lessons {
 	total: number;
 	stages: number[];
 	lessons: LessonData[];

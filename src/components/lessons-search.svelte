@@ -1,5 +1,4 @@
 <script lang="ts">
-	import type { LessonData } from '$routes/lessons.json';
 	import LessonsStore from '$stores/lessons';
 	import InternalLink from '$components/internal-link.svelte';
 	import { page } from '$app/stores';
@@ -7,7 +6,7 @@
 
 	export let placeholder = 'Search for lessons';
 
-	let results: LessonData[] = [];
+	let results = [];
 	let searchValue = '';
 
 	onMount(() => {
@@ -29,7 +28,7 @@
 
 		searchValue = value;
 		results = $LessonsStore.pages.filter(
-			(lesson: LessonData) =>
+			(lesson) =>
 				lesson.title.toLowerCase().includes(value) || lesson.content.toLowerCase().includes(value)
 		);
 	}
