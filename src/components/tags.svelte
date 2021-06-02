@@ -2,7 +2,6 @@
 	import LessonsStore from '$stores/lessons';
 	import { onMount } from 'svelte';
 	import InternalLink from '$components/internal-link.svelte';
-	import FerrisNormal from '$components/ferris/normal.svelte';
 
 	let availableTags: Set<string> = new Set();
 
