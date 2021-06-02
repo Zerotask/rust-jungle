@@ -66,6 +66,14 @@
 					>Stages</a
 				>
 			</li>
+			<li class:active={$page.path === '/en/search'}>
+				<a
+					sveltekit:prefetch
+					href="/en/search"
+					title="Search for lessons"
+					aria-label="Search for lessons">Search</a
+				>
+			</li>
 			<li class:active={$page.path === '/en/about'}>
 				<a
 					sveltekit:prefetch

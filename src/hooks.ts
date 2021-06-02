@@ -1,6 +1,6 @@
 /** @type {import('@sveltejs/kit').Handle} */
-export async function handle({ request, render }) {
-	const response = await render(request);
+export async function handle({ request, resolve }): Promise<any> {
+	const response = await resolve(request);
 
 	return {
 		...response,

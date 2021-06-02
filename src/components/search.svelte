@@ -34,31 +34,37 @@
 	}
 </script>
 
-<input
-	type="search"
-	{placeholder}
-	on:input={onInputSearch}
-	bind:value={searchValue}
-	autocomplete="false"
-/>
+<div class="search">
+	<input
+		type="search"
+		{placeholder}
+		on:input={onInputSearch}
+		bind:value={searchValue}
+		autocomplete="false"
+	/>
 
-<div class="searchResults">
-	{#if results.length === 1}
-		<p>1 lesson found.</p>
-	{:else}
-		<p>{results.length} lessons found.</p>
-	{/if}
+	<div class="searchResults">
+		{#if results.length === 1}
+			<p>1 lesson found.</p>
+		{:else}
+			<p>{results.length} lessons found.</p>
+		{/if}
 
-	{#each results as lesson}
-		<p>
-			<InternalLink href={lesson.url}
-				>Stage {lesson.stage}.{lesson.index}: {lesson.title}</InternalLink
-			>
-		</p>
-	{/each}
+		{#each results as lesson}
+			<p>
+				<InternalLink href={lesson.url}
+					>Stage {lesson.stage}.{lesson.index}: {lesson.title}</InternalLink
+				>
+			</p>
+		{/each}
+	</div>
 </div>
 
 <style lang="postcss">
+	.search {
+		margin-top: 20px;
+	}
+
 	.searchResults {
 		margin-top: 10px;
 	}
