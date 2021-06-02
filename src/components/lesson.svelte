@@ -79,7 +79,7 @@
 		shareTitle = encodeURIComponent(`Rust Jungle - ${fullTitle}`);
 		url = encodeURI(`https://${$page.host}${$page.path}`);
 
-		lessonsPerStage = $LessonsStore.pages.filter((lesson) => lesson.stage === stage);
+		lessonsPerStage = $LessonsStore.lessons.filter((lesson) => lesson.stage === stage);
 
 		// Remeber the current lesson, to enable a "continue" (testing)
 		lastLessonStore.set({

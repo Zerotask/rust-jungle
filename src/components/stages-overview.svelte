@@ -9,7 +9,7 @@
 
 	onMount(() => {
 		// Sort by index.
-		const sortedPages = $LessonsStore.pages.sort((a, b) => a.index - b.index);
+		const sortedPages = $LessonsStore.lessons.sort((a, b) => a.index - b.index);
 
 		sortedPages.forEach((lesson) => {
 			if (lesson.language !== language) {
@@ -28,8 +28,6 @@
 			// Workaround for Svelte's reactivity.
 			lessonsPerStage = lessonsPerStage;
 		});
-
-		console.log({ lessonsPerStage });
 	});
 </script>
 

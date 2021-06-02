@@ -9,7 +9,7 @@
 
 	onMount(() => {
 		// we have to do it here to avoid the error that localStorage is undefined.
-		lessonsForTag = $LessonsStore.pages?.filter((lesson) => lesson.tags?.includes(tag));
+		lessonsForTag = $LessonsStore.lessons?.filter((lesson) => lesson.tags?.includes(tag));
 	});
 </script>
 

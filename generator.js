@@ -23,6 +23,7 @@ const generateLessonsJson = async () => {
 
 	const data = [];
 	const stages = new Set();
+	const tagsSet = new Set();
 
 	pages.forEach((page) => {
 		const fileContent = fs.readFileSync(page, 'utf8');
@@ -66,6 +67,9 @@ const generateLessonsJson = async () => {
 
 		// tags
 		const tags = lessonElement.attributes.tags?.split(' ');
+		if (tags) {
+			tags.forEach((tag) => tagsSet.add(tag));
+		}
 
 		// previous
 		const previous = lessonElement.attributes.previous;
@@ -103,9 +107,9 @@ const generateLessonsJson = async () => {
 	fs.writeFileSync(
 		`${outputFolder}/${fileName}`,
 		JSON.stringify({
-			total: data.length,
+			tags: [...tagsSet],
 			stages: sortedStages,
-			pages: data
+			lessons: data
 		})
 	);
 

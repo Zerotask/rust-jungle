@@ -1,6 +1,27 @@
 import { readable } from 'svelte/store';
 import { browser } from '$app/env';
 
+export interface LessonData {
+	url: string;
+	language: string;
+	stage: number;
+	index: number;
+	title: string;
+	tags: string[];
+	previous?: string;
+	next?: string;
+	playground: string;
+	furtherInformation?: string[];
+	content?: string;
+}
+
+export interface Lessons {
+	tags: string[];
+	stages: number[];
+	lessons: LessonData[];
+}
+
+// 1 hour
 const cacheDuration = 3600 * 1000;
 const cacheKey = 'lessons';
 const endpoint = 'lessons.json';
@@ -15,7 +36,7 @@ const getData = async () => {
 };
 
 const createStore = () => {
-	return readable({ stages: [], pages: [], total: 0 }, (set) => {
+	return readable({ tags: [], stages: [], lessons: [] }, (set) => {
 		if (browser) {
 			const lessons = localStorage.getItem(cacheKey);
 			if (lessons) {

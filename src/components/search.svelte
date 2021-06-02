@@ -27,7 +27,7 @@
 		}
 
 		searchValue = value;
-		results = $LessonsStore.pages.filter(
+		results = $LessonsStore.lessons.filter(
 			(lesson) =>
 				lesson.title.toLowerCase().includes(value) || lesson.content.toLowerCase().includes(value)
 		);
