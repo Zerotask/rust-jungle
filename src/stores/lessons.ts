@@ -7,8 +7,8 @@ interface CachedObject {
 	data: Lessons;
 }
 
-// 1 hour
-const cacheDuration = 3600 * 1000;
+// 2 hours
+const cacheDuration = 7200 * 1000;
 const cacheKey = 'lessons';
 const endpoint = 'lessons.json';
 
