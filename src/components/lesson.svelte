@@ -58,7 +58,8 @@
 	$: fullTitle = `Stage ${stage}.${index}: ${title}`;
 
 	onMount(() => {
-		lastStage = $LessonsStore.stages[$LessonsStore.stages.length - 1];
+		const stageKeys = Object.keys($LessonsStore.stages);
+		lastStage = parseInt(stageKeys[stageKeys.length - 1]);
 
 		// Automatically extend navigtion destination for introduction and summary
 		if (isIntroduction) {
