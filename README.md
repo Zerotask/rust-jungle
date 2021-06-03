@@ -2,6 +2,7 @@
 
 [![Lint](https://github.com/Zerotask/rust-jungle/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/Zerotask/rust-jungle/actions/workflows/lint.yml)
 [![CodeQL](https://github.com/Zerotask/rust-jungle/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Zerotask/rust-jungle/actions/workflows/codeql-analysis.yml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/b264f55066b40b90e247/maintainability)](https://codeclimate.com/github/Zerotask/rust-jungle/maintainability)
 
 # Rust Jungle
 

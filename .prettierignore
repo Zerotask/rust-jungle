@@ -1,5 +1,4 @@
 .svelte-kit/**
-static/**
 build/**
 .vercel/**
 .vercel_build_output/**
