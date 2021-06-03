@@ -5,7 +5,7 @@
 
 	export let language = 'en';
 
-	function getLessonsForStage(stage: number) {
+	function getLessonsForStage(stage: number): LessonData[] {
 		return $LessonsStore.lessons.filter(
 			(lesson: LessonData) => lesson.language === language && lesson.stage === stage
 		);
@@ -18,7 +18,7 @@
 
 {#if $LessonsStore.lessons.length > 0}
 	{#each Object.entries($LessonsStore.stages) as [stageIndex, stageTitle]}
-		<h2>
+		<h2 id={stageIndex}>
 			<InternalLink href="/{language}/stages/{stageIndex}"
 				>Stage {stageIndex}: {stageTitle}</InternalLink
 			>

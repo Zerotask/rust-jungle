@@ -248,7 +248,10 @@
 	{/if}
 
 	{#if lessonsPerStage.length > 0}
-		<span class="stageProgress">{index} / {lessonsPerStage.length}</span>
+		<div class="stageInformation">
+			<p><InternalLink href="/en/stages#{stage}">Stage {stage}</InternalLink></p>
+			<p class="stageProgress">{index} / {lessonsPerStage.length}</p>
+		</div>
 	{/if}
 
 	{#if next}
@@ -291,14 +294,9 @@
 		color: var(--text-color);
 	}
 
-	.lesson-nav > .previous {
-		float: left;
-		margin-left: 15px;
-	}
-
 	.lesson-nav > .next {
 		float: right;
-		margin-right: 15px;
+		margin-right: 30px;
 	}
 
 	.lesson-nav a:hover {
@@ -307,7 +305,8 @@
 		font-weight: bold;
 	}
 
-	.stageProgress {
+	.stageInformation p {
+		margin-top: 3px;
 		font-weight: bold;
 	}
 
