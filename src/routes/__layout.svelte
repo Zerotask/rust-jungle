@@ -7,6 +7,7 @@
 	import Swal from 'sweetalert2';
 	import 'sweetalert2/dist/sweetalert2.css';
 	import lastLessonStore from '$stores/lastLesson';
+	import type { LastLesson } from '$lib/lessonInterfaces';
 
 	onMount(() => {
 		// Example: /en/stages/1
@@ -14,7 +15,7 @@
 
 		// If it's not a lesson page.
 		if (!regex.test($page.path)) {
-			const lesson = lastLessonStore.get();
+			const lesson: LastLesson | null = lastLessonStore.get();
 			if (lesson) {
 				const lessonDate = new Date(lesson.date);
 				const currentDate = new Date();

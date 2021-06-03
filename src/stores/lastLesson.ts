@@ -1,3 +1,4 @@
+import type { LastLesson } from '$lib/lessonInterfaces';
 import { writable } from 'svelte/store';
 
 const localStorageKey = 'last-lesson';
@@ -7,9 +8,12 @@ const createStore = () => {
 
 	return {
 		subscribe,
-		set: (value) => localStorage.setItem(localStorageKey, JSON.stringify(value)),
-		update: (value) => localStorage.setItem(localStorageKey, JSON.stringify(value)),
-		get: () => JSON.parse(localStorage.getItem(localStorageKey)),
+		set: (value: LastLesson) => localStorage.setItem(localStorageKey, JSON.stringify(value)),
+		update: (value: LastLesson) => localStorage.setItem(localStorageKey, JSON.stringify(value)),
+		get: (): LastLesson =>
+			localStorage.getItem(localStorageKey)
+				? JSON.parse(localStorage.getItem(localStorageKey))
+				: null,
 		reset: () => localStorage.removeItem(localStorageKey)
 	};
 };

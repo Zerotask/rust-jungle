@@ -5,6 +5,14 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://localhost:15007/de/about</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/de/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://localhost:15007/en/about</loc>
     <changefreq>monthly</changefreq>
   </url>
@@ -17,11 +25,7 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://localhost:15007/de/about</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/de/</loc>
+    <loc>http://localhost:15007/de/stages/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -38,10 +42,6 @@
   </url>
   <url>
     <loc>http://localhost:15007/en/tags/[slug]</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/de/stages/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>

@@ -2,15 +2,19 @@
 	export let src: string;
 </script>
 
-<code>
-	<iframe
-		{src}
-		frameborder="0"
-		title="Rust Playground is an interactive tool to run Rust code"
-		aria-label="Rust Playground is an interactive tool to run Rust code"
-		sandbox="allow-same-origin allow-scripts"
-	/>
-</code>
+{#if src}
+	<code>
+		<iframe
+			{src}
+			frameborder="0"
+			title="Rust Playground is an interactive tool to run Rust code"
+			aria-label="Rust Playground is an interactive tool to run Rust code"
+			sandbox="allow-same-origin allow-scripts"
+		/>
+	</code>
+{:else}
+	<span class="error">ERROR: invalid url</span>
+{/if}
 
 <style lang="postcss">
 	code {

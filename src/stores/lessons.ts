@@ -1,6 +1,6 @@
 import { readable } from 'svelte/store';
 import { browser } from '$app/env';
-import type { Lessons } from 'src/libs/lessonInterface';
+import type { Lessons } from '$lib/lessonInterfaces';
 
 interface CachedObject {
 	expires: number;
@@ -35,7 +35,7 @@ const createStore = () => {
 				}
 			} else {
 				getData().then((data: Lessons) => {
-					const cacheObject = {
+					const cacheObject: CachedObject = {
 						expires: Date.now() + cacheDuration,
 						data
 					};

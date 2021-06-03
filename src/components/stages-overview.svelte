@@ -5,7 +5,7 @@
 
 	export let language = 'en';
 	let lessonsPerStage = {};
-	const stages = $LessonsStore.stages || [];
+	const stages: number[] = $LessonsStore.stages || [];
 
 	onMount(() => {
 		// Sort by index.

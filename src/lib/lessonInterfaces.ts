@@ -17,3 +17,11 @@ export interface Lessons {
 	stages: number[];
 	lessons: LessonData[];
 }
+
+export interface LastLesson {
+	stage: number;
+	index: number;
+	title: string;
+	url: string;
+	date: Date;
+}

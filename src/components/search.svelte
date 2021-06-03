@@ -3,7 +3,8 @@
 	import InternalLink from '$components/internal-link.svelte';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
-	import type { LessonData } from 'src/libs/lessonInterface';
+	import type { LessonData } from '$lib/lessonInterfaces';
+	import { buildName } from '$lib/lessons';
 
 	export let placeholder = 'Search for lessons';
 
@@ -54,7 +55,7 @@
 		{#each results as lesson}
 			<p>
 				<InternalLink href={lesson.url}
-					>Stage {lesson.stage}.{lesson.index}: {lesson.title}</InternalLink
+					>{buildName(lesson.stage, lesson.index, lesson.title)}</InternalLink
 				>
 			</p>
 		{/each}
