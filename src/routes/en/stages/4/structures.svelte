@@ -5,11 +5,12 @@
 <Lesson
 	index={2}
 	title="Structures"
+	description="The struct keyword allows you to create a collection of fields"
+	tags="structs"
 	previous="./"
 	next="calling-methods"
 	playgroundUrl="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=struct%20SeaCreature%20%7B%0A%20%20%20%20%2F%2F%20String%20is%20a%20struct%0A%20%20%20%20animal_type%3A%20String%2C%0A%20%20%20%20name%3A%20String%2C%0A%20%20%20%20arms%3A%20i32%2C%0A%20%20%20%20legs%3A%20i32%2C%0A%20%20%20%20weapon%3A%20String%2C%0A%7D"
 	furtherInformationUrls="https://doc.rust-lang.org/std/keyword.struct.html https://doc.rust-lang.org/book/ch05-01-defining-structs.html"
-	tags="struct"
 >
 	<p>
 		A <code>struct</code> is a collection of fields.

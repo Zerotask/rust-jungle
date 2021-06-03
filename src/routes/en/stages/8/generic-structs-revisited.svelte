@@ -5,9 +5,9 @@
 <Lesson
 	index={15}
 	title="Generic Structs Revisited"
+	tags="generics structs"
 	previous="box"
 	next="summary"
-	tags="generics struct"
 >
 	<p>Generic structs can also have their parameterized types constrained by traits:</p>
 	<pre>
