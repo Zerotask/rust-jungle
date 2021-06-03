@@ -3,32 +3,33 @@
 	import InternalLink from '$components/internal-link.svelte';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
+	import type { LessonData } from 'src/libs/lessonInterface';
 
 	export let placeholder = 'Search for lessons';
 
-	let results = [];
+	let results: LessonData[] = [];
 	let searchValue = '';
 
 	onMount(() => {
-		// consider URL query
-		const searchQuery = $page.query.get('search');
+		// consider URL query, e. g. ?search=string
+		const searchQuery: string = $page.query.get('search');
 		if (searchQuery) {
 			search(searchQuery);
 		}
 	});
 
-	function onInputSearch(event) {
+	function onInputSearch(event): void {
 		search(event.target.value.trim().toLowerCase());
 	}
 
-	function search(value) {
+	function search(value: string): void {
 		if (value.length < 2) {
 			return;
 		}
 
 		searchValue = value;
 		results = $LessonsStore.lessons.filter(
-			(lesson) =>
+			(lesson: LessonData) =>
 				lesson.title.toLowerCase().includes(value) || lesson.content.toLowerCase().includes(value)
 		);
 	}

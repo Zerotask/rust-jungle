@@ -1,24 +1,10 @@
 import { readable } from 'svelte/store';
 import { browser } from '$app/env';
+import type { Lessons } from 'src/libs/lessonInterface';
 
-export interface LessonData {
-	url: string;
-	language: string;
-	stage: number;
-	index: number;
-	title: string;
-	tags: string[];
-	previous?: string;
-	next?: string;
-	playground: string;
-	furtherInformation?: string[];
-	content?: string;
-}
-
-export interface Lessons {
-	tags: string[];
-	stages: number[];
-	lessons: LessonData[];
+interface CachedObject {
+	expires: number;
+	data: Lessons;
 }
 
 // 1 hour
@@ -38,9 +24,9 @@ const getData = async () => {
 const createStore = () => {
 	return readable({ tags: [], stages: [], lessons: [] }, (set) => {
 		if (browser) {
-			const lessons = localStorage.getItem(cacheKey);
+			const lessons: string = localStorage.getItem(cacheKey);
 			if (lessons) {
-				const cachedObject = JSON.parse(lessons);
+				const cachedObject: CachedObject = JSON.parse(lessons);
 
 				// Cache entry is still valid.
 				if (cachedObject.expires > Date.now()) {
@@ -48,7 +34,7 @@ const createStore = () => {
 					return;
 				}
 			} else {
-				getData().then((data) => {
+				getData().then((data: Lessons) => {
 					const cacheObject = {
 						expires: Date.now() + cacheDuration,
 						data

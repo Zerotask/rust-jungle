@@ -24,6 +24,12 @@
             "url": "/en/stages"
         },
         {
+            "name": "Search",
+            "short_name": "Search",
+            "description": "Search for lessons",
+            "url": "/en/search"
+        },
+        {
             "name": "About",
             "short_name": "About",
             "description": "View the about page",
