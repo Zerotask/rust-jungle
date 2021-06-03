@@ -8,8 +8,8 @@
 	title="Compiler Messages"
 	previous="macros"
 	next="summary"
-	src="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=fn%20main()%20%7B%0D%0A%20%20%20%20let%20message%20%3D%20%22hello%20world%22%3B%0D%0A%20%20%20%20println!(message)%3B%0D%0A%7D"
-	links="https://doc.rust-lang.org/error-index.html"
+	playgroundUrl="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=fn%20main()%20%7B%0D%0A%20%20%20%20let%20message%20%3D%20%22hello%20world%22%3B%0D%0A%20%20%20%20println!(message)%3B%0D%0A%7D"
+	furtherInformationUrls="https://doc.rust-lang.org/error-index.html"
 >
 	<p>
 		Compiler messages in Rust are really helpful and informative in most cases. The Rust team and

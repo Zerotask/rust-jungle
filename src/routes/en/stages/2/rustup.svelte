@@ -7,7 +7,7 @@
 	title="rustup"
 	previous="installation"
 	next="cargo"
-	links="https://doc.rust-lang.org/nightly/edition-guide/rust-2018/rustup-for-managing-rust-versions.html"
+	furtherInformationUrls="https://doc.rust-lang.org/nightly/edition-guide/rust-2018/rustup-for-managing-rust-versions.html"
 >
 	<p>
 		<code>rustup</code> is Rust's toolchain manager. To see all available options of this tool, run

@@ -7,7 +7,7 @@
 	title="Trait Objects"
 	previous="dynamic-vs-static-dispatch"
 	next="handling-unsized-data"
-	links="https://doc.rust-lang.org/book/ch17-02-trait-objects.html https://doc.rust-lang.org/reference/types/trait-object.html"
+	furtherInformationUrls="https://doc.rust-lang.org/book/ch17-02-trait-objects.html https://doc.rust-lang.org/reference/types/trait-object.html"
 >
 	<p>
 		When we pass an instance of an object to a parameter of type <code>&dyn MyTrait</code> we pass what

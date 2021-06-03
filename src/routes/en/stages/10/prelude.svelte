@@ -7,7 +7,7 @@
 	title="Prelude"
 	previous="struct-visibility"
 	next="your-own-prelude"
-	links="https://doc.rust-lang.org/std/prelude/index.html"
+	furtherInformationUrls="https://doc.rust-lang.org/std/prelude/index.html"
 >
 	<p>
 		You might be wondering how we have access to <code>Vec</code> or <code>Box</code> everywhere

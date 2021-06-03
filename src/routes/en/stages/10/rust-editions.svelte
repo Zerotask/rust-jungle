@@ -7,7 +7,7 @@
 	title="Rust Editions"
 	previous="cargo-toml-file"
 	next="summary"
-	links="https://doc.rust-lang.org/edition-guide/editions/index.html"
+	furtherInformationUrls="https://doc.rust-lang.org/edition-guide/editions/index.html"
 >
 	<p>
 		Rust ships new releases on a six-week cycle and you can easily update to it with <i

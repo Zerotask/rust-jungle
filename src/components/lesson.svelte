@@ -14,11 +14,11 @@
 	export let index = 1;
 	export let title: string;
 	export let description: string | null = null;
+	export let tags: string[] | string = [];
 	export let previous: string | null = null;
 	export let next: string | null = null;
-	export let src: string | null = null;
-	export let links: string | string[] | null = null;
-	export let tags: string[] | string = [];
+	export let playgroundUrl: string | null = null;
+	export let furtherInformationUrls: string | string[] | null = null;
 
 	let isIntroduction = false;
 	let isSummary = false;
@@ -27,8 +27,8 @@
 	let url: string;
 
 	// for compatibility. the lessons endpoint needs a string, not an array.
-	if (typeof links === 'string') {
-		links = links.split(' ');
+	if (typeof furtherInformationUrls === 'string') {
+		furtherInformationUrls = furtherInformationUrls.split(' ');
 	}
 
 	if (!Array.isArray(tags)) {
@@ -149,8 +149,8 @@
 			</div>
 		{/if}
 
-		{#if links && links.length > 0}
-			<FurtherInformation {links} />
+		{#if furtherInformationUrls && furtherInformationUrls.length > 0}
+			<FurtherInformation links={furtherInformationUrls} />
 		{/if}
 
 		<div class="socialMedaShare">
@@ -225,8 +225,8 @@
 	<section class="pure-u-1 pure-u-md-1-2">
 		{#if isSummary}
 			<FerrisHappy />
-		{:else if src}
-			<Playground {src} />
+		{:else if playgroundUrl}
+			<Playground src={playgroundUrl} />
 		{:else}
 			<FerrisNormal />
 		{/if}

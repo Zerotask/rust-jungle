@@ -7,7 +7,7 @@
 	title="String Literals From Files"
 	previous="raw-string-literals"
 	next="string-slice"
-	links="https://doc.rust-lang.org/std/macro.include_str.html"
+	furtherInformationUrls="https://doc.rust-lang.org/std/macro.include_str.html"
 >
 	<p>
 		If you have some very large text, consider using the macro <code>include_str!</code> to include text

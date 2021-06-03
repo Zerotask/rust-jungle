@@ -7,7 +7,7 @@
 	title="Modules"
 	previous="./"
 	next="writing-a-program"
-	links="https://doc.rust-lang.org/book/ch07-01-packages-and-crates.html https://doc.rust-lang.org/book/ch07-02-defining-modules-to-control-scope-and-privacy.html"
+	furtherInformationUrls="https://doc.rust-lang.org/book/ch07-01-packages-and-crates.html https://doc.rust-lang.org/book/ch07-02-defining-modules-to-control-scope-and-privacy.html"
 >
 	<p>
 		Every Rust program or library is a <i>crate</i>.

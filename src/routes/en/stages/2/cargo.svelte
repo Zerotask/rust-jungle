@@ -7,7 +7,7 @@
 	title="cargo"
 	previous="rustup"
 	next="managing-dependencies-with-cargo"
-	links="https://doc.rust-lang.org/cargo/commands/index.html"
+	furtherInformationUrls="https://doc.rust-lang.org/cargo/commands/index.html"
 	tags="cargo"
 >
 	<p>

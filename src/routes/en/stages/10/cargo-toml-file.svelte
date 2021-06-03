@@ -8,7 +8,7 @@
 	title="Cargo.toml File"
 	previous="your-own-prelude"
 	next="rust-editions"
-	links="https://doc.rust-lang.org/cargo/reference/manifest.html"
+	furtherInformationUrls="https://doc.rust-lang.org/cargo/reference/manifest.html"
 >
 	<p>
 		The <i>Cargo.toml</i> file is the central configuration file when you decide to use

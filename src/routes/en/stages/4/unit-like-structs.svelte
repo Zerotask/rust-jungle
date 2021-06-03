@@ -7,7 +7,7 @@
 	title="Unit-like Structs"
 	previous="tuple-like-structs"
 	next="enums"
-	src="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=struct%20Marker%3B%0A%0Afn%20main()%20%7B%0A%20%20%20%20let%20_m%20%3D%20Marker%3B%0A%7D%0A"
+	playgroundUrl="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=struct%20Marker%3B%0A%0Afn%20main()%20%7B%0A%20%20%20%20let%20_m%20%3D%20Marker%3B%0A%7D%0A"
 	tags="struct"
 >
 	<p>Structs do not have to have any fields at all.</p>

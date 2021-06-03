@@ -7,7 +7,7 @@
 	title="Handling Unsized Data"
 	previous="trait-objects"
 	next="generic-functions"
-	links="https://doc.rust-lang.org/nomicon/exotic-sizes.html#dynamically-sized-types-dsts"
+	furtherInformationUrls="https://doc.rust-lang.org/nomicon/exotic-sizes.html#dynamically-sized-types-dsts"
 >
 	<p>
 		Traits introduce an interesting challenge when we want to store them within another struct.
