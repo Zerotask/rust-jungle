@@ -2,7 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson next="what-is-object-oriented-programming">
+<Lesson title="Object Oriented Programming (OOP)" next="what-is-object-oriented-programming">
 	<p>
 		Expressing ideas with functions is a proven way of representing behavior and data (C has been
 		doing it for decades!). Historically, computer science has found other useful expressive

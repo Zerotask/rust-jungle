@@ -2,7 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson next="ownership">
+<Lesson title="Ownership & Borrowing Data" next="ownership">
 	<p>
 		Rust has a unique paradigm for managing memory compared to other programming languages. We're
 		going to look at the behaviors and validations of the compiler one by one so it's not

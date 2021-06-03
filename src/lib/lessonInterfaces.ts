@@ -12,9 +12,13 @@ export interface LessonData {
 	content?: string;
 }
 
+export interface Stages {
+	[key: number]: string;
+}
+
 export interface Lessons {
 	tags: string[];
-	stages: number[];
+	stages: Stages;
 	lessons: LessonData[];
 }
 

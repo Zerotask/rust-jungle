@@ -21,9 +21,9 @@ const generateLessonsJson = async () => {
 	const startTime = process.hrtime();
 	const pages = await getPages();
 
-	const data = [];
-	const stages = new Set();
-	const tagsSet = new Set();
+	const lessonsData = [];
+	const stagesData = {};
+	const tagsData = new Set();
 
 	pages.forEach((page) => {
 		const fileContent = fs.readFileSync(page, 'utf8');
@@ -44,7 +44,6 @@ const generateLessonsJson = async () => {
 
 		// stage
 		const stage = parseInt(pathParts[4]);
-		stages.add(stage);
 
 		// index
 		const indexAttribute = lessonElement.attributes.index;
@@ -58,17 +57,19 @@ const generateLessonsJson = async () => {
 
 		// title
 		const titleAttribute = lessonElement.attributes.title;
-		let title = 'Introduction';
-		if (titleAttribute) {
-			title = titleAttribute;
-		} else if (pathParts.pop() === 'summary.svelte') {
+		let title;
+		if (pathParts.pop() === 'summary.svelte') {
 			title = 'Summary';
+		} else if (index === 1) {
+			title = `Introduction - ${titleAttribute}`;
+		} else {
+			title = titleAttribute;
 		}
 
 		// tags
 		const tags = lessonElement.attributes.tags?.split(' ');
 		if (tags) {
-			tags.forEach((tag) => tagsSet.add(tag));
+			tags.forEach((tag) => tagsData.add(tag));
 		}
 
 		// previous
@@ -86,7 +87,11 @@ const generateLessonsJson = async () => {
 		// content
 		const content = lessonElement.structuredText.trim();
 
-		data.push({
+		if (index === 1) {
+			stagesData[stage] = titleAttribute;
+		}
+
+		lessonsData.push({
 			url,
 			language,
 			stage,
@@ -101,15 +106,13 @@ const generateLessonsJson = async () => {
 		});
 	});
 
-	const sortedStages = [...stages].sort((a, b) => a - b);
-
 	const fileName = 'lessons.json';
 	fs.writeFileSync(
 		`${outputFolder}/${fileName}`,
 		JSON.stringify({
-			tags: [...tagsSet],
-			stages: sortedStages,
-			lessons: data
+			tags: [...tagsData],
+			stages: stagesData,
+			lessons: lessonsData
 		})
 	);
 

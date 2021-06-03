@@ -22,7 +22,7 @@ const getData = async () => {
 };
 
 const createStore = () => {
-	return readable({ tags: [], stages: [], lessons: [] }, (set) => {
+	return readable({ tags: [], stages: {}, lessons: [] }, (set) => {
 		if (browser) {
 			const lessons: string = localStorage.getItem(cacheKey);
 			if (lessons) {

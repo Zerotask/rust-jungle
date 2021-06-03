@@ -2,7 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson next="structures">
+<Lesson title="Basic Data Structure Types" next="structures">
 	<p>
 		It's time we explore beyond basic types! In this chapter we will look at the most primitive data
 		structures in Rust, paying close attention to their representations in memory. I think you will

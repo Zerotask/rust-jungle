@@ -2,7 +2,7 @@
 	import Lesson from '$components/lesson.svelte';
 </script>
 
-<Lesson next="what-are-generic-types">
+<Lesson title="Generic Types" next="what-are-generic-types">
 	<p>
 		Generic types are incredibly important in Rust. They are used in the representation of nullable
 		values (i.e. variables which might not have a value yet), error handling, collections, and more!

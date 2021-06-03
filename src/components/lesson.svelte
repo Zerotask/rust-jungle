@@ -12,7 +12,7 @@
 	import LessonsStore from '$stores/lessons';
 
 	export let index = 1;
-	export let title = 'Introduction';
+	export let title: string;
 	export let description: string | null = null;
 	export let previous: string | null = null;
 	export let next: string | null = null;
@@ -63,7 +63,7 @@
 		// Automatically extend navigtion destination for introduction and summary
 		if (isIntroduction) {
 			index = 1;
-			title = 'Introduction';
+			title = `Introduction - ${title}`;
 			next = `${stage}/${next}`;
 
 			if (stage > 1) {

@@ -4,8 +4,7 @@
 	import InternalLink from '$components/internal-link.svelte';
 
 	export let language = 'en';
-	let lessonsPerStage = {};
-	const stages: number[] = $LessonsStore.stages || [];
+	$: lessonsPerStage = {};
 
 	onMount(() => {
 		// Sort by index.
@@ -35,19 +34,23 @@
 	<title>Overview of all stages</title>
 </svelte:head>
 
-{#if Object.keys(lessonsPerStage).length > 0}
-	{#each stages as stage}
-		<h2><InternalLink href="/{language}/stages/{stage}">Stage {stage}: TODO</InternalLink></h2>
+{#if Object.keys(lessonsPerStage).length > 0 && Object.keys($LessonsStore.stages).length > 0}
+	{#each Object.entries($LessonsStore.stages) as [stageIndex, stageTitle]}
+		<h2>
+			<InternalLink href="/{language}/stages/{stageIndex}"
+				>Stage {stageIndex}: {stageTitle}</InternalLink
+			>
+		</h2>
 		<ul>
-			{#each lessonsPerStage[stage] as lesson}
+			{#each lessonsPerStage[stageIndex] as lesson}
 				<li>
-					<InternalLink href={lesson.url}>{stage}.{lesson.index} {lesson.title}</InternalLink>
+					<InternalLink href={lesson.url}>{stageIndex}.{lesson.index} {lesson.title}</InternalLink>
 				</li>
 			{/each}
 		</ul>
 	{/each}
 {:else}
-	<p>Loading</p>
+	<p>Loading...</p>
 {/if}
 
 <style lang="postcss">
