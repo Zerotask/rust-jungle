@@ -21,7 +21,7 @@ const generateLessonsJson = async () => {
 	const startTime = process.hrtime();
 	const pages = await getPages();
 
-	const lessonsData = [];
+	let lessonsData = [];
 	const stagesData = {};
 	const tagsData = new Set();
 
@@ -105,6 +105,8 @@ const generateLessonsJson = async () => {
 			content
 		});
 	});
+
+	lessonsData = lessonsData.sort((a, b) => a.index - b.index);
 
 	const fileName = 'lessons.json';
 	fs.writeFileSync(
