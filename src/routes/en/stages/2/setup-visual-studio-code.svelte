@@ -6,6 +6,7 @@
 <Lesson
 	index={7}
 	title="Setup Visual Studio Code"
+	tags="developing"
 	previous="cargo-subcommands"
 	next="writing-a-hello-world-program"
 >

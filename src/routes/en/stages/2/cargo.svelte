@@ -5,10 +5,11 @@
 <Lesson
 	index={4}
 	title="cargo"
+	description="Cargo is Rust's package manager and the central tool for developing Rust programs"
+	tags="cargo dependencies"
 	previous="rustup"
 	next="managing-dependencies-with-cargo"
 	furtherInformationUrls="https://doc.rust-lang.org/cargo/commands/index.html"
-	tags="cargo"
 >
 	<p>
 		<i>cargo</i> is Rust's official package manager. If you've installed Rust with rustup, then

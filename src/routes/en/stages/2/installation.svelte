@@ -3,7 +3,14 @@
 	import ExternalLink from '$components/external-link.svelte';
 </script>
 
-<Lesson index={2} title="Installation" previous="./" next="rustup">
+<Lesson
+	index={2}
+	title="Installation"
+	description="You can download rust from rust-lang.org"
+	tags="developing"
+	previous="./"
+	next="rustup"
+>
 	<p>
 		The recommended way to install Rust and its tools is to download rustup, Rust's toolchain
 		manager.<br />

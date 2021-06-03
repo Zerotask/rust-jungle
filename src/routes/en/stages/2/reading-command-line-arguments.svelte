@@ -5,6 +5,7 @@
 <Lesson
 	index={9}
 	title="Reading Command Line Arguments"
+	description="Rust provides useful modules to work with command line arguments"
 	previous="writing-a-hello-world-program"
 	next="how-to-test-functions"
 	playgroundUrl="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=use%20std%3A%3Aenv%3B%0D%0A%0D%0Afn%20main()%20%7B%0D%0A%20%20%20%20let%20args%3A%20Vec%3CString%3E%20%3D%20env%3A%3Aargs().collect()%3B%0D%0A%20%20%20%20println!(%22Your%20arguments%20are%20%7B%3A%3F%7D%22%2C%20%26args)%3B%0D%0A%7D%0D%0A"

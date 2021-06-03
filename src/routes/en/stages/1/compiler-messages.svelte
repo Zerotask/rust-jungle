@@ -6,6 +6,8 @@
 <Lesson
 	index={13}
 	title="Compiler Messages"
+	description="Rust compiler messages are especially helpful and often provide concrete solutions"
+	tags="compiler"
 	previous="macros"
 	next="summary"
 	playgroundUrl="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=fn%20main()%20%7B%0D%0A%20%20%20%20let%20message%20%3D%20%22hello%20world%22%3B%0D%0A%20%20%20%20println!(message)%3B%0D%0A%7D"

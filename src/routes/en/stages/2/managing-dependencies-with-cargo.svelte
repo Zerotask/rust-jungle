@@ -6,9 +6,10 @@
 <Lesson
 	index={5}
 	title="Managing Dependencies With Cargo"
+	description="With cargo you can install, update or remove dependencies in Rust"
+	tags="cargo dependencies"
 	previous="cargo"
 	next="cargo-subcommands"
-	tags="cargo"
 >
 	<p>
 		At first, you have to create a <i>workspace</i> (project) with either
