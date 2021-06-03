@@ -1,6 +1,7 @@
 ![image](https://user-images.githubusercontent.com/20150243/118312159-3f79d880-b4f1-11eb-9ee3-5e67f406bf55.png)
 
 [![Lint](https://github.com/Zerotask/rust-jungle/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/Zerotask/rust-jungle/actions/workflows/lint.yml)
+[![CodeQL](https://github.com/Zerotask/rust-jungle/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Zerotask/rust-jungle/actions/workflows/codeql-analysis.yml)
 
 # Rust Jungle
 
@@ -19,7 +20,7 @@ And you are not alone! [Ferris the crab](https://www.rustacean.net/) will be wit
 
 ## Still in development
 
-This project is still in development. After the english content is done, the next steps are translations.
+This project is still in development and there can be fundamental changes. After the english section is done, we will start adding new languages.
 
 ## Structure
 
@@ -27,7 +28,19 @@ Rust Jungle is separated into stages and each stage has lessons.
 
 Each stage starts with an introduction and ends with a summary.
 
-A lesson has a text and an optional Rust playground and optional _further information_.
+A lesson consists off:
+
+- text
+- optional playground
+- optional further information
+
+## Features
+
+- Lessons with interactive playgrounds
+- Small portions
+- Tags system
+- Search
+- Continue lesson
 
 ## Contributing
 
