@@ -24,7 +24,7 @@
 			>
 		</h2>
 		<ul>
-			{#each getLessonsForStage(parseInt(stageIndex)) as lesson}
+			{#each getLessonsForStage(parseInt(stageIndex, 10)) as lesson}
 				<li>
 					<InternalLink href={lesson.url}>{stageIndex}.{lesson.index} {lesson.title}</InternalLink>
 				</li>

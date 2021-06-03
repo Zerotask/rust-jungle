@@ -44,7 +44,7 @@
 		isIntroduction = true;
 	}
 
-	const stage = parseInt(currentStage);
+	const stage = parseInt(currentStage, 10);
 	isSummary = currentLesson === 'summary';
 
 	let lessonsPerStage = [];
@@ -59,7 +59,7 @@
 
 	onMount(() => {
 		const stageKeys = Object.keys($LessonsStore.stages);
-		lastStage = parseInt(stageKeys[stageKeys.length - 1]);
+		lastStage = parseInt(stageKeys[stageKeys.length - 1], 10);
 
 		// Automatically extend navigtion destination for introduction and summary
 		if (isIntroduction) {

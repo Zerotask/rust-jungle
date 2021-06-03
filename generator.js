@@ -43,15 +43,15 @@ const generateLessonsJson = async () => {
 		const language = pathParts[2];
 
 		// stage
-		const stage = parseInt(pathParts[4]);
+		const stage = parseInt(pathParts[4], 10);
 
 		// index
 		const indexAttribute = lessonElement.attributes.index;
 		let index = 1;
 		if (indexAttribute) {
-			index = parseInt(indexAttribute);
+			index = parseInt(indexAttribute, 10);
 			if (isNaN(index)) {
-				index = parseInt(indexAttribute.slice(1, -1));
+				index = parseInt(indexAttribute.slice(1, -1), 10);
 			}
 		}
 
