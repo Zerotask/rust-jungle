@@ -24,13 +24,15 @@ const getData = async () => {
 const createStore = () => {
 	return readable({ tags: [], stages: {}, lessons: [] }, (set) => {
 		if (browser) {
-			const lessons: string = localStorage.getItem(cacheKey);
-			const cachedObject: CachedObject = JSON.parse(lessons);
+			const lessons: string | null = localStorage.getItem(cacheKey);
+			if (lessons) {
+				const cachedObject: CachedObject = JSON.parse(lessons);
 
-			// Cache entry is still valid.
-			if (cachedObject.expires > Date.now()) {
-				set(cachedObject.data);
-				return;
+				// Cache entry is still valid.
+				if (cachedObject.expires > Date.now()) {
+					set(cachedObject.data);
+					return;
+				}
 			}
 
 			getData().then((data: Lessons) => {

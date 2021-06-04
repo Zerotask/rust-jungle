@@ -18,8 +18,7 @@
 		"enums",
 		"error-handling",
 		"generics",
-		"enum",
-		"macro"
+		"enum"
 	],
 	"stages": {
 		"1": "The Basics",
@@ -914,7 +913,7 @@
 			"stage": 5,
 			"index": 9,
 			"title": "Vectors",
-			"tags": ["generics", "macro", "iteration"],
+			"tags": ["generics", "macros", "iteration"],
 			"previous": "ugly-option-result-handling",
 			"next": "summary",
 			"content": "Some of the most useful generic types are collection types. A vector is a variably sized list of items represented by the struct Vec.\nThe macro vec! lets us easily create a vector rather than manually constructing one.\nVec has the method iter() which creates an iterator from a vector, allowing us to easily put a vector into a for loop.\nMemory Details:\nVec is a struct, but internally it contains a reference to a fixed list of its items on the heap.\nA vector starts with a default capacity; when more items are added than it has capacity for, it reallocates its data on the heap to have a new fixed list with large capacity."

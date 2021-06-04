@@ -1,11 +1,25 @@
 import { registerRoute } from 'workbox-routing';
 import { NetworkFirst, StaleWhileRevalidate, CacheFirst } from 'workbox-strategies';
+import * as googleAnalytics from 'workbox-google-analytics';
+import { BackgroundSyncPlugin } from 'workbox-background-sync';
 
 // @see https://developers.google.com/web/tools/workbox/guides/get-started
 // Used for filtering matches based on status code, header, or both
 import { CacheableResponsePlugin } from 'workbox-cacheable-response';
 // Used to limit entries in cache, remove entries after a certain period of time
 import { ExpirationPlugin } from 'workbox-expiration';
+
+const bgSyncPlugin = new BackgroundSyncPlugin('defaultQueue', {
+	maxRetentionTime: 24 * 60 // Retry for max of 24 Hours (specified in minutes)
+});
+
+registerRoute(
+	/.*\/*.json/,
+	new NetworkFirst({
+		plugins: [bgSyncPlugin]
+	}),
+	'GET'
+);
 
 // Cache page navigations (html) with a Network First strategy
 registerRoute(
@@ -24,13 +38,14 @@ registerRoute(
 	})
 );
 
-// Cache CSS, JS, and Web Worker requests with a Stale While Revalidate strategy
+// Cache CSS, JS, Fonts and Web Worker requests with a Stale While Revalidate strategy
 registerRoute(
 	// Check to see if the request's destination is style for stylesheets, script for JavaScript, or worker for web worker
 	({ request }) =>
 		request.destination === 'style' ||
 		request.destination === 'script' ||
 		request.destination === 'font' ||
+		request.destination === 'manifest' ||
 		request.destination === 'worker',
 	// Use a Stale While Revalidate caching strategy
 	new StaleWhileRevalidate({
@@ -66,3 +81,5 @@ registerRoute(
 		]
 	})
 );
+
+googleAnalytics.initialize();

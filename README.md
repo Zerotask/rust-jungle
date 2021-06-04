@@ -42,6 +42,8 @@ A lesson consists off:
 - Tags system
 - Search
 - Continue lesson
+- PWA support
+- Social share
 
 ## Contributing
 

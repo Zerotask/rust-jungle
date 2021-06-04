@@ -34,8 +34,11 @@
 		"cookie": "^0.4.1",
 		"svelte": "^3.34.0",
 		"sweetalert2": "^11.0.7",
+		"workbox-background-sync": "^6.1.5",
 		"workbox-cacheable-response": "^6.1.5",
 		"workbox-expiration": "^6.1.5",
+		"workbox-google-analytics": "^6.1.5",
+		"workbox-precaching": "^6.1.5",
 		"workbox-routing": "^6.1.5",
 		"workbox-strategies": "^6.1.5"
 	},
