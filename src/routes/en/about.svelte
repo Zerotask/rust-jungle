@@ -8,7 +8,7 @@
 </svelte:head>
 
 <div class="pure-g">
-	<section class="pure-u-1">
+	<section class="pure-u-1 pure-u-md-1-2">
 		<h1>About Rust Jungle</h1>
 
 		<p>
@@ -71,7 +71,7 @@
 		</p>
 	</section>
 
-	<section class="column col-md-12 col-6">
+	<section class="pure-u-1 pure-u-md-1-2">
 		<FerrisNormal />
 	</section>
 </div>
