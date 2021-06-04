@@ -7,9 +7,10 @@
 	index={6}
 	title="Cargo Subcommands"
 	summary="Cargo subcommands allow you to add additional functions to your package manager"
-	tags="cargo"
+	tags="cargo development"
 	previous="managing-dependencies-with-cargo"
 	next="setup-visual-studio-code"
+	furtherInformationUrls="https://github.com/topics/cargo-subcommand https://lib.rs/development-tools/cargo-plugins"
 >
 	<p>
 		<i>cargo</i> subcommands are an option to add additional commands which are developed by the community
@@ -40,10 +41,5 @@
 		<ExternalLink href="https://github.com/killercup/cargo-edit">cargo-edit</ExternalLink>
 		which adds multiple subcommands (cargo add, cargo rm and cargo upgrade) to handle dependencies via
 		CLI commands.
-	</p>
-
-	<p>
-		Further <i>cargo</i> subcommands can be found here:
-		<ExternalLink href="https://github.com/topics/cargo-subcommand" />
 	</p>
 </Lesson>
