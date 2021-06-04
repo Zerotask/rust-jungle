@@ -54,8 +54,8 @@
 	let yDown = null;
 
 	onMount(() => {
-		document.addEventListener('touchstart', handleTouchStart, { once: true });
-		document.addEventListener('touchmove', handleTouchMove, { once: true });
+		// document.addEventListener('touchstart', handleTouchStart, { once: true });
+		// document.addEventListener('touchmove', handleTouchMove, { once: true });
 
 		const stageKeys = Object.keys($LessonsStore.stages);
 		lastStage = parseInt(stageKeys[stageKeys.length - 1], 10);
@@ -127,16 +127,15 @@
 		const yDiff = yDown - yUp;
 
 		if (Math.abs(xDiff) > Math.abs(yDiff)) {
+			// Reset values
+			xDown = null;
+			yDown = null;
 			if (xDiff > 0 && next) {
 				goto(next);
 			} else if (previous) {
 				goto(previous);
 			}
 		}
-
-		// Reset values
-		xDown = null;
-		yDown = null;
 	}
 </script>
 
@@ -157,7 +156,10 @@
 	{/if}
 </svelte:head>
 
-<svelte:body on:keyup|once={onKeyboardNavigation} />
+<svelte:body
+	on:keyup|once={onKeyboardNavigation}
+	on:touchstart={handleTouchStart}
+	on:touchmove={handleTouchMove} />
 
 <div class="pure-g">
 	<section class="pure-u-1 pure-u-md-1-2">

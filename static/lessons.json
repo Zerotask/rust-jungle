@@ -9,9 +9,9 @@
 		"cargo",
 		"modules",
 		"structs",
+		"development",
 		"dependencies",
 		"testing",
-		"development",
 		"iteration",
 		"control-structures",
 		"memory",
@@ -672,10 +672,14 @@
 			"index": 6,
 			"title": "Cargo Subcommands",
 			"summary": "Cargo subcommands allow you to add additional functions to your package manager",
-			"tags": ["cargo"],
+			"tags": ["cargo", "development"],
 			"previous": "managing-dependencies-with-cargo",
 			"next": "setup-visual-studio-code",
-			"content": "cargo subcommands are an option to add additional commands which are developed by the community to customize your developing experience.\nTo install a cargo subcommand, you simply run: cargo install name-of-subcommand\nFor example to install the cargo-watch subcommand, you simply run: cargo install cargo-watch.\nTo see all available option for this new cargo subcommand, just run: cargo watch --help\ncargo watch is a pretty useful command to run or test your code everytime something has changed. It can be used like: cargo watch -x run. This would execute cargo run whenever it detects a change.\nThere are other useful commands like cargo-edit which adds multiple subcommands (cargo add, cargo rm and cargo upgrade) to handle dependencies via CLI commands.\nFurther cargo subcommands can be found here:"
+			"furtherInformationUrls": [
+				"https://github.com/topics/cargo-subcommand",
+				"https://lib.rs/development-tools/cargo-plugins"
+			],
+			"content": "cargo subcommands are an option to add additional commands which are developed by the community to customize your developing experience.\nTo install a cargo subcommand, you simply run: cargo install name-of-subcommand\nFor example to install the cargo-watch subcommand, you simply run: cargo install cargo-watch.\nTo see all available option for this new cargo subcommand, just run: cargo watch --help\ncargo watch is a pretty useful command to run or test your code everytime something has changed. It can be used like: cargo watch -x run. This would execute cargo run whenever it detects a change.\nThere are other useful commands like cargo-edit which adds multiple subcommands (cargo add, cargo rm and cargo upgrade) to handle dependencies via CLI commands."
 		},
 		{
 			"url": "http://localhost:15007/en/stages/3/for",
