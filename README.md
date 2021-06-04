@@ -44,6 +44,7 @@ A lesson consists off:
 - Continue lesson
 - PWA support
 - Social share
+- Keyboard & Swipe navigation
 
 ## Contributing
 
