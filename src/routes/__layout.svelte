@@ -8,6 +8,7 @@
 	import 'sweetalert2/dist/sweetalert2.css';
 	import lastLessonStore from '$stores/lastLesson';
 	import type { LastLesson } from '$lib/lessonInterfaces';
+	import { buildName } from '$lib/lessons';
 
 	onMount(() => {
 		// Example: /en/stages/1
@@ -26,7 +27,7 @@
 				if (hourDiff >= 2) {
 					Swal.fire({
 						title: 'Do you want to continue your lesson?',
-						text: lesson.title,
+						text: buildName(lesson.stage, lesson.index, lesson.title),
 						confirmButtonText: 'Yes',
 						cancelButtonText: 'No',
 						showCancelButton: true,

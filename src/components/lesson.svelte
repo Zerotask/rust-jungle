@@ -10,6 +10,7 @@
 	import InternalLink from '$components/internal-link.svelte';
 	import lastLessonStore from '$stores/lastLesson';
 	import LessonsStore from '$stores/lessons';
+	import { buildName } from '$lib/lessons';
 
 	export let index = 1;
 	export let title: string;
@@ -55,7 +56,7 @@
 	$: urlPocket = `https://getpocket.com/save?url=${shareTitle}&title=${shareTitle}`;
 	$: urlLinkedin = `http://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${shareTitle}&summary=&source=${url}`;
 	$: urlEmail = `mailto:?subject=${shareTitle}&body=${url}`;
-	$: fullTitle = `Stage ${stage}.${index}: ${title}`;
+	$: fullTitle = buildName(stage, index, title);
 
 	onMount(() => {
 		const stageKeys = Object.keys($LessonsStore.stages);
@@ -86,7 +87,7 @@
 		lastLessonStore.set({
 			stage: stage,
 			index: index,
-			title: fullTitle,
+			title: title,
 			url: $page.path,
 			date: new Date()
 		});
