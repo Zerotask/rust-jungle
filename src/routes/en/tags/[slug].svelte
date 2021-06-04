@@ -3,6 +3,7 @@
 	import LessonsStore from '$stores/lessons';
 	import { onMount } from 'svelte';
 	import FerrisNormal from '$components/ferris/normal.svelte';
+	import SocialMediaShare from '$components/lesson/socialMediaShare.svelte';
 
 	const tag = $page.params.slug;
 	let lessonsForTag = [];
@@ -21,6 +22,7 @@
 		{:else}
 			<p>No lessons found.</p>
 		{/each}
+		<SocialMediaShare title="All lessons for #{tag}" />
 	</section>
 
 	<section class="pure-u-1 pure-u-md-1-2">

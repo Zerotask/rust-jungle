@@ -5,7 +5,7 @@
 <Lesson
 	index={8}
 	title="Writing A Hello World Program"
-	tags="program developing"
+	tags="development"
 	previous="setup-visual-studio-code"
 	next="reading-command-line-arguments"
 	playgroundUrl="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=fn%20main()%20%7B%0A%20%20%20%20println!(%22Hello%2C%20world!%22)%3B%0A%7D%0A"

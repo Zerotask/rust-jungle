@@ -29,15 +29,15 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://localhost:15007/en/stages/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://localhost:15007/en/tags/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>http://localhost:15007/en/tags/[slug]</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>

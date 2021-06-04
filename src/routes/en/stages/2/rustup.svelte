@@ -5,7 +5,7 @@
 <Lesson
 	index={3}
 	title="rustup"
-	tags="compiler developing"
+	tags="compiler development"
 	previous="installation"
 	next="cargo"
 	furtherInformationUrls="https://doc.rust-lang.org/nightly/edition-guide/rust-2018/rustup-for-managing-rust-versions.html"

@@ -7,7 +7,7 @@
 	index={2}
 	title="Installation"
 	summary="You can download rust from rust-lang.org"
-	tags="developing"
+	tags="development"
 	previous="./"
 	next="rustup"
 >

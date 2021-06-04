@@ -15,7 +15,7 @@
 	$: urlEmail = `mailto:?subject=${fullTitle}&body=${url}`;
 </script>
 
-<div class="socialMedaShare">
+<div class="socialMediaShare">
 	<!-- Facebook -->
 	<ExternalLink href={urlFacebook}>
 		<img
@@ -84,7 +84,7 @@
 </div>
 
 <style lang="postcss">
-	.socialMedaShare {
+	.socialMediaShare {
 		margin-top: 25px;
 		margin-bottom: 20px;
 	}

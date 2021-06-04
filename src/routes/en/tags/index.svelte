@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Tags from '$components/tags.svelte';
 	import FerrisNormal from '$components/ferris/normal.svelte';
+	import SocialMediaShare from '$components/lesson/socialMediaShare.svelte';
 </script>
 
 <div class="pure-g">
@@ -8,6 +9,7 @@
 		<h1>Available tags</h1>
 
 		<Tags />
+		<SocialMediaShare title="Available tags" />
 	</section>
 
 	<section class="pure-u-1 pure-u-md-1-2">
