@@ -25,24 +25,22 @@ const createStore = () => {
 	return readable({ tags: [], stages: {}, lessons: [] }, (set) => {
 		if (browser) {
 			const lessons: string = localStorage.getItem(cacheKey);
-			if (lessons) {
-				const cachedObject: CachedObject = JSON.parse(lessons);
+			const cachedObject: CachedObject = JSON.parse(lessons);
 
-				// Cache entry is still valid.
-				if (cachedObject.expires > Date.now()) {
-					set(cachedObject.data);
-					return;
-				}
-			} else {
-				getData().then((data: Lessons) => {
-					const cacheObject: CachedObject = {
-						expires: Date.now() + cacheDuration,
-						data
-					};
-					localStorage.setItem(cacheKey, JSON.stringify(cacheObject));
-					set(data);
-				});
+			// Cache entry is still valid.
+			if (cachedObject.expires > Date.now()) {
+				set(cachedObject.data);
+				return;
 			}
+
+			getData().then((data: Lessons) => {
+				const cacheObject: CachedObject = {
+					expires: Date.now() + cacheDuration,
+					data
+				};
+				localStorage.setItem(cacheKey, JSON.stringify(cacheObject));
+				set(data);
+			});
 		}
 	});
 };
