@@ -17,7 +17,6 @@
 	"scripts": {
 		"predev": "npm run generate",
 		"dev": "svelte-kit dev --port 15007",
-		"prebuild": "npm run generate",
 		"build": "svelte-kit build",
 		"preview": "svelte-kit preview --port 15007",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",

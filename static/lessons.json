@@ -11,10 +11,9 @@
 		"structs",
 		"dependencies",
 		"testing",
-		"developing",
-		"program",
+		"development",
 		"iteration",
-		"control-flow",
+		"control-structures",
 		"memory",
 		"enums",
 		"error-handling",
@@ -32,7 +31,7 @@
 	"stages": {
 		"1": "The Basics",
 		"2": "Rust installation and local development",
-		"3": "Basic Control Flow",
+		"3": "Control Structures",
 		"4": "Basic Data Structure Types",
 		"5": "Generic Types",
 		"6": "Ownership & Borrowing Data",
@@ -74,9 +73,9 @@
 			"language": "en",
 			"stage": 3,
 			"index": 1,
-			"title": "Introduction - Basic Control Flow",
+			"title": "Introduction - Control Structures",
 			"next": "if-else",
-			"content": "In this chapter let's talk about basic control flow methods in Rust. If you are familiar with C based languages you'll feel right at home and maybe enjoy a surprise or two."
+			"content": "In this chapter let's talk about the basic control structures in Rust. If you are familiar with C based languages you'll feel right at home and maybe enjoy a surprise or two."
 		},
 		{
 			"url": "http://localhost:15007/en/stages/4/",
@@ -165,7 +164,7 @@
 			"index": 2,
 			"title": "Installation",
 			"summary": "You can download rust from rust-lang.org",
-			"tags": ["developing"],
+			"tags": ["development"],
 			"previous": "./",
 			"next": "rustup",
 			"content": "The recommended way to install Rust and its tools is to download rustup, Rust's toolchain manager.\nYou can download it here: https://www.rust-lang.org/tools/install (RUSTUP-INIT)\nAfter the installation you can run rustc --version (Rust's compiler) to check, if it's installed properly."
@@ -177,7 +176,7 @@
 			"index": 2,
 			"title": "if / else",
 			"summary": "Rust provides with if / else a know concept for controlling the flow of your program",
-			"tags": ["control-flow"],
+			"tags": ["control-structures"],
 			"previous": "./",
 			"next": "loop",
 			"furtherInformationUrls": [
@@ -293,7 +292,7 @@
 			"stage": 2,
 			"index": 3,
 			"title": "rustup",
-			"tags": ["compiler", "developing"],
+			"tags": ["compiler", "development"],
 			"previous": "installation",
 			"next": "cargo",
 			"furtherInformationUrls": [
@@ -308,7 +307,7 @@
 			"index": 3,
 			"title": "loop",
 			"summary": "the loop keyword is a useful tool if you need an infinite loop",
-			"tags": ["iteration", "control-flow"],
+			"tags": ["iteration", "control-structures"],
 			"previous": "if-else",
 			"next": "returning-values-from-loop",
 			"content": "Need an infinite loop? Rust makes it easy.\nbreak will escape a loop when you are ready.\nloop has a secret we'll talk about soon."
@@ -685,7 +684,7 @@
 			"index": 6,
 			"title": "for",
 			"summary": "Rust provides with for a known concept for iterating data",
-			"tags": ["iteration", "control-flow"],
+			"tags": ["iteration", "control-structures"],
 			"previous": "while",
 			"next": "match",
 			"furtherInformationUrls": [
@@ -793,7 +792,7 @@
 			"stage": 2,
 			"index": 7,
 			"title": "Setup Visual Studio Code",
-			"tags": ["developing"],
+			"tags": ["development"],
 			"previous": "cargo-subcommands",
 			"next": "writing-a-hello-world-program",
 			"content": "I recommend using Visual Studio Code for developing Rust programs.\nVisual Studio Code is a modular editor which can be extended with with useful tools (called extensions) to improve your developing experience for Rust programming.\nBesides the official Rust extension there are also extension packs which offers some additional tools often needed for Rust programming, e. g. an extension for TOML files.\nI can recommend you an extension pack of my own, which you can find here: Rust Extension Pack."
@@ -805,7 +804,7 @@
 			"index": 7,
 			"title": "match",
 			"summary": "Rust's match is similar to a switch/case, but more powerful",
-			"tags": ["control-flow"],
+			"tags": ["control-structures"],
 			"previous": "for",
 			"next": "returning-values-from-block-expressions",
 			"furtherInformationUrls": ["https://doc.rust-lang.org/book/ch06-02-match.html"],
@@ -920,7 +919,7 @@
 			"stage": 2,
 			"index": 8,
 			"title": "Writing A Hello World Program",
-			"tags": ["program", "developing"],
+			"tags": ["development"],
 			"previous": "setup-visual-studio-code",
 			"next": "reading-command-line-arguments",
 			"content": "You can create a new file main.rs and put the code from the Rust Playground in it\nor you can use cargo to create a new project with either cargo new hello-world or cargo init\ncargo will automatically create a src/main.rs for you which already has a Hello, world! output in it.\nIf you chose cargo to create a basic project for you, all you have to do is to run: cargo run in a terminal and you should see the output: Hello, world!\nIf you created a main.rs without cargo, you have to use the Rust compiler rustc and run: rustc main.rs.\nThis will create a main.exe in the same directory. Now you have to execute this compiled file (./main.exe) and you will see the same output.\nIn a later lesson you will also learn how to split your code into multiple files."
