@@ -5,7 +5,7 @@
 
 <div class="tags">
 	{#each $LessonsStore.tags as tag}
-		<span><InternalLink href="/en/tags/{tag}">#{tag}</InternalLink></span>
+		<span id={tag}><InternalLink href="/en/tags/{tag}">#{tag}</InternalLink></span>
 	{:else}
 		<p>Loading...</p>
 	{/each}
