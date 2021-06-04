@@ -5,6 +5,8 @@
 <Lesson
 	index={10}
 	title="Trait Objects"
+	summary="A trait object is what allows us to indirectly call the correct methods of an instance"
+	tags="traits methods"
 	previous="dynamic-vs-static-dispatch"
 	next="handling-unsized-data"
 	furtherInformationUrls="https://doc.rust-lang.org/book/ch17-02-trait-objects.html https://doc.rust-lang.org/reference/types/trait-object.html"

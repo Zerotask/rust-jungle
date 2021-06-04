@@ -5,6 +5,7 @@
 <Lesson
 	index={2}
 	title="What Is Object Oriented Programming (OOP)?"
+	summary="Object oriented programming roughly refers to programming languages that have a number of iconic features: encapsulation, abstraction, polymorphism and inheritance"
 	previous="./"
 	next="rust-is-not-oop"
 >

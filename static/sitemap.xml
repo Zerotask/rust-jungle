@@ -29,15 +29,15 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://localhost:15007/en/stages/</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>http://localhost:15007/en/tags/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>http://localhost:15007/en/tags/[slug]</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -94,6 +94,50 @@
   </url>
   <url>
     <loc>http://localhost:15007/en/stages/1/variables</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/2/cargo-subcommands</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/2/cargo</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/2/how-to-test-functions</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/2/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/2/installation</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/2/managing-dependencies-with-cargo</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/2/reading-command-line-arguments</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/2/rustup</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/2/setup-visual-studio-code</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/2/summary</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/2/writing-a-hello-world-program</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -162,50 +206,6 @@
   </url>
   <url>
     <loc>http://localhost:15007/en/stages/10/your-own-prelude</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/2/cargo-subcommands</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/2/cargo</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/2/how-to-test-functions</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/2/</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/2/installation</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/2/managing-dependencies-with-cargo</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/2/reading-command-line-arguments</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/2/rustup</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/2/setup-visual-studio-code</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/2/summary</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/2/writing-a-hello-world-program</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>

@@ -5,6 +5,7 @@
 <Lesson
 	index={3}
 	title="Rust Is Not OOP"
+	summary="Rust lacks inheritance of data and behavior in any meaningful way"
 	previous="what-is-object-oriented-programming"
 	next="encapsulation-with-methods"
 >

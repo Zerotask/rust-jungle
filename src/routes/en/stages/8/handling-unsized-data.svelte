@@ -5,6 +5,8 @@
 <Lesson
 	index={11}
 	title="Handling Unsized Data"
+	summary="Traits obfuscate the original struct thus it also obfuscates the original size"
+	tags="traits"
 	previous="trait-objects"
 	next="generic-functions"
 	furtherInformationUrls="https://doc.rust-lang.org/nomicon/exotic-sizes.html#dynamically-sized-types-dsts"
