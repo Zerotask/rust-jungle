@@ -5,6 +5,8 @@
 <Lesson
 	index={16}
 	title="Rust Editions"
+	summary="New editions can add new keywords which could conflict or be incompatible with your existing code. Therefore you have to opt-in to use a newer edition or you just stay on a working edition and everything is fine"
+	tags="compiler"
 	previous="cargo-toml-file"
 	next="summary"
 	furtherInformationUrls="https://doc.rust-lang.org/edition-guide/editions/index.html"

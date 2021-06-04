@@ -5,9 +5,9 @@
 <Lesson
 	index={3}
 	title="Writing A Program"
+	summary="A program has a root module in a file called main.rs"
 	previous="modules"
 	next="writing-a-library"
-	tags="program"
 >
 	<p>
 		A program has a root module in a file called <i>main.rs</i>.

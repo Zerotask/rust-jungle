@@ -5,6 +5,7 @@
 <Lesson
 	index={4}
 	title="Writing A Library"
+	summary="A library has a root module in a file called lib.rs"
 	previous="writing-a-program"
 	next="referencing-other-modules-and-crates"
 >

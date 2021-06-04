@@ -6,6 +6,8 @@
 <Lesson
 	index={15}
 	title="Cargo.toml File"
+	summary="The Cargo.toml file is the central configuration file"
+	tags="cargo"
 	previous="your-own-prelude"
 	next="rust-editions"
 	furtherInformationUrls="https://doc.rust-lang.org/cargo/reference/manifest.html"

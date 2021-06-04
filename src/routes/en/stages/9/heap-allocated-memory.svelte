@@ -5,6 +5,8 @@
 <Lesson
 	index={10}
 	title="Heap Allocated Memory"
+	summary="Box is a smart pointer that lets us move data from the stack to the heap"
+	tags="memory"
 	previous="familiar-friends"
 	next="failable-main-revisited"
 	playgroundUrl="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=struct%20Pie%3B%0A%0Aimpl%20Pie%20%7B%0A%20%20%20%20fn%20eat(%26self)%20%7B%0A%20%20%20%20%20%20%20%20println!(%22tastes%20better%20on%20the%20heap!%22)%0A%20%20%20%20%7D%0A%7D%0A%0Afn%20main()%20%7B%0A%20%20%20%20let%20heap_pie%20%3D%20Box%3A%3Anew(Pie)%3B%0A%20%20%20%20heap_pie.eat()%3B%0A%7D%0A"

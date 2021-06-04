@@ -5,6 +5,8 @@
 <Lesson
 	index={7}
 	title="Creating Modules"
+	summary="Rust lets you create modules closely related to your file structure"
+	tags="modules"
 	previous="referencing-multiple-items"
 	next="module-hierarchy"
 >

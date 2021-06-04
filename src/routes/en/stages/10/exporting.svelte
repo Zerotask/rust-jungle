@@ -5,6 +5,8 @@
 <Lesson
 	index={11}
 	title="Exporting"
+	summary="By default members of a module are not accessible from outside of the module"
+	tags="modules"
 	previous="internal-module-referencing"
 	next="struct-visibility"
 >

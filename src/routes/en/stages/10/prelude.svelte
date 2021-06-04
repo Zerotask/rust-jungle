@@ -5,6 +5,7 @@
 <Lesson
 	index={13}
 	title="Prelude"
+	summary="in the Rust standard library anything that is exported in std::prelude::* is automatically available to every part of Rust"
 	previous="struct-visibility"
 	next="your-own-prelude"
 	furtherInformationUrls="https://doc.rust-lang.org/std/prelude/index.html"

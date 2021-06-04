@@ -5,6 +5,7 @@
 <Lesson
 	index={4}
 	title="Dereferencing Revisited"
+	summary="The process of accessing / manipulating data that is being referred to by a reference is called dereferencing"
 	previous="raw-pointers"
 	next="the-dereference-operator"
 	furtherInformationUrls="https://doc.rust-lang.org/stable/rust-by-example/flow_control/match/destructuring/destructure_pointers.html"

@@ -5,6 +5,8 @@
 <Lesson
 	index={8}
 	title="Module Hierarchy"
+	summary="A module can depend on another one"
+	tags="modules"
 	previous="referencing-multiple-items"
 	next="inline-modules"
 	furtherInformationUrls="https://doc.rust-lang.org/book/ch07-05-separating-modules-into-different-files.html https://doc.rust-lang.org/rust-by-example/mod/split.html"

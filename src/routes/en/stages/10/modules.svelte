@@ -5,6 +5,8 @@
 <Lesson
 	index={2}
 	title="Modules"
+	summary="Every Rust program or library is a crate. Every crate is made of a hierarchy of modules"
+	tags="modules"
 	previous="./"
 	next="writing-a-program"
 	furtherInformationUrls="https://doc.rust-lang.org/book/ch07-01-packages-and-crates.html https://doc.rust-lang.org/book/ch07-02-defining-modules-to-control-scope-and-privacy.html"
