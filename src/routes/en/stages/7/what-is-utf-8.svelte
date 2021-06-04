@@ -5,6 +5,7 @@
 <Lesson
 	index={3}
 	title="What Is UTF-8?"
+	summary="utf-8 was introduced with a variable byte length of 1-4 bytes greatly increasing the range of possible characters"
 	previous="string-literals"
 	next="escaping-characters"
 	furtherInformationUrls="https://doc.rust-lang.org/book/ch08-02-strings.html"
