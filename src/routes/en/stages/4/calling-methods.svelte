@@ -5,7 +5,7 @@
 <Lesson
 	index={3}
 	title="Calling Methods"
-	description="Methods are similar to functions, but associated with a struct"
+	summary="Methods are similar to functions, but associated with a struct"
 	tags="structs"
 	previous="structures"
 	next="memory"

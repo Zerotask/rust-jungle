@@ -5,7 +5,7 @@
 <Lesson
 	index={7}
 	title="match"
-	description="Rust's match is similar to a switch/case, but more powerful"
+	summary="Rust's match is similar to a switch/case, but more powerful"
 	tags="control-flow"
 	previous="for"
 	next="returning-values-from-block-expressions"

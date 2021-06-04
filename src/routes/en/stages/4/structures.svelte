@@ -5,7 +5,7 @@
 <Lesson
 	index={2}
 	title="Structures"
-	description="The struct keyword allows you to create a collection of fields"
+	summary="The struct keyword allows you to create a collection of fields"
 	tags="structs"
 	previous="./"
 	next="calling-methods"

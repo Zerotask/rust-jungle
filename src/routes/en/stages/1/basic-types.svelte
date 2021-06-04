@@ -5,7 +5,7 @@
 <Lesson
 	index={5}
 	title="Basic Types"
-	description="Rust provides all the common data types, including strings, booleans, integers and more"
+	summary="Rust provides all the common data types, including strings, booleans, integers and more"
 	tags="data-types"
 	previous="changing-variables"
 	next="basic-type-conversion"

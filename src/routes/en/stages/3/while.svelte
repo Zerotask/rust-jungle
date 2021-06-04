@@ -5,7 +5,7 @@
 <Lesson
 	index={5}
 	title="while"
-	description="Rust provides with while a known concept for iteration over data"
+	summary="Rust provides with while a known concept for iteration over data"
 	tags="iteration"
 	previous="returning-values-from-loop"
 	next="for"

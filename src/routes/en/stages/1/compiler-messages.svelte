@@ -6,7 +6,7 @@
 <Lesson
 	index={13}
 	title="Compiler Messages"
-	description="Rust compiler messages are especially helpful and often provide concrete solutions"
+	summary="Rust compiler messages are especially helpful and often provide concrete solutions"
 	tags="compiler"
 	previous="macros"
 	next="summary"

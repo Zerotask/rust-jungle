@@ -5,7 +5,7 @@
 <Lesson
 	index={8}
 	title="Arrays"
-	description="arrays are a data collection with a fixed length"
+	summary="arrays are a data collection with a fixed length"
 	tags="arrays"
 	previous="constants"
 	next="functions"

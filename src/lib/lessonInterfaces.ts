@@ -4,12 +4,12 @@ export interface LessonData {
 	stage: number;
 	index: number;
 	title: string;
-	tags: string[];
+	summary?: string;
+	tags?: string[];
 	previous?: string;
 	next?: string;
-	playground: string;
-	furtherInformation?: string[];
-	content?: string;
+	furtherInformationUrls?: string[];
+	content: string;
 }
 
 export interface Stages {

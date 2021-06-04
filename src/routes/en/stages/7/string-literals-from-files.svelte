@@ -5,6 +5,7 @@
 <Lesson
 	index={7}
 	title="String Literals From Files"
+	summary="If you have some very large text, consider using the macro <code>include_str!</code> to include text from local files in your program"
 	previous="raw-string-literals"
 	next="string-slice"
 	furtherInformationUrls="https://doc.rust-lang.org/std/macro.include_str.html"

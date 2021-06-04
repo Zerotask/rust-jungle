@@ -5,7 +5,7 @@
 <Lesson
 	index={4}
 	title="cargo"
-	description="Cargo is Rust's package manager and the central tool for developing Rust programs"
+	summary="Cargo is Rust's package manager and the central tool for developing Rust programs"
 	tags="cargo dependencies"
 	previous="rustup"
 	next="managing-dependencies-with-cargo"

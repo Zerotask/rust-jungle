@@ -5,7 +5,7 @@
 <Lesson
 	index={6}
 	title="Basic Type Conversion"
-	description="Rust allows you to easily convert data types with the as keyword"
+	summary="Rust allows you to easily convert data types with the as keyword"
 	tags="data-types"
 	previous="basic-types"
 	next="constants"

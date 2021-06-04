@@ -5,7 +5,7 @@
 <Lesson
 	index={8}
 	title="Enums"
-	description="nums allow you to create a new type that can have a value of several tagged elements"
+	summary="nums allow you to create a new type that can have a value of several tagged elements"
 	tags="enums"
 	previous="unit-like-structs"
 	next="enums-with-data"

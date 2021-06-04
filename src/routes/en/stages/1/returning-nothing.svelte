@@ -5,7 +5,7 @@
 <Lesson
 	index={11}
 	title="Returning Nothing"
-	description="Rust functions can also return an empty tuple, also known as a unit"
+	summary="Rust functions can also return an empty tuple, also known as a unit"
 	tags="functions"
 	previous="multiple-return-values"
 	next="macros"

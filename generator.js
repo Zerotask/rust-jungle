@@ -5,7 +5,7 @@ import { create } from 'xmlbuilder2';
 import dotenv from 'dotenv';
 dotenv.config();
 
-// const outputFolder = './.vercel_build_output/static';
+const fileNameLessonsData = 'lessons.json';
 const outputFolder = './static';
 
 const getPages = async () => await fg('src/routes/**/[^__]*.svelte');
@@ -17,6 +17,47 @@ const getUrl = (page) => {
 		.replace('index', '');
 };
 
+const getLessonElement = (page) => {
+	const fileContent = fs.readFileSync(page, 'utf8');
+	const root = parse(fileContent);
+
+	return root.querySelector('Lesson');
+};
+
+const getLessonIndex = (lessonElement) => {
+	const indexAttribute = lessonElement.attributes.index;
+	let index = 1;
+	if (indexAttribute) {
+		index = parseInt(indexAttribute, 10);
+		if (isNaN(index)) {
+			index = parseInt(indexAttribute.slice(1, -1), 10);
+		}
+	}
+
+	return index;
+};
+
+const getLessonTitle = (lessonElement, fileName, index) => {
+	const titleAttribute = lessonElement.attributes.title;
+	let title;
+	if (fileName === 'summary.svelte') {
+		title = 'Summary';
+	} else if (index === 1) {
+		title = `Introduction - ${titleAttribute}`;
+	} else {
+		title = titleAttribute;
+	}
+
+	return title;
+};
+
+const writeLessonsJsonFile = (tags, stages, lessons) => {
+	fs.writeFileSync(
+		`${outputFolder}/${fileNameLessonsData}`,
+		JSON.stringify({ tags, stages, lessons })
+	);
+};
+
 const generateLessonsJson = async () => {
 	const startTime = process.hrtime();
 	const pages = await getPages();
@@ -26,69 +67,34 @@ const generateLessonsJson = async () => {
 	const tagsData = new Set();
 
 	pages.forEach((page) => {
-		const fileContent = fs.readFileSync(page, 'utf8');
-		const root = parse(fileContent);
-		const lessonElement = root.querySelector('Lesson');
+		const lessonElement = getLessonElement(page);
 
 		if (!lessonElement) {
-			console.log({ page });
+			console.info({ page });
 			return;
 		}
 
 		const url = getUrl(page);
-
 		const pathParts = page.split('/');
-
-		// language
 		const language = pathParts[2];
-
-		// stage
 		const stage = parseInt(pathParts[4], 10);
+		const index = getLessonIndex(lessonElement);
+		const title = getLessonTitle(lessonElement, pathParts.pop(), index);
+		const summary = lessonElement.attributes.summary;
+		const previous = lessonElement.attributes.previous;
+		const next = lessonElement.attributes.next;
+		const furtherInformationUrls = lessonElement.attributes.furtherInformationUrls?.split(' ');
+		const content = lessonElement.structuredText.trim();
 
-		// index
-		const indexAttribute = lessonElement.attributes.index;
-		let index = 1;
-		if (indexAttribute) {
-			index = parseInt(indexAttribute, 10);
-			if (isNaN(index)) {
-				index = parseInt(indexAttribute.slice(1, -1), 10);
-			}
+		// stages data
+		if (index === 1) {
+			stagesData[stage] = lessonElement.attributes.title;
 		}
 
-		// title
-		const titleAttribute = lessonElement.attributes.title;
-		let title;
-		if (pathParts.pop() === 'summary.svelte') {
-			title = 'Summary';
-		} else if (index === 1) {
-			title = `Introduction - ${titleAttribute}`;
-		} else {
-			title = titleAttribute;
-		}
-
-		// tags
+		// tags data
 		const tags = lessonElement.attributes.tags?.split(' ');
 		if (tags) {
 			tags.forEach((tag) => tagsData.add(tag));
-		}
-
-		// previous
-		const previous = lessonElement.attributes.previous;
-
-		// next
-		const next = lessonElement.attributes.next;
-
-		// playground
-		const playground = lessonElement.attributes.src;
-
-		// furtherInformation
-		const furtherInformation = lessonElement.attributes.links?.split(' ');
-
-		// content
-		const content = lessonElement.structuredText.trim();
-
-		if (index === 1) {
-			stagesData[stage] = titleAttribute;
 		}
 
 		lessonsData.push({
@@ -97,29 +103,19 @@ const generateLessonsJson = async () => {
 			stage,
 			index,
 			title,
+			summary,
 			tags,
 			previous,
 			next,
-			playground,
-			furtherInformation,
+			furtherInformationUrls,
 			content
 		});
 	});
 
 	lessonsData = lessonsData.sort((a, b) => a.index - b.index);
-
-	const fileName = 'lessons.json';
-	fs.writeFileSync(
-		`${outputFolder}/${fileName}`,
-		JSON.stringify({
-			tags: [...tagsData],
-			stages: stagesData,
-			lessons: lessonsData
-		})
-	);
-
+	writeLessonsJsonFile([...tagsData], stagesData, lessonsData);
 	const endTime = process.hrtime(startTime);
-	console.log(`Generated ${fileName} in: %ds %dms`, endTime[0], endTime[1] / 1000000);
+	console.info(`Generated ${fileNameLessonsData} in: %ds %dms`, endTime[0], endTime[1] / 1000000);
 };
 
 const generateSitemapXml = async () => {
@@ -141,7 +137,7 @@ const generateSitemapXml = async () => {
 	fs.writeFileSync(`${outputFolder}/${fileName}`, sitemap.end({ prettyPrint: true }));
 
 	const endTime = process.hrtime(startTime);
-	console.log(`Generated ${fileName} in: %ds %dms`, endTime[0], endTime[1] / 1000000);
+	console.info(`Generated ${fileName} in: %ds %dms`, endTime[0], endTime[1] / 1000000);
 };
 
 generateLessonsJson();

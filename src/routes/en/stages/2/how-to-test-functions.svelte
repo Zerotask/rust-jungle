@@ -5,7 +5,7 @@
 <Lesson
 	index={10}
 	title="How to test functions"
-	description="Rust provides built-in tools to test functions"
+	summary="Rust provides built-in tools to test functions"
 	tags="testing functions"
 	previous="reading-command-line-arguments"
 	next="summary"

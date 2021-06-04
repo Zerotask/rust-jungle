@@ -5,7 +5,7 @@
 <Lesson
 	index={2}
 	title="if / else"
-	description="Rust provides with if / else a know concept for controlling the flow of your program"
+	summary="Rust provides with if / else a know concept for controlling the flow of your program"
 	tags="control-flow"
 	previous="./"
 	next="loop"

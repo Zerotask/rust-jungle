@@ -5,7 +5,7 @@
 <Lesson
 	index={4}
 	title="Returning Values From Loop"
-	description="In Rust you can return a value from a loop and assign it to a variable"
+	summary="In Rust you can return a value from a loop and assign it to a variable"
 	tags="iteration variables"
 	previous="loop"
 	next="while"
