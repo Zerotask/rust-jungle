@@ -325,6 +325,70 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://localhost:15007/en/stages/6/borrowing-mutable-ownership-with-references</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/6/borrowing-ownership-with-references</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/6/dereferencing</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/6/dropping-is-hierarchical</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/6/explicit-lifetimes</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/6/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/6/lifetimes-in-data-types</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/6/moving-ownership</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/6/multiple-lifetimes</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/6/ownership</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/6/passing-around-borrowed-data</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/6/references-of-references</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/6/returning-ownership</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/6/scope-based-resource-management</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/6/static-lifetimes</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:15007/en/stages/6/summary</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://localhost:15007/en/stages/7/building-strings</loc>
     <changefreq>monthly</changefreq>
   </url>
@@ -390,70 +454,6 @@
   </url>
   <url>
     <loc>http://localhost:15007/en/stages/7/what-is-utf-8</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/6/borrowing-mutable-ownership-with-references</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/6/borrowing-ownership-with-references</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/6/dereferencing</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/6/dropping-is-hierarchical</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/6/explicit-lifetimes</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/6/</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/6/lifetimes-in-data-types</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/6/moving-ownership</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/6/multiple-lifetimes</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/6/ownership</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/6/passing-around-borrowed-data</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/6/references-of-references</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/6/returning-ownership</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/6/scope-based-resource-management</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/6/static-lifetimes</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:15007/en/stages/6/summary</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>

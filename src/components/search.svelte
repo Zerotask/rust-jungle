@@ -32,7 +32,7 @@
 		results = $LessonsStore.lessons.filter(
 			(lesson: LessonData) =>
 				lesson.title.toLowerCase().includes(value) ||
-				lesson.summary.toLowerCase().includes(value) ||
+				lesson.summary?.toLowerCase().includes(value) ||
 				lesson.content.toLowerCase().includes(value)
 		);
 	}
