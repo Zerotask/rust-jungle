@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Lesson from '$components/lesson.svelte';
-	import ExternalLink from '$components/external-link.svelte';
+	import Lesson from '$components/lesson/lesson.svelte';
+	import ExternalLink from '$components/externalLink.svelte';
 </script>
 
 <Lesson index={17} previous="rust-editions">

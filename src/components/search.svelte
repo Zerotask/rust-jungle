@@ -1,10 +1,10 @@
 <script lang="ts">
 	import LessonsStore from '$stores/lessons';
-	import InternalLink from '$components/internal-link.svelte';
+	import InternalLink from '$components/internalLink.svelte';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	import type { LessonData } from '$lib/lessonInterfaces';
-	import { buildName } from '$lib/lessons';
+	import { buildTitle } from '$lib/lessons';
 
 	export let placeholder = 'Search for lessons';
 
@@ -57,7 +57,7 @@
 		{#each results as lesson}
 			<p>
 				<InternalLink href={lesson.url}
-					>{buildName(lesson.stage, lesson.index, lesson.title)}</InternalLink
+					>{buildTitle(lesson.stage, lesson.index, lesson.title)}</InternalLink
 				>
 			</p>
 		{/each}

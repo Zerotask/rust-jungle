@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Lesson from '$components/lesson.svelte';
+	import Lesson from '$components/lesson/lesson.svelte';
 </script>
 
 <Lesson index={11} previous="how-to-test-functions">

@@ -5,13 +5,12 @@
 	import Playground from '$components/playground.svelte';
 	import FerrisNormal from '$components/ferris/normal.svelte';
 	import FerrisHappy from '$components/ferris/happy.svelte';
-	import FurtherInformation from '$components/further-information.svelte';
-	import ExternalLink from '$components/external-link.svelte';
-	import InternalLink from '$components/internal-link.svelte';
+	import FurtherInformation from '$components/furtherInformation.svelte';
+	import InternalLink from '$components/internalLink.svelte';
 	import lastLessonStore from '$stores/lastLesson';
 	import LessonsStore from '$stores/lessons';
-	import { buildName } from '$lib/lessons';
-
+	import { buildTitle } from '$lib/lessons';
+	import SocialMediaShare from '$components/lesson/socialMediaShare.svelte';
 	export let index = 1;
 	export let title: string | null = null;
 	export let summary: string | null = null;
@@ -24,8 +23,7 @@
 	let isIntroduction = false;
 	let isSummary = false;
 	let lastStage: number;
-	let shareTitle: string;
-	let url: string;
+	const url: string = encodeURI(`https://${$page.host}${$page.path}`);
 
 	// for compatibility. the lessons endpoint needs a string, not an array.
 	if (typeof furtherInformationUrls === 'string') {
@@ -50,13 +48,7 @@
 
 	let lessonsPerStage = [];
 
-	$: urlFacebook = `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${shareTitle}`;
-	$: urlTwitter = `https://twitter.com/intent/tweet?source=${url}&text=${shareTitle}`;
-	$: urlReddit = `http://www.reddit.com/submit?url=${url}&title=${shareTitle}`;
-	$: urlPocket = `https://getpocket.com/save?url=${shareTitle}&title=${shareTitle}`;
-	$: urlLinkedin = `http://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${shareTitle}&summary=&source=${url}`;
-	$: urlEmail = `mailto:?subject=${shareTitle}&body=${url}`;
-	$: fullTitle = buildName(stage, index, title);
+	$: fullTitle = buildTitle(stage, index, title);
 
 	let xDown = null;
 	let yDown = null;
@@ -83,9 +75,6 @@
 				next = `../${stage + 1}`;
 			}
 		}
-
-		shareTitle = encodeURIComponent(`Rust Jungle - ${fullTitle}`);
-		url = encodeURI(`https://${$page.host}${$page.path}`);
 
 		lessonsPerStage = $LessonsStore.lessons.filter((lesson) => lesson.stage === stage);
 
@@ -121,13 +110,13 @@
 		}
 	}
 
-	function handleTouchStart(event) {
+	function handleTouchStart(event): void {
 		const firstTouch = event.touches[0];
 		xDown = firstTouch.clientX;
 		yDown = firstTouch.clientY;
 	}
 
-	function handleTouchMove(event) {
+	function handleTouchMove(event): void {
 		if (!xDown || !yDown) {
 			return;
 		}
@@ -138,9 +127,9 @@
 		const yDiff = yDown - yUp;
 
 		if (Math.abs(xDiff) > Math.abs(yDiff)) {
-			if (xDiff > 0) {
+			if (xDiff > 0 && next) {
 				goto(next);
-			} else {
+			} else if (previous) {
 				goto(previous);
 			}
 		}
@@ -189,73 +178,7 @@
 			<FurtherInformation links={furtherInformationUrls} />
 		{/if}
 
-		<div class="socialMedaShare">
-			<!-- Facebook -->
-			<ExternalLink href={urlFacebook}>
-				<img
-					title="Share on Facebook"
-					alt="Share on Facebook"
-					src="/images/social-media/facebook.png"
-					width="32"
-					height="32"
-				/>
-			</ExternalLink>
-
-			<!-- Twitter -->
-			<ExternalLink href={urlTwitter}>
-				<img
-					title="Share on Twitter"
-					alt="Share on Twitter"
-					src="/images/social-media/twitter.png"
-					width="32"
-					height="32"
-				/>
-			</ExternalLink>
-
-			<!-- Reddit -->
-			<ExternalLink href={urlReddit}>
-				<img
-					title="Share on Reddit"
-					alt="Share on Reddit"
-					src="/images/social-media/reddit.png"
-					width="32"
-					height="32"
-				/>
-			</ExternalLink>
-
-			<!-- Pocket -->
-			<ExternalLink href={urlPocket}>
-				<img
-					title="Save on Pocket"
-					alt="Save on Pocket"
-					src="/images/social-media/pocket.png"
-					width="32"
-					height="32"
-				/>
-			</ExternalLink>
-
-			<!-- LinkedIn -->
-			<ExternalLink href={urlLinkedin}>
-				<img
-					title="Share on LinkedIn"
-					alt="Share on LinkedIn"
-					src="/images/social-media/linkedin.png"
-					width="32"
-					height="32"
-				/>
-			</ExternalLink>
-
-			<!-- EMail -->
-			<ExternalLink href={urlEmail}>
-				<img
-					title="Share via email"
-					alt="Share via email"
-					src="/images/social-media/email.png"
-					width="32"
-					height="32"
-				/>
-			</ExternalLink>
-		</div>
+		<SocialMediaShare title={fullTitle} />
 	</section>
 
 	<section class="pure-u-1 pure-u-md-1-2">
@@ -344,11 +267,6 @@
 	.stageInformation p {
 		margin-top: 3px;
 		font-weight: bold;
-	}
-
-	.socialMedaShare {
-		margin-top: 25px;
-		margin-bottom: 20px;
 	}
 
 	#tags {

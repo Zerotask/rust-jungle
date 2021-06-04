@@ -1,6 +1,6 @@
 <script lang="ts">
 	import LessonsStore from '$stores/lessons';
-	import InternalLink from '$components/internal-link.svelte';
+	import InternalLink from '$components/internalLink.svelte';
 </script>
 
 <div class="tags">

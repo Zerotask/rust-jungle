@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Lesson from '$components/lesson.svelte';
+	import Lesson from '$components/lesson/lesson.svelte';
 </script>
 
 <Lesson title="Basic Data Structure Types" next="structures">

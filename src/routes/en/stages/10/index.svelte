@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Lesson from '$components/lesson.svelte';
+	import Lesson from '$components/lesson/lesson.svelte';
 </script>
 
 <Lesson title="Project Organization and Stucture" next="modules">

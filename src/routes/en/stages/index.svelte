@@ -1,5 +1,5 @@
 <script lang="ts">
-	import StagesOverview from '$components/stages-overview.svelte';
+	import StagesOverview from '$components/stagesOverview.svelte';
 </script>
 
 <div class="pure-g">

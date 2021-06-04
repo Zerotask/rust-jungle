@@ -1,2 +1,2 @@
-export const buildName = (stage: number, index: number, title: string): string =>
+export const buildTitle = (stage: number, index: number, title: string): string =>
 	`Stage ${stage}.${index}: ${title}`;
