@@ -58,7 +58,13 @@
 	$: urlEmail = `mailto:?subject=${shareTitle}&body=${url}`;
 	$: fullTitle = buildName(stage, index, title);
 
+	let xDown = null;
+	let yDown = null;
+
 	onMount(() => {
+		document.addEventListener('touchstart', handleTouchStart, { once: true });
+		document.addEventListener('touchmove', handleTouchMove, { once: true });
+
 		const stageKeys = Object.keys($LessonsStore.stages);
 		lastStage = parseInt(stageKeys[stageKeys.length - 1], 10);
 
@@ -113,6 +119,35 @@
 		if (link) {
 			goto(link);
 		}
+	}
+
+	function handleTouchStart(event) {
+		const firstTouch = event.touches[0];
+		xDown = firstTouch.clientX;
+		yDown = firstTouch.clientY;
+	}
+
+	function handleTouchMove(event) {
+		if (!xDown || !yDown) {
+			return;
+		}
+
+		const xUp = event.touches[0].clientX;
+		const yUp = event.touches[0].clientY;
+		const xDiff = xDown - xUp;
+		const yDiff = yDown - yUp;
+
+		if (Math.abs(xDiff) > Math.abs(yDiff)) {
+			if (xDiff > 0) {
+				goto(next);
+			} else {
+				goto(previous);
+			}
+		}
+
+		// Reset values
+		xDown = null;
+		yDown = null;
 	}
 </script>
 
