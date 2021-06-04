@@ -30,3 +30,11 @@ you can run `npm run lint` or `npm run lint:fix` to automatically fix it, if pos
 You can build / compile the entire project with `npm run build`
 
 and with `npm run start` you can test it.
+
+## Add or update a lesson
+
+The core of a lesson is the Lesson component. If you want to add or update a lesson, you have to ensure, that this component is imported.
+
+After it, you can use it like an HTML tag and just pass data via attributes.
+
+`<Lesson index="{99}" title="Test" summary="" tags="" previous="" next="" playgroundUrl="" furtherInformationUrls="">content</lesson>`
