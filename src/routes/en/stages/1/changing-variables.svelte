@@ -5,7 +5,7 @@
 <Lesson
 	index={4}
 	title="Changing Variables"
-	description="Rust variables are immutable by default"
+	summary="Rust variables are immutable by default"
 	tags="variables"
 	previous="variables"
 	next="basic-types"

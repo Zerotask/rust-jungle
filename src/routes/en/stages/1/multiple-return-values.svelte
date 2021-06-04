@@ -5,7 +5,7 @@
 <Lesson
 	index={10}
 	title="Multiple Return Values"
-	description="Rust functions can return multiple values (tuple)"
+	summary="Rust functions can return multiple values (tuple)"
 	tags="functions"
 	previous="functions"
 	next="returning-nothing"

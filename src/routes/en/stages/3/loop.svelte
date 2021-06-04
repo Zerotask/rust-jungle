@@ -5,7 +5,7 @@
 <Lesson
 	index={3}
 	title="loop"
-	description="the loop keyword is a useful tool if you need an infinite loop"
+	summary="the loop keyword is a useful tool if you need an infinite loop"
 	tags="iteration control-flow"
 	previous="if-else"
 	next="returning-values-from-loop"

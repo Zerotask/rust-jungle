@@ -5,7 +5,7 @@
 <Lesson
 	index={4}
 	title="Memory"
-	description="Rust have 3 different kinds of memory storage"
+	summary="Rust have 3 different kinds of memory storage"
 	tags="memory"
 	previous="calling-methods"
 	next="creating-data-in-memory"

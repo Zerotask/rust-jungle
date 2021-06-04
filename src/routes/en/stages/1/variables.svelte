@@ -5,7 +5,7 @@
 <Lesson
 	index={3}
 	title="Variables"
-	description="Rust variables are declared with the let keyword"
+	summary="Rust variables are declared with the let keyword"
 	tags="variables"
 	previous="the-rust-playground"
 	next="changing-variables"

@@ -5,7 +5,7 @@
 <Lesson
 	index={6}
 	title="for"
-	description="Rust provides with for a known concept for iterating data"
+	summary="Rust provides with for a known concept for iterating data"
 	tags="iteration control-flow"
 	previous="while"
 	next="match"

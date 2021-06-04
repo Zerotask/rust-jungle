@@ -6,7 +6,7 @@
 <Lesson
 	index={6}
 	title="Cargo Subcommands"
-	description="Cargo subcommands allow you to add additional functions to your package manager"
+	summary="Cargo subcommands allow you to add additional functions to your package manager"
 	tags="cargo"
 	previous="managing-dependencies-with-cargo"
 	next="setup-visual-studio-code"

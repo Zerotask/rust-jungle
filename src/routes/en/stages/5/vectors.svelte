@@ -5,7 +5,7 @@
 <Lesson
 	index={9}
 	title="Vectors"
-	description="Vectors are used for dynamic collections"
+	summary="Vectors are used for dynamic collections"
 	tags="generics macros iteration"
 	previous="ugly-option-result-handling"
 	next="summary"

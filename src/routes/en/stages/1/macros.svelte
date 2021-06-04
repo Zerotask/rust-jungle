@@ -5,7 +5,7 @@
 <Lesson
 	index={12}
 	title="Macros"
-	description="Rust macros are similar to functions, but they're more flexible."
+	summary="Rust macros are similar to functions, but they're more flexible."
 	tags="macros"
 	previous="returning-nothing"
 	next="compiler-messages"

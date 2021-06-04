@@ -13,8 +13,8 @@
 	import { buildName } from '$lib/lessons';
 
 	export let index = 1;
-	export let title: string;
-	export let description: string | null = null;
+	export let title: string | null = null;
+	export let summary: string | null = null;
 	export let tags: string[] | string = [];
 	export let previous: string | null = null;
 	export let next: string | null = null;
@@ -122,10 +122,10 @@
 	<meta name="twitter:title" content="Rust Jungle - {fullTitle}" />
 	<meta property="og:url" content={url} />
 
-	{#if description}
-		<meta name="description" content={description} />
-		<meta property="og:description" content={description} />
-		<meta name="twitter:description" content={description} />
+	{#if summary}
+		<meta name="description" content={summary} />
+		<meta property="og:description" content={summary} />
+		<meta name="twitter:description" content={summary} />
 	{/if}
 
 	{#if tags && tags.length > 0}

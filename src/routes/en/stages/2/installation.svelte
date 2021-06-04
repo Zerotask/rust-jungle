@@ -6,7 +6,7 @@
 <Lesson
 	index={2}
 	title="Installation"
-	description="You can download rust from rust-lang.org"
+	summary="You can download rust from rust-lang.org"
 	tags="developing"
 	previous="./"
 	next="rustup"

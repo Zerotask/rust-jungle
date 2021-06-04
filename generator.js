@@ -80,6 +80,7 @@ const generateLessonsJson = async () => {
 		const stage = parseInt(pathParts[4], 10);
 		const index = getLessonIndex(lessonElement);
 		const title = getLessonTitle(lessonElement, pathParts.pop(), index);
+		const summary = lessonElement.attributes.summary;
 		const previous = lessonElement.attributes.previous;
 		const next = lessonElement.attributes.next;
 		const furtherInformationUrls = lessonElement.attributes.furtherInformationUrls?.split(' ');
@@ -102,6 +103,7 @@ const generateLessonsJson = async () => {
 			stage,
 			index,
 			title,
+			summary,
 			tags,
 			previous,
 			next,

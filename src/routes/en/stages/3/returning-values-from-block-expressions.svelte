@@ -5,7 +5,7 @@
 <Lesson
 	index={8}
 	title="Returning Values From Block Expressions"
-	description="In Rust you can return values from a block expression and assign it to a variable"
+	summary="In Rust you can return values from a block expression and assign it to a variable"
 	tags="variables"
 	previous="match"
 	next="summary"
