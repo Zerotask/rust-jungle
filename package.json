@@ -33,7 +33,7 @@
 		"@sveltejs/kit": "next",
 		"cookie": "^0.4.1",
 		"svelte": "^3.34.0",
-		"sweetalert2": "^11.0.17",
+		"sweetalert2": "^11.0.18",
 		"workbox-background-sync": "^6.1.5",
 		"workbox-cacheable-response": "^6.1.5",
 		"workbox-expiration": "^6.1.5",
