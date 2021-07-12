@@ -46,7 +46,7 @@
 		"@sveltejs/adapter-vercel": "next",
 		"@typescript-eslint/eslint-plugin": "^4.28.0",
 		"@typescript-eslint/parser": "^4.19.0",
-		"autoprefixer": "^10.2.5",
+		"autoprefixer": "^10.3.1",
 		"cssnano": "^5.0.6",
 		"dotenv": "^10.0.0",
 		"eslint": "^7.30.0",
