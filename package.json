@@ -27,7 +27,7 @@
 		"generate": "node ./generator.js"
 	},
 	"dependencies": {
-		"@fontsource/alata": "^4.4.5",
+		"@fontsource/alata": "^4.5.0",
 		"@fontsource/alfa-slab-one": "^4.5.0",
 		"@lukeed/uuid": "^2.0.0",
 		"@sveltejs/kit": "next",
