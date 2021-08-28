@@ -1,5 +1,6 @@
 <script lang="ts">
 	import FerrisNormal from '$components/ferris/normal.svelte';
+	import InternalLink from '$components/internalLink.svelte';
 </script>
 
 <svelte:head>
@@ -40,9 +41,19 @@
 		</p>
 
 		<p>We wish you much fun on your journey through the Rust Jungle.</p>
+
+		<p class="startJourney">
+			<InternalLink href="en/stages/1">Start your journey!</InternalLink>
+		</p>
 	</section>
 
 	<section class="pure-u-1 pure-u-md-1-2">
 		<FerrisNormal />
 	</section>
 </div>
+
+<style lang="postcss">
+	.startJourney {
+		font-size: 1.8em;
+	}
+</style>

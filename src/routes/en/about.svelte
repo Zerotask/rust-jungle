@@ -63,6 +63,27 @@
 
 		<p>Every stage has a maximum of 20 lessons.</p>
 
+		<h2>Further learning resources</h2>
+
+		<ul>
+			<li>
+				<ExternalLink href="https://doc.rust-lang.org/stable/book/"
+					>The official Rust book</ExternalLink
+				>
+			</li>
+			<li>
+				<ExternalLink href="https://doc.rust-lang.org/stable/rust-by-example"
+					>Rust by Example</ExternalLink
+				>
+			</li>
+			<li>
+				<ExternalLink href="https://github.com/rust-lang/rustlings">Rustlings</ExternalLink>
+			</li>
+			<li>
+				<ExternalLink href="https://cheats.rs">Rust Cheat Sheet</ExternalLink>
+			</li>
+		</ul>
+
 		<h2>Community</h2>
 		<p>
 			You're welcome to join <ExternalLink href="https://discord.gg/cYw6q6D4tr"
