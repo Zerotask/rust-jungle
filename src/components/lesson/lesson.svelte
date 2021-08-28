@@ -34,7 +34,7 @@
 		tags = tags.split(' ');
 	}
 
-	const [language, currentPage, currentStage, currentLesson] = $page.path
+	const [_language, _currentPage, currentStage, currentLesson] = $page.path
 		.split('/')
 		.filter(Boolean);
 
