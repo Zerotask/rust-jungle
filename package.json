@@ -51,7 +51,7 @@
 		"dotenv": "^10.0.0",
 		"eslint": "^7.31.0",
 		"eslint-config-prettier": "^8.1.0",
-		"eslint-plugin-svelte3": "^3.2.0",
+		"eslint-plugin-svelte3": "^3.2.1",
 		"fast-glob": "^3.2.7",
 		"node-html-better-parser": "^1.2.0",
 		"postcss": "^8.3.6",
