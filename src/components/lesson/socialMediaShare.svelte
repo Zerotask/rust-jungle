@@ -4,7 +4,7 @@
 
 	export let title: string;
 
-	const url = encodeURI(`https://${$page.host}${$page.path}`);
+	const url = encodeURI(`https://${$page.url.host}${$page.url.pathname}`);
 
 	$: fullTitle = encodeURIComponent(`Rust Jungle - ${title}`);
 	$: urlFacebook = `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${fullTitle}`;

@@ -23,7 +23,7 @@
 	let isIntroduction = false;
 	let isSummary = false;
 	let lastStage: number;
-	const url: string = encodeURI(`https://${$page.host}${$page.path}`);
+	const url: string = encodeURI(`https://${$page.url.host}${$page.url.pathname}`);
 
 	// for compatibility. the lessons endpoint needs a string, not an array.
 	if (typeof furtherInformationUrls === 'string') {
@@ -34,7 +34,7 @@
 		tags = tags.split(' ');
 	}
 
-	const [_language, _currentPage, currentStage, currentLesson] = $page.path
+	const [_language, _currentPage, currentStage, currentLesson] = $page.url.pathname
 		.split('/')
 		.filter(Boolean);
 
@@ -83,7 +83,7 @@
 			stage: stage,
 			index: index,
 			title: title,
-			url: $page.path,
+			url: $page.url.pathname,
 			date: new Date()
 		});
 

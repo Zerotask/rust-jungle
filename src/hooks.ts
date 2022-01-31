@@ -1,12 +1,13 @@
 /** @type {import('@sveltejs/kit').Handle} */
-export async function handle({ request, resolve }): Promise<any> {
-	const response = await resolve(request);
+export async function handle({ event, resolve }): Promise<Response> {
+	const response: Response = await resolve(event);
+	const body = await response.text();
 
-	return {
-		...response,
+	return new Response(body, {
 		headers: {
 			...response.headers,
-			'Access-Control-Allow-Origin': '*'
+			'Access-Control-Allow-Origin': '*',
+			'Content-Type': 'text/html'
 		}
-	};
+	});
 }
