@@ -10,7 +10,7 @@
 	tags="compiler"
 	previous="macros"
 	next="summary"
-	playgroundUrl="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=fn%20main()%20%7B%0D%0A%20%20%20%20let%20message%20%3D%20%22hello%20world%22%3B%0D%0A%20%20%20%20println!(message)%3B%0D%0A%7D"
+	playgroundUrl="https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&code=fn%20main()%20%7B%0D%0A%20%20%20%20let%20message%20%3D%20%22hello%20world%22%3B%0D%0A%20%20%20%20println!(message)%3B%0D%0A%7D"
 	furtherInformationUrls="https://doc.rust-lang.org/error-index.html"
 >
 	<p>
@@ -40,7 +40,7 @@
 	<p>
 		You can actually copy & paste the provided help to get your program working as expected.<br />
 		After it, your programm will look like <ExternalLink
-			href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=fn%20main()%20%7B%0D%0A%20%20%20%20let%20message%20%3D%20%22hello%20world%22%3B%0D%0A%20%20%20%20println!(%22%7B%7D%22%2C%20message)%3B%0D%0A%7D"
+			href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&code=fn%20main()%20%7B%0D%0A%20%20%20%20let%20message%20%3D%20%22hello%20world%22%3B%0D%0A%20%20%20%20println!(%22%7B%7D%22%2C%20message)%3B%0D%0A%7D"
 			>this</ExternalLink
 		>.
 	</p>

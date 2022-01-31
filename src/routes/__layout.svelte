@@ -15,7 +15,7 @@
 		const regex = /\/([a-zA-Z]{2})+\/stages\/+([1-9]{1,2})/;
 
 		// If it's not a lesson page.
-		if (!regex.test($page.path)) {
+		if (!regex.test($page.url.pathname)) {
 			const lesson: LastLesson | null = lastLessonStore.get();
 			if (lesson) {
 				const lessonDate = new Date(lesson.date);
@@ -58,8 +58,8 @@
 		</svg>
 		<ul>
 			<!-- TODO: dynamic links with slugs -->
-			<li class:active={$page.path === '/en'}><a sveltekit:prefetch href="/en">Home</a></li>
-			<li class:active={$page.path === '/en/stages'}>
+			<li class:active={$page.url.pathname === '/en'}><a sveltekit:prefetch href="/en">Home</a></li>
+			<li class:active={$page.url.pathname === '/en/stages'}>
 				<a
 					sveltekit:prefetch
 					href="/en/stages"
@@ -68,7 +68,7 @@
 					>Stages</a
 				>
 			</li>
-			<li class:active={$page.path === '/en/search'}>
+			<li class:active={$page.url.pathname === '/en/search'}>
 				<a
 					sveltekit:prefetch
 					href="/en/search"
@@ -76,7 +76,7 @@
 					aria-label="Search for lessons">Search</a
 				>
 			</li>
-			<li class:active={$page.path === '/en/about'}>
+			<li class:active={$page.url.pathname === '/en/about'}>
 				<a
 					sveltekit:prefetch
 					href="/en/about"

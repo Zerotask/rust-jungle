@@ -16,19 +16,19 @@
 struct MyStruct{'<T>'}
 where
     T: MyTrait
-{ '{'}
+{'{'}
     foo: T
     ...
-{ '}'}
+{'}'}
         </code>
     </pre>
 
 	<p>Generic structs have their parameterized type in their implementation blocks:</p>
 	<pre>
         <code>
-impl{'<T>'} MyStruct{'<T>'} { '{'}
+impl{'<T>'} MyStruct{'<T>'} {'{'}
     ...
-{ '}'}
+{'}'}
         </code>
     </pre>
 </Lesson>
