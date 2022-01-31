@@ -25,9 +25,9 @@
 fn my_function{'<T>'}(foo: T)
 where
     T: Foo
-{ '{'}
+{'{'}
     ...
-{ '}'}
+{'}'}
         </code>
     </pre>
 

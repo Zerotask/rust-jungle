@@ -14,9 +14,9 @@
 	<p>Rust has a shorthand for expressing generics constrained by a trait:</p>
 	<pre>
         <code>
-fn my_function(foo: impl Foo) { '{'}
+fn my_function(foo: impl Foo) {'{'}
     ...
-{ '}'}
+{'}'}
         </code>
     </pre>
 
@@ -26,9 +26,9 @@ fn my_function(foo: impl Foo) { '{'}
 fn my_function{'<T>'}(foo: T)
 where
     T: Foo
-{ '{'}
+{'{'}
     ...
-{ '}'}
+{'}'}
         </code>
     </pre>
 </Lesson>

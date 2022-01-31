@@ -32,8 +32,8 @@ impl MyStruct {'{'}
     ...
     fn foo(&self) {'{'}
         ...
-    { '}'}
-{ '}'}
+    {'}'}
+{'}'}
         </code>
     </pre>
 </Lesson>

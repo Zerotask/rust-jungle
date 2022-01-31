@@ -21,7 +21,7 @@
         <code>
 trait MyTrait {'{'}
     fn foo(&self);
-{ '}'}
+{'}'}
         </code>
     </pre>
 
@@ -39,7 +39,7 @@ impl MyTrait for MyStruct  {'{'}
 	...
     {'}'}
     ...
-{ '}'}
+{'}'}
         </code>
     </pre>
 </Lesson>
