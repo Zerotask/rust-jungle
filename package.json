@@ -35,7 +35,7 @@
 		"svelte": "^3.39.0",
 		"sweetalert2": "^11.0.19",
 		"workbox-background-sync": "^6.1.5",
-		"workbox-cacheable-response": "^6.1.5",
+		"workbox-cacheable-response": "^6.5.4",
 		"workbox-expiration": "^6.1.5",
 		"workbox-google-analytics": "^6.1.5",
 		"workbox-precaching": "^6.1.5",
